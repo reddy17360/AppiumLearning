@@ -20,7 +20,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your/appium-project.git'
+               git branch: 'main', url: 'https://github.com/reddy17360/AppiumLearning.git'
+
             }
         }
 
@@ -61,11 +62,15 @@ pipeline {
             }
         }
 
-        stage('Reports') {
-            steps {
-                junit 'build/test-results/test/*.xml'
-                archiveArtifacts artifacts: 'build/reports/**/*', fingerprint: true
-            }
-        }
+       stage('Reports') {
+           steps {
+               // Publish TestNG results (requires "TestNG Results Plugin" in Jenkins)
+               publishTestNG testNGPattern: 'build/test-output/testng-results.xml'
+
+               // Archive TestNG HTML reports
+               archiveArtifacts artifacts: 'build/reports/tests/test/**/*', fingerprint: true
+           }
+       }
+
     }
 }
