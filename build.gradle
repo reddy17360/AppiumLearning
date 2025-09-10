@@ -54,8 +54,8 @@ test {
     } else {
         println "❌ deviceName not provided!"
     }
-    if (System.getProperty("androidVersion")) {
-        println "✅ Username property received: ${System.getProperty("androidVersion")}"
+    if (System.getProperty("platformVersion")) {
+        println "✅ Username property received: ${System.getProperty("platformVersion")}"
     } else {
         println "❌ androidVersion not provided!"
     }
