@@ -69,11 +69,19 @@ pipeline {
             }
         }
 
-        stage('Reports') {
-            steps {
-                publishTestNG testNGPattern: 'build/test-output/testng-results.xml'
-                archiveArtifacts artifacts: 'build/reports/tests/test/**/*', fingerprint: true
-            }
-        }
+         stage('Publish Extent Report') {
+             steps {
+                 publishHTML([
+                     allowMissing: false,
+                     alwaysLinkToLastBuild: true,
+                     keepAll: true,
+                     reportDir: 'ExtentReport/reports',  // relative to project root / Jenkins workspace
+                     reportFiles: 'ExtentReport.html',   // exact HTML file name
+                     reportName: 'Extent Report'
+                 ])
+             }
+         }
+
+
     }
 }
