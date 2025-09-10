@@ -47,7 +47,7 @@ pipeline {
 
         stage('Build Tests') {
             steps {
-                sh './gradlew clean build'
+                sh './gradlew clean build -x test'
             }
         }
 
@@ -68,6 +68,11 @@ pipeline {
                 sh 'pkill -f appium || true'
             }
         }
+        stage('Verify Report Folder') {
+            steps {
+                sh 'ls -l ExtentReports/reports'
+            }
+        }
 
          stage('Publish Extent Report') {
              steps {
@@ -75,8 +80,8 @@ pipeline {
                      allowMissing: false,
                      alwaysLinkToLastBuild: true,
                      keepAll: true,
-                     reportDir: 'ExtentReport/reports',  // relative to project root / Jenkins workspace
-                     reportFiles: 'ExtentReport.html',   // exact HTML file name
+                     reportDir: 'ExtentReports/reports',  // relative to project root / Jenkins workspace
+                     reportFiles: 'index.html',   // exact HTML file name
                      reportName: 'Extent Report'
                  ])
              }
