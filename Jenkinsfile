@@ -12,10 +12,10 @@ pipeline {
     }
 
     environment {
-        DEVICE_NAME = "${params.DEVICE_NAME}"
-        ANDROID_HOME = "${params.ANDROID_HOME}"
-        PATH = "$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH"
-    }
+            JAVA_HOME = "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
+            ANDROID_HOME = "/Users/jenkins/Library/Android/sdk"
+            PATH = "${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+        }
 
     stages {
         stage('Checkout') {
