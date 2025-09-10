@@ -7,6 +7,7 @@ pipeline {
 
     parameters {
         string(name: 'DEVICE_NAME', defaultValue: 'emulator-5554', description: 'Android device/emulator name')
+        string(name: 'PLATFORM_VERSION', defaultValue: '13.0', description: 'Android/iOS platform version')
         choice(name: 'APPIUM_MODE', choices: ['code', 'pipeline'], description: 'How to start Appium: inside test code OR pipeline')
     }
 
@@ -30,6 +31,7 @@ pipeline {
                 sh './gradlew -v'
                 sh 'adb version'
                 sh 'echo "Using device: $DEVICE_NAME"'
+                sh 'echo "Platform version: $PLATFORM_VERSION"'
                 sh 'echo "Appium mode: $APPIUM_MODE"'
             }
         }
@@ -37,10 +39,9 @@ pipeline {
         stage('Start Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
             steps {
-                // Start Appium in background with proper PATH
                 sh 'echo "Starting Appium..."'
                 sh 'nohup appium --base-path /wd/hub --log-level error > appium.log 2>&1 &'
-                sh 'sleep 10' // wait for Appium server to boot
+                sh 'sleep 10'
             }
         }
 
@@ -52,7 +53,11 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh "./gradlew clean test"
+                sh """
+                    ./gradlew clean test \
+                    -DdeviceName=${params.DEVICE_NAME} \
+                    -DplatformVersion=${params.PLATFORM_VERSION}
+                """
             }
         }
 
@@ -66,10 +71,7 @@ pipeline {
 
         stage('Reports') {
             steps {
-                // Publish TestNG results (requires "TestNG Results Plugin" in Jenkins)
                 publishTestNG testNGPattern: 'build/test-output/testng-results.xml'
-
-                // Archive TestNG HTML reports
                 archiveArtifacts artifacts: 'build/reports/tests/test/**/*', fingerprint: true
             }
         }
