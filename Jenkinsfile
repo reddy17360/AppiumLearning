@@ -73,4 +73,9 @@ pipeline {
                 // Publish TestNG results (requires "TestNG Results Plugin" in Jenkins)
                 publishTestNG testNGPattern: 'build/test-output/testng-results.xml'
 
-                // Archive Te
+                // Archive TestNG HTML reports
+                archiveArtifacts artifacts: 'build/reports/tests/test/**/*', fingerprint: true
+            }
+        }
+    }
+}
