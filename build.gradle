@@ -1,0 +1,77 @@
+plugins {
+    id 'java'
+}
+
+group = 'LearAumatingApps'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.appium/java-client
+
+    implementation 'io.appium:java-client:9.5.0'
+
+
+// https://mvnrepository.com/artifact/org.testng/testng
+    implementation 'org.testng:testng:7.11.0'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation 'org.seleniumhq.selenium:selenium-java:4.34.0'
+
+
+
+// https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation 'commons-io:commons-io:2.20.0'
+
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
+// https://mvnrepository.com/artifact/com.aventstack/extentreports
+    implementation 'com.aventstack:extentreports:5.1.2'
+
+}
+
+
+//test is a predefined task for running the tests
+test {
+    useTestNG {
+        suites "testng.xml"
+        if (System.getProperty("groups") != null) {
+            includeGroups System.getProperty("groups")
+        }
+    }
+
+    // Forward deviceName property to JVM
+    systemProperty "deviceName", System.getProperty("deviceName") ?: "SanjeevPhone"
+    systemProperty "androidVersion" , System.getProperty("androidVersion") ?: "12"
+// forward deviceName from Gradle's JVM to the test JVM
+
+    if (System.getProperty("deviceName")) {
+        println "✅ Username property received: ${System.getProperty("deviceName")}"
+    } else {
+        println "❌ deviceName not provided!"
+    }
+    if (System.getProperty("androidVersion")) {
+        println "✅ Username property received: ${System.getProperty("androidVersion")}"
+    } else {
+        println "❌ androidVersion not provided!"
+    }
+
+
+
+
+
+    // Optional: print to debug
+
+
+
+
+
+
+}
+
+
+
