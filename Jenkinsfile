@@ -11,11 +11,7 @@ pipeline {
     }
 
     environment {
-        // Java and Android SDK
-        JAVA_HOME = "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
-        ANDROID_HOME = "/Users/jenkins/Library/Android/sdk"
-
-        // Include Homebrew adb, Java, Android SDK, and system binaries
+        ANDROID_HOME = "/Users/sanjeevareddysj/Library/Android/sdk"
         PATH = "/opt/homebrew/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     }
 
@@ -56,7 +52,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh "./gradlew -PdeviceName=$DEVICE_NAME test"
+                sh "./gradlew clean test"
             }
         }
 
