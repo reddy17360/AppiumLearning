@@ -6,8 +6,8 @@ pipeline {
     }
 
     parameters {
-        string(name: 'DEVICE_NAME', defaultValue: 'emulator-5554', description: 'Android device/emulator name')
-        string(name: 'PLATFORM_VERSION', defaultValue: '13.0', description: 'Android/iOS platform version')
+        string(name: 'DEVICE_NAME',  description: 'Android device/emulator name')
+        string(name: 'PLATFORM_VERSION', description: 'Android/iOS platform version')
         choice(name: 'APPIUM_MODE', choices: ['code', 'pipeline'], description: 'How to start Appium: inside test code OR pipeline')
     }
 

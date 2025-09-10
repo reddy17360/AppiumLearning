@@ -45,8 +45,8 @@ test {
     }
 
     // Forward deviceName property to JVM
-    systemProperty "deviceName", System.getProperty("deviceName") ?: "SanjeevPhone"
-    systemProperty "androidVersion" , System.getProperty("androidVersion") ?: "12"
+    systemProperty "deviceName", System.getProperty("deviceName") ?: "emulator-5558"
+    systemProperty "platformVersion" , System.getProperty("platformVersion") ?: "12"
 // forward deviceName from Gradle's JVM to the test JVM
 
     if (System.getProperty("deviceName")) {

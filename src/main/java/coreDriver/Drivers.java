@@ -41,16 +41,15 @@ public class Drivers {
 
 
             UiAutomator2Options options = new UiAutomator2Options();
-              if(System.getProperty("deviceName") != null && System.getProperty("androidVersion") != null) {
-                  options.setDeviceName(System.getProperty("deviceName"));
-                  options.setPlatformVersion(System.getProperty("androidVersion"));
-              }
-            else{
-                      options.setDeviceName(prop.getProperty("deviceName"));
-                      options.setPlatformVersion(prop.getProperty("androidVersion"));
-            }
-            System.out.println(System.getProperty("deviceName"));
-            System.out.println(System.getProperty("androidVersion"));
+//if(System.getProperty("deviceName") != null && System.getProperty("androidVersion") != null) {
+           String deviceName= System.getProperty("deviceName");
+          String platformVersion =  System.getProperty("platformVersion");
+                  options.setDeviceName(deviceName);
+                  options.setPlatformVersion(platformVersion);
+
+
+            System.out.println(platformVersion);
+            System.out.println(deviceName);
 
             options.setChromedriverExecutable("/Users/sanjeevareddysj/Downloads/chromedriver 2");
 

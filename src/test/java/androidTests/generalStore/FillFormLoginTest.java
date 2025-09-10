@@ -30,10 +30,10 @@ public class FillFormLoginTest  {
 
     @Test(priority = 0)
     public void loginErrorValidation() throws InterruptedException {
-        fillFormPage.setCountryPicker("Angolaj");
+        fillFormPage.setCountryPicker("Angola");
         fillFormPage.setGender("Female");
         fillFormPage.submitForm();
-        WebElement toast = Drivers.getDrivers().findElement(By.xpath("(//android.widget.Toast)[10]"));
+        WebElement toast = Drivers.getDrivers().findElement(By.xpath("(//android.widget.Toast)[1]"));
         System.out.println(toast.getAttribute("name"));
         Assert.assertEquals(toast.getAttribute("name"), "Please enter your name");
     }
