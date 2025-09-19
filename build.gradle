@@ -38,7 +38,13 @@ dependencies {
 //test is a predefined task for running the tests
 test {
     useTestNG {
-        suites "testng.xml"
+       // suites "testng.xml"
+
+            // Use testng.xml if it exists
+            if (file("testng.xml").exists()) {
+                suites "testng.xml"
+            }
+
         if (System.getProperty("groups") != null) {
             includeGroups System.getProperty("groups")
         }

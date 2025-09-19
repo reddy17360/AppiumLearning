@@ -10,9 +10,9 @@
 
 
 <classes>
-            <class name="androidTests.generalStore.FillFormLoginTest"/>
 
 
+    <class name="gojek.android.gojek.GojekWelcomeScreenVerificationTest"/>
 
 
         </classes>

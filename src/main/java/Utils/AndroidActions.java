@@ -13,16 +13,24 @@ public class AndroidActions extends AppiumUtilities{
 
    public AppiumDriver driver;
     public AndroidActions(AppiumDriver driver){
-
         this.driver = driver;
     }
-    public void scrollItTill( String scrollObject){
+    public void scrollItTill( String scrollObject ){
 
         driver.findElement(AppiumBy.androidUIAutomator(
                 "new UiScrollable(" +
                         "new UiSelector()).scrollIntoView(text( \"" + scrollObject + "\"));")).click();
     }
 
+    public void scrollMore() {
+        boolean canScrollMore ;
+        do {
+            canScrollMore = (Boolean) driver.executeScript("mobile: scrollGesture",
+                    ImmutableMap.of("left", 100, "top", 100,
+                            "width", 200, "height", 200,
+                            "direction", "left", "percent", 3.0));
+        }while(canScrollMore);
+    }
 
     public void longPress(WebElement element){
         driver.executeScript("mobile: longClickGesture" ,
@@ -36,5 +44,11 @@ public class AndroidActions extends AppiumUtilities{
 
     public void startAnActivity(String intent){
         ((JavascriptExecutor)driver).executeScript("mobile: startActivity" , ImmutableMap.of("intent" , intent));
+    }
+
+    public void swipeIt(WebElement element){
+        driver.executeScript("mobile: swipeGesture" , ImmutableMap.of(
+                "elementId" , ((RemoteWebElement)element).getId() , "direction" , "left" ,
+                "percent" , "0.75"));
     }
 }

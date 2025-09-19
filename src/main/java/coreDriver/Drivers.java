@@ -55,7 +55,8 @@ public class Drivers {
 
             options.setPlatformName("Android");
             options.setAutomationName("UiAutomator2");
-            options.setApp(System.getProperty("user.dir") + "/src/test/resources/GeneralStore.apk");
+            options.setApp("/Users//sanjeevareddysj//Downloads//gojek-integration-6f8b9c1.apk");
+           // options.setApp(System.getProperty("user.dir") + "/src/test/resources/GeneralStore.apk");
             options.setNewCommandTimeout(Duration.ofSeconds(500));
 
 
