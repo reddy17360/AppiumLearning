@@ -3,6 +3,7 @@ package gojek.android.gojek;
 
 
 import Pages.Android.GojekPages.GojekWelcomePage;
+import Pages.Android.GojekPages.PhoneInputPages;
 import coreDriver.Drivers;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -13,10 +14,12 @@ import java.io.IOException;
 
 public class GojekWelcomeScreenVerificationTest{
     public GojekWelcomePage gojekWelcomePage;
+    public PhoneInputPages phoneInputPages;
     @BeforeClass
     public void preRequisit() throws IOException {
         Drivers.initDriver();
         gojekWelcomePage = new GojekWelcomePage(Drivers.getDrivers());
+      phoneInputPages=  new  PhoneInputPages(Drivers.getDrivers());
     }
 
     @Test
@@ -37,6 +40,7 @@ public class GojekWelcomeScreenVerificationTest{
          String latestLanguage = gojekWelcomePage.appLanguage();
          Assert.assertEquals(defaultLanguage, latestLanguage);
     }
+
 
 
 }

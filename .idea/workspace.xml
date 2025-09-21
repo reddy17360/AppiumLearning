@@ -5,18 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccf00bd7-89be-4148-95f8-b6dec30e64ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/GojekWelcomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/iostests/ISSs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/ChooseVerificationMethodPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/CountrySelectionPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/EmailInputPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/LocationPermissionPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/NameInputPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/PhoneInputPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/SHSPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/SmsOtpMethodPageObjectNewUi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/TurnOnLocationPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/WhatsappOtpMethodPageObjectNewUi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/ChooseVerificationMethodPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/CountrySelectPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/EmailInputPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/LocationPermissionPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/NameInputPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/PhoneInputPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/ShsPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/SmsOtpMethodPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/TurnOnLocationPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/WhatsappOtpMethodPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/PhoneNumberErrorValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/loginErrorValidation.png" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/loginErrorValidation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/loginToGeneralStore.png" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/loginToGeneralStore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/addItemsToCart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/changeAppLanguage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/loginErrorValidation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/loginToGeneralStore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/titleOfScreen.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/WelcomePageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/WelcomePageObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/GojekWelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/GojekWelcomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils/AndroidActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/AndroidActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/AppiumUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/AppiumUtilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,10 +74,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="32sP4qIQE7wBn5NAvUA0Idvg8IU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -65,20 +90,23 @@
     "Gradle.GojekWelcomeScreenVerificationTest.executor": "Run",
     "Gradle.GojekWelcomeScreenVerificationTest.titleOfScreen.executor": "Run",
     "Gradle.ISSs.executor": "Run",
+    "Gradle.SignUpHappyFlowTest.executor": "Run",
     "Gradle.Tests in 'LearAutomatingApp'.executor": "Run",
+    "Gradle.Tests in 'gojek.android.gojek'.executor": "Run",
     "Gradle.WelcomeScreenVerificationTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "devGojek",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Tests in 'LearAutomatingApp'">
+  <component name="RunManager" selected="Gradle.SignUpHappyFlowTest">
     <configuration name="GojekWelcomeScreenVerificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -103,7 +131,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GojekWelcomeScreenVerificationTest.changeAppLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SignUpHappyFlowTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -116,31 +144,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GojekWelcomeScreenVerificationTest.titleOfScreen" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;gojek.android.gojek.GojekWelcomeScreenVerificationTest.titleOfScreen&quot;" />
+            <option value="&quot;gojek.android.gojek.SignUpHappyFlowTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -173,6 +177,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Tests in 'gojek.android.gojek'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;gojek.android.gojek.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="LearAutomatingApp" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -185,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'LearAutomatingApp'" />
+        <item itemvalue="Gradle.SignUpHappyFlowTest" />
         <item itemvalue="TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml" />
-        <item itemvalue="Gradle.GojekWelcomeScreenVerificationTest.changeAppLanguage" />
-        <item itemvalue="Gradle.GojekWelcomeScreenVerificationTest.titleOfScreen" />
+        <item itemvalue="Gradle.Tests in 'gojek.android.gojek'" />
         <item itemvalue="Gradle.GojekWelcomeScreenVerificationTest" />
+        <item itemvalue="Gradle.Tests in 'LearAutomatingApp'" />
       </list>
     </recent_temporary>
   </component>
@@ -203,5 +231,26 @@
       <updated>1758206119797</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utils/AndroidActions.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utils/AndroidActions.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

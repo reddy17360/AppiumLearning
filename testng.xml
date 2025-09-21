@@ -12,7 +12,8 @@
 <classes>
 
 
-    <class name="gojek.android.gojek.GojekWelcomeScreenVerificationTest"/>
+
+    <class name="gojek.android.gojek.SignUpHappyFlowTest"/>
 
 
         </classes>

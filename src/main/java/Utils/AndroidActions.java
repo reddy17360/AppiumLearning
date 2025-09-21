@@ -18,8 +18,7 @@ public class AndroidActions extends AppiumUtilities{
     public void scrollItTill( String scrollObject ){
 
         driver.findElement(AppiumBy.androidUIAutomator(
-                "new UiScrollable(" +
-                        "new UiSelector()).scrollIntoView(text( \"" + scrollObject + "\"));")).click();
+                "new UiScrollable(new UiSelector()).scrollIntoView(text( \"" + scrollObject + "\"));")).click();
     }
 
     public void scrollMore() {

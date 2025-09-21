@@ -10,12 +10,18 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class AppiumUtilities {
 
@@ -60,4 +66,23 @@ public class AppiumUtilities {
 
         return destination;
     }
+
+    public String randomNumberGenerator(){
+        //generates the random int from 8 to 9
+        int firstDigit =ThreadLocalRandom.current().nextInt(8,9 );
+        //generates the random long rom 0 to 99999999
+        long remainingDigits = ThreadLocalRandom.current().nextLong(1_000_000_000L);
+        return firstDigit +  String.format("%09d" , remainingDigits);
+
+
+    }
+
+    public void waitBroUntilVisibility(WebElement ele , int duration){
+
+        WebDriverWait wait = new WebDriverWait(Drivers.getDrivers() , Duration.ofSeconds(duration));
+        wait.until(ExpectedConditions.elementToBeClickable(ele));
+
+    }
+
+
 }

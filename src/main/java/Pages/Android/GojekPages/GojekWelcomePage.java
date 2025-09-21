@@ -48,4 +48,11 @@ public class GojekWelcomePage {
         public String appLanguage(){
         return welcomePageObjects.languagePicker.getAttribute("content-desc");
         }
+
+        public void clickOnLogin(){
+            welcomePageObjects.loginButton.click();
+        }
+        public void clickOnSignUp(){
+        welcomePageObjects.signUpButton.click();
+        }
     }

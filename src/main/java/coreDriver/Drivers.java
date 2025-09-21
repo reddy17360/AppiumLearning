@@ -61,7 +61,7 @@ public class Drivers {
 
 
             AppiumDriver appiumDriver = new AndroidDriver(service.getUrl(), options);
-            appiumDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+            appiumDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             driver.set(appiumDriver);
         }
     }
