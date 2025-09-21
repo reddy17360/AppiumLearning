@@ -83,29 +83,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build LearAumatingApp.executor": "Run",
-    "Gradle.GojekWelcomeScreenVerificationTest.changeAppLanguage.executor": "Run",
-    "Gradle.GojekWelcomeScreenVerificationTest.executor": "Run",
-    "Gradle.GojekWelcomeScreenVerificationTest.titleOfScreen.executor": "Run",
-    "Gradle.ISSs.executor": "Run",
-    "Gradle.SignUpHappyFlowTest.executor": "Run",
-    "Gradle.Tests in 'LearAutomatingApp'.executor": "Run",
-    "Gradle.Tests in 'gojek.android.gojek'.executor": "Run",
-    "Gradle.WelcomeScreenVerificationTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml.executor": "Run",
-    "git-widget-placeholder": "devGojek",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build LearAumatingApp.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GojekWelcomeScreenVerificationTest.changeAppLanguage.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GojekWelcomeScreenVerificationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GojekWelcomeScreenVerificationTest.titleOfScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ISSs.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SignUpHappyFlowTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'LearAutomatingApp'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'gojek.android.gojek'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WelcomeScreenVerificationTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;devGojek&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.SignUpHappyFlowTest">
     <configuration name="GojekWelcomeScreenVerificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
