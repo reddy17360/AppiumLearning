@@ -10,53 +10,60 @@ repositories {
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/io.appium/java-client
 
     implementation 'io.appium:java-client:9.5.0'
-
-
-// https://mvnrepository.com/artifact/org.testng/testng
     implementation 'org.testng:testng:7.11.0'
-
-    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation 'org.seleniumhq.selenium:selenium-java:4.34.0'
-
-
-
-// https://mvnrepository.com/artifact/commons-io/commons-io
     implementation 'commons-io:commons-io:2.20.0'
-
-
-    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
-// https://mvnrepository.com/artifact/com.aventstack/extentreports
     implementation 'com.aventstack:extentreports:5.1.2'
 
+    implementation 'com.browserstack:browserstack-local-java:1.0.6'
+
+    // https://mvnrepository.com/artifact/com.browserstack/browserstack-java-sdk
+    testImplementation 'com.browserstack:browserstack-java-sdk:1.40.6'
+
 }
+def browserstackSDKArtifact = configurations.compileClasspath.resolvedConfiguration.resolvedArtifacts.find { it.name == 'browserstack-java-sdk' }
 
+// === Local TestNG / Appium Config ===
+    test {
+        useTestNG {
+            suites "testng.xml"
+            if (System.getProperty("groups") != null) {
+                includeGroups System.getProperty("groups")
+            }
 
-//test is a predefined task for running the tests
-test {
-    useTestNG {
-        suites "testng.xml"
-        if (System.getProperty("groups") != null) {
-            includeGroups System.getProperty("groups")
         }
 
+        // Fallback to local device if BrowserStack not used
+        systemProperty "deviceName", System.getProperty("deviceName", "emulator-5554")
+        systemProperty "platformVersion", System.getProperty("platformVersion", "11")
+
+        doFirst {
+            println "▶ Using deviceName     : ${systemProperties['deviceName']}"
+            println "▶ Using platformVersion: ${systemProperties['platformVersion']}"
+        }
     }
-    // Set system properties with defaults (for the test JVM)
-    systemProperty "deviceName", System.getProperty("deviceName", "emulator-5554")
-    systemProperty "platformVersion", System.getProperty("platformVersion", "11")
+// === BrowserStack Task ===
+// === BrowserStack TestNG Runner ===
 
-    // Log the final values just before tests run
-    doFirst {
-        println "▶ Using deviceName     : ${systemProperties['deviceName']}"
-        println "▶ Using platformVersion: ${systemProperties['platformVersion']}"
+task browserStackRun(type: JavaExec) {
+    group = "Verification"
+    description = "Run Appium TestNG suite on BrowserStack via SDK"
 
+    mainClass.set("org.testng.TestNG")
+    classpath = sourceSets.test.runtimeClasspath
+    args "src/test/resources/testng.xml"
 
-        // Optional: print to debug
+    // tell code to use cloud mode and pass credentials/paths
+    systemProperty "runEnv", "cloud"
+    systemProperty "bsUsername", project.bsUsername
+    systemProperty "bsAccessKey", project.bsAccessKey
+    systemProperty "bsAppId", project.bsAppId
+    systemProperty "browserstack.configFile", "${projectDir}/browserstack.yml"
 
-    }
-
-
+    // optional device overrides (falls back to browserstack.yml)
+    systemProperty "deviceName", project.hasProperty("deviceName") ? project.deviceName : ""
+    systemProperty "platformVersion", project.hasProperty("platformVersion") ? project.platformVersion : ""
 }
