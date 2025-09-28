@@ -1,25 +1,21 @@
 pipeline {
     agent any
 
-environment {
-        // BrowserStack credentials from Jenkins
-        BROWSERSTACK_USERNAME = credentials('BROWSERSTACK_USERNAME')
-        BROWSERSTACK_ACCESS_KEY = credentials('BROWSERSTACK_ACCESS_KEY')
-             ANDROID_HOME = "/Users/sanjeevareddysj/Library/Android/sdk"
-                PATH = "/opt/homebrew/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-
-    }
     tools {
         jdk 'JDK17' // Make sure JDK17 is configured in Jenkins Tools
     }
 
     parameters {
-        string(name: 'DEVICE_NAME',  description: 'Android device/emulator name')
-        string(name: 'PLATFORM_VERSION', description: 'Android/iOS platform version')
+        string(name: 'DEVICE_NAME',  description: 'Android device/emulator name', defaultValue: 'emulator-5554')
+        string(name: 'PLATFORM_VERSION', description: 'Android/iOS platform version', defaultValue: '11')
         choice(name: 'APPIUM_MODE', choices: ['code', 'pipeline'], description: 'How to start Appium: inside test code OR pipeline')
+        booleanParam(name: 'USE_BROWSERSTACK', defaultValue: true, description: 'Run tests on BrowserStack?')
     }
 
-
+    environment {
+        ANDROID_HOME = "/Users/sanjeevareddysj/Library/Android/sdk"
+        PATH = "/opt/homebrew/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    }
 
     stages {
         stage('Checkout') {
@@ -38,6 +34,7 @@ environment {
                 sh 'echo "Using device: $DEVICE_NAME"'
                 sh 'echo "Platform version: $PLATFORM_VERSION"'
                 sh 'echo "Appium mode: $APPIUM_MODE"'
+                sh 'echo "Run on BrowserStack: $USE_BROWSERSTACK"'
             }
         }
 
@@ -56,19 +53,21 @@ environment {
             }
         }
 
-
-              stage('Run Tests') {
-                  steps {
-                      sh """
-                          ./gradlew clean testBrowserStack \
-                          -DUSE_BROWSERSTACK=true \
-                          -DdeviceName=${params.DEVICE_NAME} \
-                          -DplatformVersion=${params.PLATFORM_VERSION}
-                      """
-                  }
-              }
-
-
+        stage('Run Tests') {
+            steps {
+                withCredentials([
+                    string(credentialsId: 'BROWSERSTACK_USERNAME', variable: 'BROWSERSTACK_USERNAME'),
+                    string(credentialsId: 'BROWSERSTACK_ACCESS_KEY', variable: 'BROWSERSTACK_ACCESS_KEY')
+                ]) {
+                    sh """
+                        ./gradlew clean testBrowserStack \
+                        -DUSE_BROWSERSTACK=${params.USE_BROWSERSTACK} \
+                        -DdeviceName=${params.DEVICE_NAME} \
+                        -DplatformVersion=${params.PLATFORM_VERSION}
+                    """
+                }
+            }
+        }
 
         stage('Stop Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
@@ -77,26 +76,24 @@ environment {
                 sh 'pkill -f appium || true'
             }
         }
+
         stage('Verify Report Folder') {
             steps {
                 sh 'ls -l ExtentReports/reports'
             }
         }
 
-         stage('Publish Extent Report') {
-             steps {
-                 publishHTML([
-                     allowMissing: false,
-                     alwaysLinkToLastBuild: true,
-                     keepAll: true,
-                     reportDir: 'ExtentReports/reports',  // relative to project root / Jenkins workspace
-                     reportFiles: 'index.html',   // exact HTML file name
-                     reportName: 'Extent Report'
-                 ])
-             }
-         }
-
-
+        stage('Publish Extent Report') {
+            steps {
+                publishHTML([
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'ExtentReports/reports',
+                    reportFiles: 'index.html',
+                    reportName: 'Extent Report'
+                ])
+            }
+        }
     }
-}///Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp
-
+}
