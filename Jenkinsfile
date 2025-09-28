@@ -6,7 +6,7 @@ pipeline {
     }
 
     parameters {
-        string(name: 'DEVICE_NAME',  description: 'Android device/emulator name', defaultValue: 'emulator-5554')
+        string(name: 'DEVICE_NAME', description: 'Android device/emulator name', defaultValue: 'emulator-5554')
         string(name: 'PLATFORM_VERSION', description: 'Android/iOS platform version', defaultValue: '11')
         choice(name: 'APPIUM_MODE', choices: ['code', 'pipeline'], description: 'How to start Appium: inside test code OR pipeline')
         booleanParam(name: 'USE_BROWSERSTACK', defaultValue: true, description: 'Run tests on BrowserStack')
@@ -26,24 +26,28 @@ pipeline {
 
         stage('Verify Environment') {
             steps {
-                sh 'echo "JAVA_HOME=$JAVA_HOME"'
-                sh 'echo "ANDROID_HOME=$ANDROID_HOME"'
-                sh 'java -version'
-                sh './gradlew -v'
-                sh 'adb version'
-                sh 'echo "Using device: $DEVICE_NAME"'
-                sh 'echo "Platform version: $PLATFORM_VERSION"'
-                sh 'echo "Appium mode: $APPIUM_MODE"'
-                sh 'echo "Run on BrowserStack: $USE_BROWSERSTACK"'
+                sh '''
+                    echo "JAVA_HOME=$JAVA_HOME"
+                    echo "ANDROID_HOME=$ANDROID_HOME"
+                    java -version
+                    ./gradlew -v
+                    adb version
+                    echo "Using device: $DEVICE_NAME"
+                    echo "Platform version: $PLATFORM_VERSION"
+                    echo "Appium mode: $APPIUM_MODE"
+                    echo "Run on BrowserStack: $USE_BROWSERSTACK"
+                '''
             }
         }
 
         stage('Start Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
             steps {
-                sh 'echo "Starting Appium..."'
-                sh 'nohup appium --base-path /wd/hub --log-level error > appium.log 2>&1 &'
-                sh 'sleep 10'
+                sh '''
+                    echo "Starting Appium..."
+                    nohup appium --base-path /wd/hub --log-level error > appium.log 2>&1 &
+                    sleep 10
+                '''
             }
         }
 
@@ -53,37 +57,39 @@ pipeline {
             }
         }
 
-      stage('Run Tests') {
-          steps {
-              withCredentials([usernamePassword(
-                  credentialsId: '251af401-79f0-41c7-8ab4-966172378c5b',  // 👈 use the ID from Jenkins UI
-                  usernameVariable: 'BROWSERSTACK_USERNAME',
-                  passwordVariable: 'BROWSERSTACK_ACCESS_KEY'
-              )]) {
-                  sh """
-                      ./gradlew clean testBrowserStack \
-                      -DdeviceName=${params.DEVICE_NAME} \
-                      -DplatformVersion=${params.PLATFORM_VERSION} \
-                      -DUSE_BROWSERSTACK=${params.USE_BROWSERSTACK} \
-                      -DBROWSERSTACK_USERNAME=$BROWSERSTACK_USERNAME \
-                      -DBROWSERSTACK_ACCESS_KEY=$BROWSERSTACK_ACCESS_KEY
-                  """
-              }
-          }
-      }
-
+        stage('Run Tests') {
+            steps {
+                withCredentials([usernamePassword(
+                    credentialsId: 'browserstack-creds',   // 👈 Set this ID in Jenkins
+                    usernameVariable: 'BROWSERSTACK_USERNAME',
+                    passwordVariable: 'BROWSERSTACK_ACCESS_KEY'
+                )]) {
+                    sh """
+                        echo "Running tests on BrowserStack..."
+                        ./gradlew clean testBrowserStack \
+                          -DdeviceName=${params.DEVICE_NAME} \
+                          -DplatformVersion=${params.PLATFORM_VERSION} \
+                          -DUSE_BROWSERSTACK=${params.USE_BROWSERSTACK} \
+                          -DBROWSERSTACK_USERNAME=$BROWSERSTACK_USERNAME \
+                          -DBROWSERSTACK_ACCESS_KEY=$BROWSERSTACK_ACCESS_KEY
+                    """
+                }
+            }
+        }
 
         stage('Stop Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
             steps {
-                sh 'echo "Stopping Appium..."'
-                sh 'pkill -f appium || true'
+                sh '''
+                    echo "Stopping Appium..."
+                    pkill -f appium || true
+                '''
             }
         }
 
         stage('Verify Report Folder') {
             steps {
-                sh 'ls -l ExtentReports/reports'
+                sh 'ls -l ExtentReports/reports || echo "No reports generated"'
             }
         }
 
