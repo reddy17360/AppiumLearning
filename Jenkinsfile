@@ -5,6 +5,9 @@ environment {
         // BrowserStack credentials from Jenkins
         BROWSERSTACK_USERNAME = credentials('BROWSERSTACK_USERNAME')
         BROWSERSTACK_ACCESS_KEY = credentials('BROWSERSTACK_ACCESS_KEY')
+             ANDROID_HOME = "/Users/sanjeevareddysj/Library/Android/sdk"
+                PATH = "/opt/homebrew/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
     }
     tools {
         jdk 'JDK17' // Make sure JDK17 is configured in Jenkins Tools
@@ -16,10 +19,7 @@ environment {
         choice(name: 'APPIUM_MODE', choices: ['code', 'pipeline'], description: 'How to start Appium: inside test code OR pipeline')
     }
 
-    environment {
-        ANDROID_HOME = "/Users/sanjeevareddysj/Library/Android/sdk"
-        PATH = "/opt/homebrew/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    }
+
 
     stages {
         stage('Checkout') {
