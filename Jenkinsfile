@@ -59,8 +59,7 @@ pipeline {
             }
         }
 
-           stage('Run Tests') {
-                     steps {
+
                        stage('Run Tests') {
                            steps {
                                sh """
@@ -70,9 +69,7 @@ pipeline {
                                    -DplatformVersion=${params.PLATFORM_VERSION}
                                """
                            }
-                       }
 
-                     }
                  }
 
         stage('Stop Appium (if pipeline mode)') {
