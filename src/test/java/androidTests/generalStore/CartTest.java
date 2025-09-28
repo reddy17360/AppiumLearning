@@ -22,8 +22,8 @@ public class CartTest    {
     ProductsListPage productsListPage;
 
     @BeforeClass
-    public void initPages() throws IOException {
-        Drivers.initDriver();
+    public void initPages() throws Exception {
+
         fillFormPage = new FillFormPage(Drivers.getDrivers());
         productsListPage = new ProductsListPage(Drivers.getDrivers());
         cartPage = new CartPage(Drivers.getDrivers());
@@ -31,7 +31,7 @@ public class CartTest    {
     }
 
     @Test()
-    public void getSumOfItems() throws InterruptedException {
+    public void getSumOfItems() throws Exception {
         fillFormPage.setName("SanjeevReddy");
         fillFormPage.setCountryPicker("Angola");
         fillFormPage.setGender("Female");
@@ -66,7 +66,7 @@ public class CartTest    {
 @AfterClass(alwaysRun = true)
     public void killMe(){
         Drivers.quitDriver();
-        Drivers.stopService();
+
 
 }
 }

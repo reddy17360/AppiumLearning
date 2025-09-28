@@ -1,95 +1,104 @@
 package coreDriver;
 
-import Utils.AppiumUtilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
+//import com.browserstack.local.Local;
+import org.openqa.selenium.MutableCapabilities;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.time.Duration;
-import java.util.Properties;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Drivers {
 
-    private static final ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
+    private static ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
+
     private static AppiumDriverLocalService service;
 
-    /**
-     * Initialize driver for the current thread.
-     */
-    // static because we want a single global driver manager.
-    public static void initDriver() throws IOException {
+    /** Get driver instance, decides Local vs BrowserStack based on system property */
+    public static AppiumDriver getDrivers() throws Exception {
         if (driver.get() == null) {
-            Properties prop = new Properties();
-            FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/ConfigData.properties");
-            prop.load(fileInputStream);
 
-            if (service == null) {
-                service = AppiumDriverLocalService.buildService(
-                        new AppiumServiceBuilder()
-                                .usingAnyFreePort()   // Let Appium pick an available port
-                );
-            }
+            boolean useBrowserStack = "true".equalsIgnoreCase(System.getProperty("USE_BROWSERSTACK"));
+            System.out.println("▶ USE_BROWSERSTACK: " + useBrowserStack);
 
-            service.start();
-
-            System.out.println("Appium server started at: " + service.getUrl());
-
-
-
-            UiAutomator2Options options = new UiAutomator2Options();
-//if(System.getProperty("deviceName") != null && System.getProperty("androidVersion") != null) {
-           String deviceName= System.getProperty("deviceName");
-          String platformVersion =  System.getProperty("platformVersion");
-                  options.setDeviceName(deviceName);
-                  options.setPlatformVersion(platformVersion);
-
-
-            System.out.println(platformVersion);
-            System.out.println(deviceName);
-
-            options.setChromedriverExecutable("/Users/sanjeevareddysj/Downloads/chromedriver 2");
-
-            options.setPlatformName("Android");
-            options.setAutomationName("UiAutomator2");
-            options.setApp("/Users//sanjeevareddysj//Downloads//gojek-integration-6f8b9c1.apk");
-           // options.setApp(System.getProperty("user.dir") + "/src/test/resources/GeneralStore.apk");
-            options.setNewCommandTimeout(Duration.ofSeconds(500));
-
-
-            AppiumDriver appiumDriver = new AndroidDriver(service.getUrl(), options);
-            appiumDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-            driver.set(appiumDriver);
+            driver.set(createDriver(useBrowserStack));
         }
-    }
-
-    /**
-     * Get driver for the current thread.
-     */
-    public static AppiumDriver getDrivers() {
         return driver.get();
     }
 
-    /**
-     * Quit driver for the current thread.
-     */
-    public static void quitDriver() {
-        if (driver.get() != null) {
-            driver.get().quit();
-            driver.remove();
-        }
+    public static AppiumDriver createDriver(boolean useBrowserStack) throws Exception {
+        if (useBrowserStack) return createBrowserStackDriver();
+        else return createLocalDriver();
     }
 
-    /**
-     * Stop Appium service.
-     */
-    public static void stopService() {
-        if (service != null) {
-            service.stop();
-            service = null;
+    /** Local Appium Driver */
+    private static AppiumDriver createLocalDriver() throws Exception {
+        if (service == null || !service.isRunning()) {
+            service = AppiumDriverLocalService.buildService(
+                    new AppiumServiceBuilder()
+                            .withIPAddress("127.0.0.1")
+                            .usingAnyFreePort()
+            );
+            service.start();
+        }
+        System.out.println("▶ Local Appium URL: " + service.getUrl());
+
+        UiAutomator2Options options = new UiAutomator2Options();
+        options.setPlatformName("Android");
+        options.setAutomationName("UiAutomator2");
+        options.setDeviceName(System.getProperty("deviceName", "emulator-5554"));
+        options.setPlatformVersion(System.getProperty("platformVersion", "11"));
+        options.setApp(System.getProperty("LOCAL_APP_PATH", "//Users//sanjeevareddysj//Downloads//gen.apk"));
+
+        System.out.println("▶ Running locally on: " + options.getDeviceName());
+        AppiumDriver driver =  new AndroidDriver(service.getUrl(), options);
+        return driver;
+    }
+
+    /** BrowserStack Driver */
+    private static AppiumDriver createBrowserStackDriver() throws Exception {
+        String username = System.getenv("BROWSERSTACK_USERNAME");
+        String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+
+        if (username == null || accessKey == null || username.isEmpty() || accessKey.isEmpty()) {
+            throw new RuntimeException("BrowserStack credentials missing!");
+        }
+
+
+
+        MutableCapabilities caps = new MutableCapabilities();
+        caps.setCapability("app", System.getProperty("BROWSERSTACK_APP", "bs://<YOUR_APP_ID>"));
+        caps.setCapability("deviceName", System.getProperty("BROWSERSTACK_DEVICE", "Samsung Galaxy S22 Ultra"));
+        caps.setCapability("platformVersion", System.getProperty("BROWSERSTACK_PLATFORM_VERSION", "12.0"));
+        caps.setCapability("platformName", "Android");
+        caps.setCapability("project", "BrowserStack Sample");
+        caps.setCapability("build", "browserstack-build-1");
+        caps.setCapability("name", "Sample Test");
+
+        // if (bsLocal != null && bsLocal.isRunning()) caps.setCapability("browserstack.local", "true");
+
+        String hubUrl = "https://" + username + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub";
+        System.out.println("▶ Running on BrowserStack device: " + caps.getCapability("deviceName"));
+
+        return new AndroidDriver(new URL(hubUrl), caps);
+    }
+
+    /** Quit driver and stop services */
+    public static void quitDriver() {
+        try {
+            if (driver.get() != null) {
+                driver.get().quit();
+                driver.remove();
+                System.out.println("▶ Driver quit");
+            }
+            if (service != null && service.isRunning()) service.stop();
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

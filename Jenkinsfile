@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+environment {
+        // BrowserStack credentials from Jenkins
+        BROWSERSTACK_USERNAME = credentials('BROWSERSTACK_USERNAME')
+        BROWSERSTACK_ACCESS_KEY = credentials('BROWSERSTACK_ACCESS_KEY')
+    }
     tools {
         jdk 'JDK17' // Make sure JDK17 is configured in Jenkins Tools
     }

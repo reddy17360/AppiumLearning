@@ -18,6 +18,9 @@ public class SHSPageObject {
     public WebElement goRideTile;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"com.gojek.app.staging:id/ivFullImage\").instance(3)")
-    public WebElement goCarTiel;
+    public WebElement goCarTile;
+
+    @AndroidFindBy(id = "com.gojek.app.staging:id/recyclerView")
+    public WebElement shsGrid;
 
 }
