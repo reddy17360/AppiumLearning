@@ -5,6 +5,7 @@ import Utils.AndroidActions;
 import coreDriver.Drivers;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
@@ -20,11 +21,11 @@ public class GojekWelcomePage {
     }
 
 
-    public String getWelcomeTitle() {
-        return welcomePageObjects.gojekTitle.getAttribute("content-desc");
+    public WebElement getWelcomeTitle() {
+        return welcomePageObjects.gojekTitle;
     }
 
-    public void swipeTheCarousel() throws   InterruptedException {
+    public void swipeTheCarousel() throws Exception {
         AndroidActions androidActions = new AndroidActions(Drivers.getDrivers());
 
             androidActions.swipeIt(welcomePageObjects.corouselSequence);

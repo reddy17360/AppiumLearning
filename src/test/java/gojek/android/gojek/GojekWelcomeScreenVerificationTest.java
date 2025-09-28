@@ -16,15 +16,16 @@ public class GojekWelcomeScreenVerificationTest{
     public GojekWelcomePage gojekWelcomePage;
     public PhoneInputPages phoneInputPages;
     @BeforeClass
-    public void preRequisit() throws IOException {
-        Drivers.initDriver();
+    public void preRequisit() throws Exception {
+
         gojekWelcomePage = new GojekWelcomePage(Drivers.getDrivers());
       phoneInputPages=  new  PhoneInputPages(Drivers.getDrivers());
     }
 
     @Test
-    public void verifyWelcomeScreen() throws IOException, InterruptedException {
-        Assert.assertEquals(gojekWelcomePage.getWelcomeTitle(),"Gojek");
+    public void verifyWelcomeScreen() throws Exception {
+        String title = gojekWelcomePage.getWelcomeTitle().getAttribute("content-desc");
+        Assert.assertEquals(title,"Gojek");
         for(int i=0 ;i<4;i++) {
             gojekWelcomePage.swipeTheCarousel();
             Thread.sleep(4000);

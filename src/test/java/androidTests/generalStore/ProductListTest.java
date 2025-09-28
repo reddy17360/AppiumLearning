@@ -14,8 +14,8 @@ public class ProductListTest   {
     public ProductsListPage productsListPage;
 
     @BeforeClass(alwaysRun = true)
-    public void initPages() throws IOException {
-        Drivers.initDriver();
+    public void initPages() throws Exception {
+
         fillFormPage = new FillFormPage(Drivers.getDrivers());
         productsListPage = new ProductsListPage(Drivers.getDrivers());
     }

@@ -9,6 +9,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -30,9 +31,8 @@ public class SignUpHappyFlowTest {
     TurnOnLocationPages turnOnLocationPages;
 
      @BeforeClass
-    public void preRequisite() throws IOException {
+    public void preRequisite() throws Exception {
         driver= Drivers.getDrivers();
-         Drivers.initDriver();
          gojekWelcomePage = new GojekWelcomePage(Drivers.getDrivers());
          phoneInputPages = new PhoneInputPages(Drivers.getDrivers());
          chooseVerificationMethodPages = new ChooseVerificationMethodPages(Drivers.getDrivers());
@@ -45,42 +45,55 @@ public class SignUpHappyFlowTest {
            turnOnLocationPages = new TurnOnLocationPages(Drivers.getDrivers());
 
            appiumUtilities = new AppiumUtilities( );
+
      }
 
      @Test
-    public void happySignUpTest() throws InterruptedException {
+    public void happySignUpTest() throws Exception {
+
+       //  String user =appiumUtilities.autoUser();
+         appiumUtilities.waitBroUntilVisibility(gojekWelcomePage.getWelcomeTitle() , 20);
+         String user = "reddySanjuReddy";
          gojekWelcomePage.clickOnLogin();
-       phoneInputPages.clickOnPhoneInputField();
-          appiumUtilities.waitBroUntilVisibility(phoneInputPages.googleNumberPopUp() , 10);
-         if(phoneInputPages.googleNumberPopUp().isDisplayed()) {
-               phoneInputPages.clickOnNoneOfTheAbove();
-               phoneInputPages.clickOnPhoneInputField();
-             phoneInputPages.enterPhones(new AppiumUtilities().randomNumberGenerator());
-             phoneInputPages.clickOnContinue();
-             phoneInputPages.clickOnConsent();
-         }else{
-             phoneInputPages.enterPhones(new AppiumUtilities().randomNumberGenerator());
-             phoneInputPages.clickOnContinue();
-             phoneInputPages.clickOnConsent();
-         }
+
+         phoneInputPages.clickOnPhoneInputField();
+            appiumUtilities.waitBroUntilVisibility(phoneInputPages.googleNumberPopUp() , 10);
+               if( phoneInputPages.googleNumberPopUp().isDisplayed()){
+                 System.out.println("pop-up appeared");
+                 phoneInputPages.clickOnNoneOfTheAbove();
+                 phoneInputPages.clickOnPhoneInputField();
+                   phoneInputPages.clickOnPhoneInputField();
+                 phoneInputPages.enterPhones(new AppiumUtilities().randomNumberGenerator());
+                 phoneInputPages.clickOnContinue();
+                 phoneInputPages.clickOnConsent();
+              }else{
+                   phoneInputPages.clickOnPhoneInputField();
+                 phoneInputPages.enterPhones(new AppiumUtilities().randomNumberGenerator());
+                 phoneInputPages.clickOnContinue();
+                 phoneInputPages.clickOnConsent();
+              }
 
          chooseVerificationMethodPages.selectSms();
-         smsOtpMethodPages.enterOtp();
+            smsOtpMethodPages.enterOtp();
+
          appiumUtilities.waitBroUntilVisibility(nameInputPages.emailIstPopupOnEmailScreen(), 10);
+            ((AndroidDriver) Drivers.getDrivers()).pressKey(new KeyEvent().withKey(AndroidKey.BACK));
+            nameInputPages.clickOnNameInputField();
+            nameInputPages.enterName(user);
+            nameInputPages.clickOnContinue();
 
-             ((AndroidDriver) Drivers.getDrivers()).pressKey(new KeyEvent().withKey(AndroidKey.BACK));
-             nameInputPages.clickOnNameInputField();
-             nameInputPages.enterName("Sanjeev");
-             nameInputPages.clickOnContinue();
 
-         emailInputPages.enterEmail("saauijdfsssoisd@gmail.cosmssanjureddy");
-         emailInputPages.clickOnEmailContinue();
-         Thread.sleep(5000);
-          turnOnLocationPages.clickOnTurnOnLocationCta();
-                locationPermissionPages.clickOnAllowUsingApp();
-         Thread.sleep(6000);
-        countrySelectPages.clickOnIndonesia();
-         appiumUtilities.waitBroUntilVisibility(shsPages.clickOnSkipShs() , 10);
-         shsPages.clickOnSkipShs().click();
+         emailInputPages.enterEmail(user+"@gmail.com");
+            emailInputPages.clickOnEmailContinue();
+
+         appiumUtilities.waitBroUntilVisibility(turnOnLocationPages.TurnOnLocationPageTitle() , 20);
+            turnOnLocationPages.clickOnTurnOnLocationCta();
+
+         locationPermissionPages.clickOnAllowUsingApp();
+         appiumUtilities.waitBroUntilVisibility(countrySelectPages.countrySelectorTitle() , 20);
+            countrySelectPages.clickOnIndonesia();
+
+         appiumUtilities.waitBroUntilVisibility(shsPages.getGrid(), 20);
+            shsPages.clickOnSkipShs().click();
      }
 }

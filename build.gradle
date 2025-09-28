@@ -5,64 +5,50 @@ plugins {
 group = 'LearAumatingApps'
 version = '1.0-SNAPSHOT'
 
+sourceCompatibility = '17'
+
 repositories {
     mavenCentral()
+    maven { url "https://hub.browserstack.com/maven" }
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/io.appium/java-client
-
     implementation 'io.appium:java-client:9.5.0'
-
-
-// https://mvnrepository.com/artifact/org.testng/testng
     implementation 'org.testng:testng:7.11.0'
-
-    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation 'org.seleniumhq.selenium:selenium-java:4.34.0'
-
-
-
-// https://mvnrepository.com/artifact/commons-io/commons-io
     implementation 'commons-io:commons-io:2.20.0'
-
-
-    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
-// https://mvnrepository.com/artifact/com.aventstack/extentreports
     implementation 'com.aventstack:extentreports:5.1.2'
-
+    testImplementation 'org.yaml:snakeyaml:2.0'
+    compileOnly 'com.browserstack:browserstack-java-sdk:latest.release'
 }
 
+def browserstackSDKArtifact = configurations.compileClasspath.resolvedConfiguration.resolvedArtifacts.find { it.name == 'browserstack-java-sdk' }
 
-//test is a predefined task for running the tests
-test {
+// -------------------- LOCAL --------------------
+task testLocal(type: Test) {
     useTestNG {
-       // suites "testng.xml"
-
-            // Use testng.xml if it exists
-            if (file("testng.xml").exists()) {
-                suites "testng.xml"
-            }
-
-        if (System.getProperty("groups") != null) {
-            includeGroups System.getProperty("groups")
-        }
-
+        suites "testng.xml"
     }
-    // Set system properties with defaults (for the test JVM)
+    systemProperty "USE_BROWSERSTACK", "false"
     systemProperty "deviceName", System.getProperty("deviceName", "emulator-5554")
     systemProperty "platformVersion", System.getProperty("platformVersion", "11")
 
-    // Log the final values just before tests run
-    doFirst {
-        println "▶ Using deviceName     : ${systemProperties['deviceName']}"
-        println "▶ Using platformVersion: ${systemProperties['platformVersion']}"
+    doFirst { println "▶ Running LOCAL tests" }
+}
 
-
-        // Optional: print to debug
-
+// -------------------- BROWSERSTACK --------------------
+task testBrowserStack(type: Test) {
+    useTestNG {
+        suites "testng.xml"
+        // Attach Java agent only for BrowserStack
+        if ("true".equalsIgnoreCase(System.getProperty("USE_BROWSERSTACK"))) {
+            jvmArgs "-javaagent:${browserstackSDKArtifact.file}"
+        }
     }
+    systemProperty "USE_BROWSERSTACK", "true"
+    systemProperty "BROWSERSTACK_USERNAME", System.getenv("BROWSERSTACK_USERNAME")
+    systemProperty "BROWSERSTACK_ACCESS_KEY", System.getenv("BROWSERSTACK_ACCESS_KEY")
 
-
+    doFirst { println "▶ Running BrowserStack tests" }
 }

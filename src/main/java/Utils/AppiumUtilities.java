@@ -4,13 +4,14 @@ package Utils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import coreDriver.Drivers;
-import io.appium.java_client.AppiumDriver;
+
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,7 +21,7 @@ import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class AppiumUtilities {
@@ -56,7 +57,7 @@ public class AppiumUtilities {
 
     }
 
-    public String getScreenShot(String testName) throws IOException {
+    public String getScreenShot(String testName) throws Exception {
         // Capture the screenshot from the thread-safe driver
         File source = Drivers.getDrivers().getScreenshotAs(OutputType.FILE);
 
@@ -77,12 +78,15 @@ public class AppiumUtilities {
 
     }
 
-    public void waitBroUntilVisibility(WebElement ele , int duration){
+    public void waitBroUntilVisibility(WebElement ele , int duration) throws Exception {
 
         WebDriverWait wait = new WebDriverWait(Drivers.getDrivers() , Duration.ofSeconds(duration));
-        wait.until(ExpectedConditions.elementToBeClickable(ele));
+        wait.until(ExpectedConditions.visibilityOf(ele));
 
     }
+
+
+
 
 
 }

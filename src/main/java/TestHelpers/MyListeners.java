@@ -49,6 +49,8 @@ public class MyListeners implements ITestListener {
             extentTest.addScreenCaptureFromPath(screenshotPath, result.getMethod().getMethodName());
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
     @Override

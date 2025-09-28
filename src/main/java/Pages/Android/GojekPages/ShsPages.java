@@ -18,4 +18,8 @@ public class ShsPages {
        return shsPageObject.skipTheTreatCta;
     }
 
+    public WebElement getGrid(){
+        return shsPageObject.shsGrid;
+    }
+
 }
