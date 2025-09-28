@@ -9,7 +9,7 @@ pipeline {
         string(name: 'DEVICE_NAME',  description: 'Android device/emulator name', defaultValue: 'emulator-5554')
         string(name: 'PLATFORM_VERSION', description: 'Android/iOS platform version', defaultValue: '11')
         choice(name: 'APPIUM_MODE', choices: ['code', 'pipeline'], description: 'How to start Appium: inside test code OR pipeline')
-        booleanParam(name: 'USE_BROWSERSTACK', defaultValue: true, description: 'Run tests on BrowserStack?')
+        booleanParam(name: 'USE_BROWSERSTACK', defaultValue: true, description: 'Run tests on BrowserStack')
     }
 
     environment {
@@ -55,15 +55,14 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                withCredentials([
-                    string(credentialsId: 'BROWSERSTACK_USERNAME', variable: 'BROWSERSTACK_USERNAME'),
-                    string(credentialsId: 'BROWSERSTACK_ACCESS_KEY', variable: 'BROWSERSTACK_ACCESS_KEY')
-                ]) {
+                withCredentials([usernamePassword(credentialsId: 'browserstack', usernameVariable: 'BROWSERSTACK_USERNAME', passwordVariable: 'BROWSERSTACK_ACCESS_KEY')]) {
                     sh """
                         ./gradlew clean testBrowserStack \
-                        -DUSE_BROWSERSTACK=${params.USE_BROWSERSTACK} \
                         -DdeviceName=${params.DEVICE_NAME} \
-                        -DplatformVersion=${params.PLATFORM_VERSION}
+                        -DplatformVersion=${params.PLATFORM_VERSION} \
+                        -DUSE_BROWSERSTACK=${params.USE_BROWSERSTACK} \
+                        -DBROWSERSTACK_USERNAME=$BROWSERSTACK_USERNAME \
+                        -DBROWSERSTACK_ACCESS_KEY=$BROWSERSTACK_ACCESS_KEY
                     """
                 }
             }
