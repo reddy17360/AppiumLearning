@@ -56,8 +56,7 @@ environment {
             }
         }
 
-        stage('Run Tests') {
-            steps {
+
               stage('Run Tests') {
                   steps {
                       sh """
@@ -69,8 +68,7 @@ environment {
                   }
               }
 
-            }
-        }
+
 
         stage('Stop Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
