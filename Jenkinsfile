@@ -1,4 +1,4 @@
-pipeline {
+'pipeline {
     agent any
 
     tools {
@@ -53,20 +53,25 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                withCredentials([usernamePassword(credentialsId: 'browserstack', usernameVariable: 'BROWSERSTACK_USERNAME', passwordVariable: 'BROWSERSTACK_ACCESS_KEY')]) {
-                    sh """
-                        ./gradlew clean testBrowserStack \
-                        -DdeviceName=${params.DEVICE_NAME} \
-                        -DplatformVersion=${params.PLATFORM_VERSION} \
-                        -DUSE_BROWSERSTACK=${params.USE_BROWSERSTACK} \
-                        -DBROWSERSTACK_USERNAME=$BROWSERSTACK_USERNAME \
-                        -DBROWSERSTACK_ACCESS_KEY=$BROWSERSTACK_ACCESS_KEY
-                    """
-                }
-            }
-        }
+      stage('Run Tests') {
+          steps {
+              withCredentials([usernamePassword(
+                  credentialsId: '251af401-79f0-41c7-8ab4-966172378c5b',  // 👈 use the ID from Jenkins UI
+                  usernameVariable: 'BROWSERSTACK_USERNAME',
+                  passwordVariable: 'BROWSERSTACK_ACCESS_KEY'
+              )]) {
+                  sh """
+                      ./gradlew clean testBrowserStack \
+                      -DdeviceName=${params.DEVICE_NAME} \
+                      -DplatformVersion=${params.PLATFORM_VERSION} \
+                      -DUSE_BROWSERSTACK=${params.USE_BROWSERSTACK} \
+                      -DBROWSERSTACK_USERNAME=$BROWSERSTACK_USERNAME \
+                      -DBROWSERSTACK_ACCESS_KEY=$BROWSERSTACK_ACCESS_KEY
+                  """
+              }
+          }
+      }
+
 
         stage('Stop Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
@@ -96,3 +101,4 @@ pipeline {
         }
     }
 }
+'
