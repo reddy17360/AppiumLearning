@@ -13,6 +13,8 @@ pipeline {
     }
 
     environment {
+      BROWSERSTACK_USERNAME = credentials('BROWSERSTACK_USERNAME')
+            BROWSERSTACK_ACCESS_KEY = credentials('BROWSERSTACK_ACCESS_KEY')
         ANDROID_HOME = "/Users/sanjeevareddysj/Library/Android/sdk"
         PATH = "/opt/homebrew/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     }
@@ -57,25 +59,21 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                withCredentials([usernamePassword(
-                    credentialsId: 'browserstack-creds',   // 👈 Set this ID in Jenkins
-                    usernameVariable: 'BROWSERSTACK_USERNAME',
-                    passwordVariable: 'BROWSERSTACK_ACCESS_KEY'
-                )]) {
-                    sh """
-                        echo "Running tests on BrowserStack..."
-                        ./gradlew clean testBrowserStack \
-                          -DdeviceName=${params.DEVICE_NAME} \
-                          -DplatformVersion=${params.PLATFORM_VERSION} \
-                          -DUSE_BROWSERSTACK=${params.USE_BROWSERSTACK} \
-                          -DBROWSERSTACK_USERNAME=$BROWSERSTACK_USERNAME \
-                          -DBROWSERSTACK_ACCESS_KEY=$BROWSERSTACK_ACCESS_KEY
-                    """
-                }
-            }
-        }
+           stage('Run Tests') {
+                     steps {
+                       stage('Run Tests') {
+                           steps {
+                               sh """
+                                   ./gradlew clean testBrowserStack \
+                                   -DUSE_BROWSERSTACK=true \
+                                   -DdeviceName=${params.DEVICE_NAME} \
+                                   -DplatformVersion=${params.PLATFORM_VERSION}
+                               """
+                           }
+                       }
+
+                     }
+                 }
 
         stage('Stop Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
