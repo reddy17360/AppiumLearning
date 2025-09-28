@@ -52,6 +52,7 @@ public class SignUpHappyFlowTest {
     public void happySignUpTest() throws Exception {
 
        //  String user =appiumUtilities.autoUser();
+         appiumUtilities.waitBroUntilVisibility(gojekWelcomePage.getWelcomeTitle() , 20);
          String user = "reddySanjuReddy";
          gojekWelcomePage.clickOnLogin();
 
@@ -61,10 +62,12 @@ public class SignUpHappyFlowTest {
                  System.out.println("pop-up appeared");
                  phoneInputPages.clickOnNoneOfTheAbove();
                  phoneInputPages.clickOnPhoneInputField();
+                   phoneInputPages.clickOnPhoneInputField();
                  phoneInputPages.enterPhones(new AppiumUtilities().randomNumberGenerator());
                  phoneInputPages.clickOnContinue();
                  phoneInputPages.clickOnConsent();
               }else{
+                   phoneInputPages.clickOnPhoneInputField();
                  phoneInputPages.enterPhones(new AppiumUtilities().randomNumberGenerator());
                  phoneInputPages.clickOnContinue();
                  phoneInputPages.clickOnConsent();

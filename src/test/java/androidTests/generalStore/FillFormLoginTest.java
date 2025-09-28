@@ -23,13 +23,13 @@ public class FillFormLoginTest  {
 
     @BeforeClass
     public void initPages() throws Exception {
-        Drivers.initDriver();
+
         fillFormPage = new FillFormPage(Drivers.getDrivers());
         actions = new AndroidActions(Drivers.getDrivers());
     }
 
     @Test(priority = 0)
-    public void loginErrorValidation() throws InterruptedException {
+    public void loginErrorValidation() throws Exception {
         fillFormPage.setCountryPicker("Angola");
         fillFormPage.setGender("Female");
         fillFormPage.submitForm();
@@ -38,7 +38,7 @@ public class FillFormLoginTest  {
         Assert.assertEquals(toast.getAttribute("name"), "Please enter your name");
     }
     @Test(priority = 1, dataProvider = "getData")
-    public void loginToGeneralStore(HashMap<String ,String> data) throws InterruptedException {
+    public void loginToGeneralStore(HashMap<String ,String> data) throws Exception {
         WebDriverWait wait = new WebDriverWait(Drivers.getDrivers() , Duration.ofSeconds(10));
         WebElement title = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.androidsample.generalstore:id/toolbar_title")));
         fillFormPage.setName(data.get("name"));

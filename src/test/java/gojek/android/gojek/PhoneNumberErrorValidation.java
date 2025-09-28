@@ -18,8 +18,8 @@ public class PhoneNumberErrorValidation {
     PhoneInputPages phoneInputPages;
     public AppiumDriver driver;
     @BeforeClass
-    public void preRequisite() throws IOException {
-        Drivers.initDriver();
+    public void preRequisite() throws Exception {
+
         driver = Drivers.getDrivers();
       gojekWelcomePage = new  GojekWelcomePage(Drivers.getDrivers());
       phoneInputPages = new PhoneInputPages(Drivers.getDrivers());

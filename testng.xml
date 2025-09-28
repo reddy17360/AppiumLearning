@@ -13,7 +13,7 @@
 
 
 
-    <class name="gojek.android.gojek.SignUpHappyFlowTest"/>
+    <class name="gojek.android.gojek.GojekWelcomeScreenVerificationTest"/>
 
 
         </classes>

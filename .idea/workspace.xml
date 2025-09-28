@@ -5,20 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccf00bd7-89be-4148-95f8-b6dec30e64ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExtentReports/reports/happySignUpTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/happySignUpTest.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExtentReports/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/SHSPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AndroidPageObject/GojekPageObject/SHSPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/ShsPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/ShsPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/TurnOnLocationPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/TurnOnLocationPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/AppiumUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/AppiumUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/GojekWelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Android/GojekPages/GojekWelcomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestHelpers/MyListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestHelpers/MyListeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/androidTests/generalStore/FillFormLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/androidTests/generalStore/FillFormLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/androidTests/generalStore/ProductListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/androidTests/generalStore/ProductListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/PhoneNumberErrorValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/PhoneNumberErrorValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,30 +62,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build LearAumatingApp.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GojekWelcomeScreenVerificationTest.changeAppLanguage.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GojekWelcomeScreenVerificationTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GojekWelcomeScreenVerificationTest.titleOfScreen.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ISSs.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SignUpHappyFlowTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'LearAutomatingApp'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'gojek.android.gojek'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.WelcomeScreenVerificationTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SignUpHappyFlowTest.happySignUpTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;devGojek&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build LearAumatingApp.executor": "Run",
+    "Gradle.GojekWelcomeScreenVerificationTest.changeAppLanguage.executor": "Run",
+    "Gradle.GojekWelcomeScreenVerificationTest.executor": "Run",
+    "Gradle.GojekWelcomeScreenVerificationTest.titleOfScreen.executor": "Run",
+    "Gradle.ISSs.executor": "Run",
+    "Gradle.SignUpHappyFlowTest.executor": "Run",
+    "Gradle.Tests in 'LearAutomatingApp'.executor": "Run",
+    "Gradle.Tests in 'gojek.android.gojek'.executor": "Run",
+    "Gradle.WelcomeScreenVerificationTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml.executor": "Run",
+    "TestNG.SignUpHappyFlowTest.happySignUpTest.executor": "Debug",
+    "git-widget-placeholder": "devGojek",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -166,37 +166,43 @@
     </configuration>
     <configuration name="SignUpHappyFlowTest.happySignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="LearAutomatingApp.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gojek.android.gojek.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="gojek.android.gojek" />
       <option name="MAIN_CLASS_NAME" value="gojek.android.gojek.SignUpHappyFlowTest" />
       <option name="METHOD_NAME" value="happySignUpTest" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-DUSE_BROWSERSTACK=false" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="LearAutomatingApp" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Gradle.GojekWelcomeScreenVerificationTest" />
+      <item itemvalue="Gradle.SignUpHappyFlowTest" />
+      <item itemvalue="Gradle.Tests in 'gojek.android.gojek'" />
+      <item itemvalue="TestNG.SignUpHappyFlowTest.happySignUpTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SignUpHappyFlowTest.happySignUpTest" />
         <item itemvalue="Gradle.SignUpHappyFlowTest" />
-        <item itemvalue="TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml" />
         <item itemvalue="Gradle.Tests in 'gojek.android.gojek'" />
         <item itemvalue="Gradle.GojekWelcomeScreenVerificationTest" />
       </list>
@@ -228,8 +234,92 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/SignUpHappyFlowTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java</url>
+          <line>21</line>
+          <properties class="coreDriver.Drivers" method="getDrivers">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

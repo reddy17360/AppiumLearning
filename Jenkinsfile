@@ -58,11 +58,17 @@ environment {
 
         stage('Run Tests') {
             steps {
-                sh """
-                    ./gradlew clean test \
-                    -DdeviceName=${params.DEVICE_NAME} \
-                    -DplatformVersion=${params.PLATFORM_VERSION}
-                """
+              stage('Run Tests') {
+                  steps {
+                      sh """
+                          ./gradlew clean testBrowserStack \
+                          -DUSE_BROWSERSTACK=true \
+                          -DdeviceName=${params.DEVICE_NAME} \
+                          -DplatformVersion=${params.PLATFORM_VERSION}
+                      """
+                  }
+              }
+
             }
         }
 

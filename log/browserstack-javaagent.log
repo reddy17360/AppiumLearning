@@ -1,0 +1,151 @@
+21:26:52.958 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+21:26:52.976 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.34.0
+21:26:52.976 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 9.5.0
+21:26:53.086 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+21:26:53.089 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+21:26:53.578 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://e00f1482142eb25279affa9605b5ded0396b8fec]
+21:26:53.578 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+21:26:53.581 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: f4230358-b8b0-4ff8-9c3a-817fc1c308f3
+21:26:53.581 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:26:53.589 [main] DEBUG com.browserstack.v2.SdkCliUtils - File /Users/sanjeevareddysj/.browserstack already exist
+21:26:53.590 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: /Users/sanjeevareddysj/.browserstack/cli/binary-macos-arm64
+21:26:55.070 [main] ERROR com.browserstack.v2.SdkCliUtils - Error in setting up cli path directory, Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.checkAndUpdateCli(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.setupCliPath(Unknown Source)
+	at com.browserstack.v2.SdkCLI.<clinit>(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
+21:26:55.072 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+21:26:55.073 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='null' 'sdk' 'tcp'
+21:26:57.899 [SIGINT handler] INFO  c.b.utils.ExitSignalHandler - Shutdown triggered by: INT 2
+21:26:57.915 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+21:26:58.503 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+21:34:23.204 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+21:34:23.229 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.34.0
+21:34:23.229 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 9.5.0
+21:34:23.311 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+21:34:23.314 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+21:34:23.784 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://e00f1482142eb25279affa9605b5ded0396b8fec]
+21:34:23.784 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+21:34:23.785 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 445caa86-8092-4a54-a945-0b2e361a2661
+21:34:23.786 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:34:23.793 [main] DEBUG com.browserstack.v2.SdkCliUtils - File /Users/sanjeevareddysj/.browserstack already exist
+21:34:23.794 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: /Users/sanjeevareddysj/.browserstack/cli/binary-macos-arm64
+21:34:24.744 [main] ERROR com.browserstack.v2.SdkCliUtils - Error in setting up cli path directory, Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.checkAndUpdateCli(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.setupCliPath(Unknown Source)
+	at com.browserstack.v2.SdkCLI.<clinit>(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
+21:34:24.747 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+21:34:24.747 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='null' 'sdk' 'tcp'
+21:34:28.244 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+21:34:29.501 [main] INFO  c.b.config.BrowserStackConfig - ERROR
+21:34:29.502 [main] WARN  com.browserstack.testOps.Listener - Exception in testhub build creation Access to BrowserStack denied due to incorrect credentials.
+21:34:29.502 [main] INFO  c.browserstack.utils.LogReportingAPI - 
+[2025-09-28T16:04:29.502574Z][ TESTHUB ] EXCEPTION IN BUILD START EVENT : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsJson(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.launch(Unknown Source)
+	at com.browserstack.testOps.Listener.onStart(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.onStart(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
+
+21:34:29.503 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:34:29.503 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+21:34:29.969 [main] ERROR com.browserstack.PercyFactory - Error fetching percy token for project : java.lang.Exception: Fetch token failed with 401
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
+21:34:29.969 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
+21:34:29.969 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+21:34:37.450 [main] ERROR com.browserstack.LocalFactory - Initialization of BrowserStack Local failed com.browserstack.local.LocalException: Auth Token must be alphanumeric characters only. Please fetch it from Local Testing section of settings page:  https://www.browserstack.com/accounts/settings.
+21:34:52.066 [Thread-0] ERROR c.browserstack.testOps.RequestUtils - [RequestUtils] Error in stop: Non 200 response
+com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+21:34:54.481 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+21:34:56.958 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 445caa86-8092-4a54-a945-0b2e361a2661, testhub id: 
+21:34:56.958 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO

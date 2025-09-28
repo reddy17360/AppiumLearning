@@ -294,3 +294,51 @@
 19:06:04.803 [ApplicationImpl pooled thread 553] INFO  c.b.s.l.BrowserStackRunExtension - Agent path: null
 10:03:37.028 [AWT-EventQueue-0] INFO  c.b.sdk.actions.DisableBrowserStack - Setting disable browserstack run update
 10:03:37.042 [AWT-EventQueue-0] INFO  c.b.sdk.actions.EnableBrowserStack - Setting enable browserstack run update
+21:26:50.826 [AWT-EventQueue-0] INFO  c.b.s.l.BrowserStackRunExtension - gradle
+21:26:50.829 [AWT-EventQueue-0] INFO  com.browserstack.sdk.utils.Helpers - null
+21:26:52.407 [ApplicationImpl pooled thread 965] INFO  c.b.s.l.BrowserStackRunExtension - testng
+21:26:52.407 [ApplicationImpl pooled thread 965] INFO  com.browserstack.sdk.utils.Helpers - null
+21:26:52.409 [ApplicationImpl pooled thread 965] INFO  com.browserstack.sdk.utils.Helpers - /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:26:52.409 [ApplicationImpl pooled thread 965] INFO  c.b.s.l.BrowserStackRunExtension - Agent path: /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:26:52.409 [ApplicationImpl pooled thread 965] INFO  c.b.s.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+21:26:52.409 [ApplicationImpl pooled thread 965] INFO  c.b.s.l.BrowserStackRunExtension - Plugin version: 2.0.0-IC
+21:30:53.703 [AWT-EventQueue-0] INFO  c.b.s.l.BrowserStackRunExtension - gradle
+21:30:53.704 [AWT-EventQueue-0] INFO  com.browserstack.sdk.utils.Helpers - null
+21:30:56.151 [ApplicationImpl pooled thread 970] INFO  c.b.s.l.BrowserStackRunExtension - testng
+21:30:56.151 [ApplicationImpl pooled thread 970] INFO  com.browserstack.sdk.utils.Helpers - null
+21:30:56.152 [ApplicationImpl pooled thread 970] INFO  com.browserstack.sdk.utils.Helpers - /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:30:56.153 [ApplicationImpl pooled thread 970] INFO  c.b.s.l.BrowserStackRunExtension - Agent path: /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:30:56.153 [ApplicationImpl pooled thread 970] INFO  c.b.s.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+21:30:56.153 [ApplicationImpl pooled thread 970] INFO  c.b.s.l.BrowserStackRunExtension - Plugin version: 2.0.0-IC
+21:31:47.392 [AWT-EventQueue-0] INFO  c.b.s.l.BrowserStackRunExtension - gradle
+21:31:47.392 [AWT-EventQueue-0] INFO  com.browserstack.sdk.utils.Helpers - null
+21:31:48.172 [ApplicationImpl pooled thread 977] INFO  c.b.s.l.BrowserStackRunExtension - testng
+21:31:48.172 [ApplicationImpl pooled thread 977] INFO  com.browserstack.sdk.utils.Helpers - null
+21:31:48.172 [ApplicationImpl pooled thread 977] INFO  com.browserstack.sdk.utils.Helpers - /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:31:48.172 [ApplicationImpl pooled thread 977] INFO  c.b.s.l.BrowserStackRunExtension - Agent path: /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:31:48.172 [ApplicationImpl pooled thread 977] INFO  c.b.s.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+21:31:48.172 [ApplicationImpl pooled thread 977] INFO  c.b.s.l.BrowserStackRunExtension - Plugin version: 2.0.0-IC
+21:32:13.824 [AWT-EventQueue-0] INFO  c.b.s.l.BrowserStackRunExtension - gradle
+21:32:13.824 [AWT-EventQueue-0] INFO  com.browserstack.sdk.utils.Helpers - null
+21:32:14.904 [ApplicationImpl pooled thread 979] INFO  c.b.s.l.BrowserStackRunExtension - testng
+21:32:14.904 [ApplicationImpl pooled thread 979] INFO  com.browserstack.sdk.utils.Helpers - null
+21:32:14.904 [ApplicationImpl pooled thread 979] INFO  com.browserstack.sdk.utils.Helpers - /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:32:14.904 [ApplicationImpl pooled thread 979] INFO  c.b.s.l.BrowserStackRunExtension - Agent path: /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:32:14.904 [ApplicationImpl pooled thread 979] INFO  c.b.s.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+21:32:14.904 [ApplicationImpl pooled thread 979] INFO  c.b.s.l.BrowserStackRunExtension - Plugin version: 2.0.0-IC
+21:32:56.434 [AWT-EventQueue-0] INFO  c.b.s.l.BrowserStackRunExtension - gradle
+21:32:56.434 [AWT-EventQueue-0] INFO  com.browserstack.sdk.utils.Helpers - null
+21:32:57.626 [ApplicationImpl pooled thread 965] INFO  c.b.s.l.BrowserStackRunExtension - testng
+21:32:57.626 [ApplicationImpl pooled thread 965] INFO  com.browserstack.sdk.utils.Helpers - null
+21:32:57.627 [ApplicationImpl pooled thread 965] INFO  com.browserstack.sdk.utils.Helpers - /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:32:57.627 [ApplicationImpl pooled thread 965] INFO  c.b.s.l.BrowserStackRunExtension - Agent path: /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:32:57.627 [ApplicationImpl pooled thread 965] INFO  c.b.s.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+21:32:57.627 [ApplicationImpl pooled thread 965] INFO  c.b.s.l.BrowserStackRunExtension - Plugin version: 2.0.0-IC
+21:34:21.414 [AWT-EventQueue-0] INFO  c.b.s.l.BrowserStackRunExtension - gradle
+21:34:21.415 [AWT-EventQueue-0] INFO  com.browserstack.sdk.utils.Helpers - null
+21:34:22.608 [ApplicationImpl pooled thread 981] INFO  c.b.s.l.BrowserStackRunExtension - testng
+21:34:22.608 [ApplicationImpl pooled thread 981] INFO  com.browserstack.sdk.utils.Helpers - null
+21:34:22.610 [ApplicationImpl pooled thread 981] INFO  com.browserstack.sdk.utils.Helpers - /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:34:22.610 [ApplicationImpl pooled thread 981] INFO  c.b.s.l.BrowserStackRunExtension - Agent path: /Users/sanjeevareddysj/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.41.1/9db606957fb0f97045b7b31e3a208ff39b8cd46a/browserstack-java-sdk-1.41.1.jar
+21:34:22.611 [ApplicationImpl pooled thread 981] INFO  c.b.s.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+21:34:22.611 [ApplicationImpl pooled thread 981] INFO  c.b.s.l.BrowserStackRunExtension - Plugin version: 2.0.0-IC

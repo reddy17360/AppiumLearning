@@ -52,7 +52,7 @@ public class Drivers {
         options.setAutomationName("UiAutomator2");
         options.setDeviceName(System.getProperty("deviceName", "emulator-5554"));
         options.setPlatformVersion(System.getProperty("platformVersion", "11"));
-        options.setApp(System.getProperty("LOCAL_APP_PATH", "//Users//sanjeevareddysj//Downloads//gen.apk"));
+        options.setApp(System.getProperty("LOCAL_APP_PATH", "//Users//sanjeevareddysj//Downloads//gojek.apk"));
 
         System.out.println("▶ Running locally on: " + options.getDeviceName());
         AppiumDriver driver =  new AndroidDriver(service.getUrl(), options);
