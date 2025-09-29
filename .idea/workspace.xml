@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ccf00bd7-89be-4148-95f8-b6dec30e64ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.log" beforeDir="false" afterPath="$PROJECT_DIR$/local.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/browserstack-javaagent.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/browserstack-javaagent.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sdk-cli.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sdk-cli.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +71,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+ 
   }
 }</component>
   <component name="RecentsManager">
