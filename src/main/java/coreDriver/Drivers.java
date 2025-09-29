@@ -7,7 +7,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 //import com.browserstack.local.Local;
 import org.openqa.selenium.MutableCapabilities;
-import org.testng.internal.Yaml;
+ import org.yaml.snakeyaml.*;
 
 import java.io.InputStream;
 import java.net.URL;
@@ -65,7 +65,15 @@ public class Drivers {
     /** BrowserStack Driver */
     private static AppiumDriver createBrowserStackDriver() throws Exception {
 
+        InputStream in = Drivers.class.getClassLoader().getResourceAsStream("browserstack.yml");
+        if (in == null) throw new RuntimeException("browserstack.yml not found!");
 
+// Parse YAML
+        Yaml yaml = new Yaml();
+        Map<String,Object> yamlData = yaml.load(in);
+
+// Credentials
+        Map<String,Object> bs = (Map<String,Object>) yamlData.get("browserstack");
 
 
         String username = System.getenv("BROWSERSTACK_USERNAME");
@@ -80,7 +88,8 @@ public class Drivers {
 
 
         MutableCapabilities caps = new MutableCapabilities();
-        caps.setCapability("app", System.getProperty("BROWSERSTACK_APP", "bs://<YOUR_APP_ID>"));
+        caps.setCapability("app" , yamlData.get("app"));
+       // caps.setCapability("app", System.getProperty("BROWSERSTACK_APP", "bs://<YOUR_APP_ID>"));
         System.out.println("▶ Runtime BROWSERSTACK_APP = " + System.getProperty("BROWSERSTACK_APP"));
 
         caps.setCapability("deviceName", System.getProperty("BROWSERSTACK_DEVICE", "Samsung Galaxy S22 Ultra"));

@@ -19,7 +19,7 @@ dependencies {
     implementation 'commons-io:commons-io:2.20.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
     implementation 'com.aventstack:extentreports:5.1.2'
-    implementation 'org.yaml:snakeyaml:2.0'
+    testImplementation 'org.yaml:snakeyaml:2.0'
     compileOnly 'com.browserstack:browserstack-java-sdk:latest.release'
 }
 
@@ -51,4 +51,13 @@ task testBrowserStack(type: Test) {
     systemProperty "BROWSERSTACK_ACCESS_KEY", System.getenv("BROWSERSTACK_ACCESS_KEY")
 
     doFirst { println "▶ Running BrowserStack tests" }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir '.'
+            include 'browserstack.yml'
+        }
+    }
 }
