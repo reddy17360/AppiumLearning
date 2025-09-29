@@ -1,7 +1,7 @@
 userName: ${BROWSERSTACK_USERNAME}
 accessKey: ${BROWSERSTACK_ACCESS_KEY}
 framework: testng
-app: bs://e00f1482142eb25279affa9605b5ded0396b8fec
+app: bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688
 platforms:
 
   - platformName: android

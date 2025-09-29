@@ -1,22 +1,20 @@
 pipeline {
     agent any
 
-environment {
-        // BrowserStack credentials from Jenkins
-        BROWSERSTACK_USERNAME = credentials('BROWSERSTACK_USERNAME')
-        BROWSERSTACK_ACCESS_KEY = credentials('BROWSERSTACK_ACCESS_KEY')
-    }
     tools {
         jdk 'JDK17' // Make sure JDK17 is configured in Jenkins Tools
     }
 
     parameters {
-        string(name: 'DEVICE_NAME',  description: 'Android device/emulator name')
-        string(name: 'PLATFORM_VERSION', description: 'Android/iOS platform version')
+        string(name: 'DEVICE_NAME', description: 'Android device/emulator name', defaultValue: 'emulator-5554')
+        string(name: 'PLATFORM_VERSION', description: 'Android/iOS platform version', defaultValue: '11')
         choice(name: 'APPIUM_MODE', choices: ['code', 'pipeline'], description: 'How to start Appium: inside test code OR pipeline')
+        booleanParam(name: 'USE_BROWSERSTACK', defaultValue: true, description: 'Run tests on BrowserStack')
     }
 
     environment {
+      BROWSERSTACK_USERNAME = credentials('BROWSERSTACK_USERNAME')
+            BROWSERSTACK_ACCESS_KEY = credentials('BROWSERSTACK_ACCESS_KEY')
         ANDROID_HOME = "/Users/sanjeevareddysj/Library/Android/sdk"
         PATH = "/opt/homebrew/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     }
@@ -30,23 +28,28 @@ environment {
 
         stage('Verify Environment') {
             steps {
-                sh 'echo "JAVA_HOME=$JAVA_HOME"'
-                sh 'echo "ANDROID_HOME=$ANDROID_HOME"'
-                sh 'java -version'
-                sh './gradlew -v'
-                sh 'adb version'
-                sh 'echo "Using device: $DEVICE_NAME"'
-                sh 'echo "Platform version: $PLATFORM_VERSION"'
-                sh 'echo "Appium mode: $APPIUM_MODE"'
+                sh '''
+                    echo "JAVA_HOME=$JAVA_HOME"
+                    echo "ANDROID_HOME=$ANDROID_HOME"
+                    java -version
+                    ./gradlew -v
+                    adb version
+                    echo "Using device: $DEVICE_NAME"
+                    echo "Platform version: $PLATFORM_VERSION"
+                    echo "Appium mode: $APPIUM_MODE"
+                    echo "Run on BrowserStack: $USE_BROWSERSTACK"
+                '''
             }
         }
 
         stage('Start Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
             steps {
-                sh 'echo "Starting Appium..."'
-                sh 'nohup appium --base-path /wd/hub --log-level error > appium.log 2>&1 &'
-                sh 'sleep 10'
+                sh '''
+                    echo "Starting Appium..."
+                    nohup appium --base-path /wd/hub --log-level error > appium.log 2>&1 &
+                    sleep 10
+                '''
             }
         }
 
@@ -56,49 +59,46 @@ environment {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-              stage('Run Tests') {
-                  steps {
-                      sh """
-                          ./gradlew clean testBrowserStack \
-                          -DUSE_BROWSERSTACK=true \
-                          -DdeviceName=${params.DEVICE_NAME} \
-                          -DplatformVersion=${params.PLATFORM_VERSION}
-                      """
-                  }
-              }
 
-            }
-        }
+                       stage('Run Tests') {
+                           steps {
+                               sh """
+                                   ./gradlew clean testBrowserStack \
+                                   -DUSE_BROWSERSTACK=true \
+                                   -DdeviceName=${params.DEVICE_NAME} \
+                                   -DplatformVersion=${params.PLATFORM_VERSION}
+                               """
+                           }
+
+                 }
 
         stage('Stop Appium (if pipeline mode)') {
             when { expression { return params.APPIUM_MODE == 'pipeline' } }
             steps {
-                sh 'echo "Stopping Appium..."'
-                sh 'pkill -f appium || true'
+                sh '''
+                    echo "Stopping Appium..."
+                    pkill -f appium || true
+                '''
             }
         }
+
         stage('Verify Report Folder') {
             steps {
-                sh 'ls -l ExtentReports/reports'
+                sh 'ls -l ExtentReports/reports || echo "No reports generated"'
             }
         }
 
-         stage('Publish Extent Report') {
-             steps {
-                 publishHTML([
-                     allowMissing: false,
-                     alwaysLinkToLastBuild: true,
-                     keepAll: true,
-                     reportDir: 'ExtentReports/reports',  // relative to project root / Jenkins workspace
-                     reportFiles: 'index.html',   // exact HTML file name
-                     reportName: 'Extent Report'
-                 ])
-             }
-         }
-
-
+        stage('Publish Extent Report') {
+            steps {
+                publishHTML([
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'ExtentReports/reports',
+                    reportFiles: 'index.html',
+                    reportName: 'Extent Report'
+                ])
+            }
+        }
     }
-}///Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp
-
+}
