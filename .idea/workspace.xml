@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ccf00bd7-89be-4148-95f8-b6dec30e64ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/changeAppLanguage.png" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/changeAppLanguage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExtentReports/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/reports/verifyWelcomeScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/reports/verifyWelcomeScreen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browserstack.yml" beforeDir="false" afterPath="$PROJECT_DIR$/browserstack.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.log" beforeDir="false" afterPath="$PROJECT_DIR$/local.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/browserstack-javaagent.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/browserstack-javaagent.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sdk-cli.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sdk-cli.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreDriver/Drivers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LearAutomatingApp" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -53,29 +62,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build LearAumatingApp.executor": "Run",
-    "Gradle.GojekWelcomeScreenVerificationTest.changeAppLanguage.executor": "Run",
-    "Gradle.GojekWelcomeScreenVerificationTest.executor": "Run",
-    "Gradle.GojekWelcomeScreenVerificationTest.titleOfScreen.executor": "Run",
-    "Gradle.ISSs.executor": "Run",
-    "Gradle.SignUpHappyFlowTest.executor": "Run",
-    "Gradle.Tests in 'LearAutomatingApp'.executor": "Run",
-    "Gradle.Tests in 'gojek.android.gojek'.executor": "Run",
-    "Gradle.WelcomeScreenVerificationTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build LearAumatingApp.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GojekWelcomeScreenVerificationTest.changeAppLanguage.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GojekWelcomeScreenVerificationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GojekWelcomeScreenVerificationTest.titleOfScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ISSs.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SignUpHappyFlowTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'LearAutomatingApp'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'gojek.android.gojek'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WelcomeScreenVerificationTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG./Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.SignUpHappyFlowTest">
     <configuration name="GojekWelcomeScreenVerificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -226,6 +241,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java</url>
           <line>35</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
