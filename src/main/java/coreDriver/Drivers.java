@@ -7,10 +7,13 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 //import com.browserstack.local.Local;
 import org.openqa.selenium.MutableCapabilities;
+import org.testng.internal.Yaml;
 
+import java.io.InputStream;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+
 
 public class Drivers {
 
@@ -61,6 +64,10 @@ public class Drivers {
 
     /** BrowserStack Driver */
     private static AppiumDriver createBrowserStackDriver() throws Exception {
+
+
+
+
         String username = System.getenv("BROWSERSTACK_USERNAME");
         String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
 
@@ -70,8 +77,12 @@ public class Drivers {
 
 
 
+
+
         MutableCapabilities caps = new MutableCapabilities();
         caps.setCapability("app", System.getProperty("BROWSERSTACK_APP", "bs://<YOUR_APP_ID>"));
+        System.out.println("▶ Runtime BROWSERSTACK_APP = " + System.getProperty("BROWSERSTACK_APP"));
+
         caps.setCapability("deviceName", System.getProperty("BROWSERSTACK_DEVICE", "Samsung Galaxy S22 Ultra"));
         caps.setCapability("platformVersion", System.getProperty("BROWSERSTACK_PLATFORM_VERSION", "12.0"));
         caps.setCapability("platformName", "Android");

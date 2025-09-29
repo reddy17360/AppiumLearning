@@ -19,7 +19,7 @@ dependencies {
     implementation 'commons-io:commons-io:2.20.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
     implementation 'com.aventstack:extentreports:5.1.2'
-    testImplementation 'org.yaml:snakeyaml:2.0'
+    implementation 'org.yaml:snakeyaml:2.0'
     compileOnly 'com.browserstack:browserstack-java-sdk:latest.release'
 }
 

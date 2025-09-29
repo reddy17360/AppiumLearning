@@ -1,0 +1,3133 @@
+2025-09-29T05:03:40.939Z CLI info [main]     Server listening on port: 5400
+2025-09-29T05:03:41.144Z CLI info     Config : {"userName":"sanjeev_efWR7h","accessKey":"BrUyx5M5aC3uabP5s3sQ","framework":"testng","app":"bs://e00f1482142eb25279affa9605b5ded0396b8fec","platforms":[{"platformName":"android","deviceName":"Samsung Galaxy S22 Ultra","platformVersion":"12.0"}],"browserstackLocal":true,"buildName":"browserstack-local-build-1","projectName":"BrowserStack Sanju"}
+2025-09-29T05:03:41.163Z CLI info [testhub:module]  [sanjeev_efWR7h]   [ff241bae-81d0-485f-8e83-5d6348546378]  Starting testhub from 5611:0
+2025-09-29T05:03:41.164Z CLI info [testhub:module]  [sanjeev_efWR7h]   [ff241bae-81d0-485f-8e83-5d6348546378]  startBuild: payload=
+
+{"started_at":"2025-09-29T05:03:41.164Z","host_info":{"hostname":"Sanjeeva-Reddy-2.local","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 25.0.0: Mon Aug 25 21:17:53 PDT 2025; root:xnu-12377.1.9~3/RELEASE_ARM64_T8112","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"d34bfe8b8c0c84d9fa8583d5229e3d14d4859211","short_sha":"d34bfe8b8c","branch":"main","tag":null,"committer":"Reddy <sanjeevreddy9611@gmail.com>","committer_date":"2025-09-28T18:03:15.000Z","author":"Reddy <sanjeevreddy9611@gmail.com>","author_date":"2025-09-28T18:03:15.000Z","commit_message":"sanju","root":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp","common_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","worktree_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","last_tag":null,"commits_since_last_tag":0,"remotes":[{"name":"origin","url":"https://github.com/reddy17360/AppiumLearning.git"}]},"project_name":"BrowserStack Sanju","name":"browserstack-local-build-1","build_identifier":"#7","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.11.0","sdkVersion":"1.41.1","cliVersion":"1.6.23","language":"java","testFramework":{"name":"selenium","version":"4.34.0"}},"product_map":{"observability":true,"accessibility":null,"percy":false,"automate":false,"app_automate":true},"browserstackAutomation":true,"test_orchestration":{}}
+2025-09-29T05:03:41.164Z CLI info  [sanjeev_efWR7h]   [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2025-09-29T05:03:41.931Z CLI info [testhub:module]  [sanjeev_efWR7h]   [ff241bae-81d0-485f-8e83-5d6348546378]  startBuild: response=u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n
+2025-09-29T05:03:41.933Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T05:03:42.246Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T05:03:42.544Z CLI error  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  error invoking callback for eventName: {}
+2025-09-29T05:03:42.544Z CLI error  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-09-29T05:03:52.746Z CLI info [appautomate:service]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Using app: bs://e00f1482142eb25279affa9605b5ded0396b8fec
+2025-09-29T05:03:52.854Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-09-29T05:03:53.034Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-09-29T05:03:53.170Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-09-29T05:03:53.820Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2025-09-29T05:03:56.583Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: '63f51f38-7edc-49f2-8a12-224c80be523b',
+    name: 'preRequisit',
+    result: 'pending',
+    test_run_id: '28bd0b76-28e2-4974-a072-b731e78d15fc',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T05:03:56.568Z'
+  },
+  logs: []
+} to 5611:0
+2025-09-29T05:03:56.634Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:03:56.627Z',
+      uuid: '63f51f38-7edc-49f2-8a12-224c80be523b',
+      kind: 'TEST_LOG',
+      message: '"▶ USE_BROWSERSTACK: true"',
+      level: 'INFO',
+      test_run_uuid: '63f51f38-7edc-49f2-8a12-224c80be523b'
+    }
+  ]
+} to 5611:0
+2025-09-29T05:03:56.644Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:03:56.642Z',
+      uuid: '63f51f38-7edc-49f2-8a12-224c80be523b',
+      kind: 'TEST_LOG',
+      message: '"▶ Running on BrowserStack device: Samsung Galaxy S22 Ultra"',
+      level: 'INFO',
+      test_run_uuid: '63f51f38-7edc-49f2-8a12-224c80be523b'
+    }
+  ]
+} to 5611:0
+2025-09-29T05:03:57.946Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: '63f51f38-7edc-49f2-8a12-224c80be523b',
+      name: 'preRequisit',
+      result: 'pending',
+      test_run_id: '28bd0b76-28e2-4974-a072-b731e78d15fc',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T05:03:56.568Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 5611:0
+2025-09-29T05:03:57.947Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:04:28.095Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: '63f51f38-7edc-49f2-8a12-224c80be523b',
+    name: 'preRequisit',
+    result: 'passed',
+    test_run_id: '28bd0b76-28e2-4974-a072-b731e78d15fc',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T05:03:56.568Z',
+    finished_at: '2025-09-29T05:04:28.090Z'
+  },
+  logs: []
+} to 5611:0
+2025-09-29T05:04:28.147Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'b70067e1-e607-47f7-a265-9ecb0f8281ce',
+    integrations: { browserstack: [Object] }
+  }
+} to 5611:0
+2025-09-29T05:04:28.153Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'b70067e1-e607-47f7-a265-9ecb0f8281ce',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T05:04:28.116Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5611:0
+2025-09-29T05:04:29.975Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: '63f51f38-7edc-49f2-8a12-224c80be523b',
+      name: 'preRequisit',
+      result: 'passed',
+      test_run_id: '28bd0b76-28e2-4974-a072-b731e78d15fc',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T05:03:56.568Z',
+      finished_at: '2025-09-29T05:04:28.090Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'b70067e1-e607-47f7-a265-9ecb0f8281ce',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'b70067e1-e607-47f7-a265-9ecb0f8281ce',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T05:04:28.116Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 5611:0
+2025-09-29T05:04:29.978Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:04:32.832Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  TestRunFinished: event={"test_hook_last_started":"BEFORE_CLASS","test_failure_type":"UnhandledError","test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T10:34:30.809751","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T10:34:28.116119","platform_index":0,"test_failure":[{"backtrace":["org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.gojek.app.staging:id/pill_language_picker})","\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)","\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:74)","\tat io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)","\tat org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$zcehB3ym.click(Unknown Source)","\tat Pages.Android.GojekPages.GojekWelcomePage.clickOnLanguagePicker(GojekWelcomePage.java:37)","\tat gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage(GojekWelcomeScreenVerificationTest.java:37)","\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)","\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)","\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)","\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)","\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)","\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)","\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)","\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)","\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)","\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)","\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)","\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)","\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)","\tat org.testng.TestRunner.privateRun(TestRunner.java:741)","\tat org.testng.TestRunner.run(TestRunner.java:616)","\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:421)","\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)","\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)","\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)","\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)","\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)","\tat java.base/java.lang.Thread.run(Thread.java:842)","Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@27c2bc2e (tried for 1 second(s) with 500 milliseconds interval)","\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)","\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)","\tat io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)","\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)","\t... 27 more","Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.gojek.app.staging:id/pill_language_picker})","For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception","Build info: version: '4.34.0', revision: '707dcb4246*'","System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0', java.version: '17.0.10'","Driver info: driver.version: RemoteWebDriver","\tat io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)","\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)","\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)","\tat io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)","\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)","\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)","\tat io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)","\tat io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)","\tat io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)","\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)","\t... 29 more"]}],"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"b70067e1-e607-47f7-a265-9ecb0f8281ce","test_ended_at":"2025-09-29T10:34:30.810183","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_hook_last_finished":"BEFORE_CLASS","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-changeAppLanguage","test_hook_state":"sdk:hook:159d72ab","custom_metadata":{},"test_failure_reason":"org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.gojek.app.staging:id/pill_language_picker})","test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{"BEFORE_CLASS":[]},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"failed","test_hooks_finished":{"BEFORE_CLASS":[{"hook_name":"preRequisit","hook_result":"passed","test_file_path":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","event_started_at":"2025-09-29T10:33:56.568265","hook_id":"63f51f38-7edc-49f2-8a12-224c80be523b","hook_logs":[],"logs":[],"key":"BEFORE_CLASS","custom_metadata":{},"event_ended_at":"2025-09-29T10:34:28.090408","test_location":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java"}]},"hook_id":"63f51f38-7edc-49f2-8a12-224c80be523b","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"changeAppLanguage","logs":[]}
+2025-09-29T05:04:32.836Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'b70067e1-e607-47f7-a265-9ecb0f8281ce',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'failed',
+    duration_in_ms: 2694,
+    started_at: '2025-09-29T05:04:28.116Z',
+    finished_at: '2025-09-29T05:04:30.810Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: "org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.gojek.app.staging:id/pill_language_picker})",
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [ '63f51f38-7edc-49f2-8a12-224c80be523b' ],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5611:0
+2025-09-29T05:04:32.877Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '11a9ad9f-56ce-4d55-9b23-39738f34eb11',
+    integrations: { browserstack: [Object] }
+  }
+} to 5611:0
+2025-09-29T05:04:32.881Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '11a9ad9f-56ce-4d55-9b23-39738f34eb11',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T05:04:32.873Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5611:0
+2025-09-29T05:04:33.980Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'b70067e1-e607-47f7-a265-9ecb0f8281ce',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'failed',
+      duration_in_ms: 2694,
+      started_at: '2025-09-29T05:04:28.116Z',
+      finished_at: '2025-09-29T05:04:30.810Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: "org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.gojek.app.staging:id/pill_language_picker})",
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '11a9ad9f-56ce-4d55-9b23-39738f34eb11',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '11a9ad9f-56ce-4d55-9b23-39738f34eb11',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T05:04:32.873Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 5611:0
+2025-09-29T05:04:33.982Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:04:37.593Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  TestRunFinished: event={"test_failure_type":"UnhandledError","test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T10:34:35.745289","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T10:34:32.873346","platform_index":0,"test_failure":[{"backtrace":["org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Gojek})","\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)","\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:74)","\tat io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)","\tat org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$zcehB3ym.getAttribute(Unknown Source)","\tat gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen(GojekWelcomeScreenVerificationTest.java:27)","\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)","\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)","\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)","\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)","\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)","\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)","\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)","\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)","\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)","\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)","\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)","\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)","\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)","\tat org.testng.TestRunner.privateRun(TestRunner.java:741)","\tat org.testng.TestRunner.run(TestRunner.java:616)","\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:421)","\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)","\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)","\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)","\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)","\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)","\tat java.base/java.lang.Thread.run(Thread.java:842)","Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@68924e (tried for 1 second(s) with 500 milliseconds interval)","\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)","\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)","\tat io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)","\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)","\t... 26 more","Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.accessibilityId: Gojek})","For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception","Build info: version: '4.34.0', revision: '707dcb4246*'","System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0', java.version: '17.0.10'","Driver info: driver.version: RemoteWebDriver","\tat io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)","\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)","\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)","\tat io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)","\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)","\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)","\tat io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)","\tat io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)","\tat io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)","\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)","\t... 28 more"]}],"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"11a9ad9f-56ce-4d55-9b23-39738f34eb11","test_ended_at":"2025-09-29T10:34:35.745578","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-verifyWelcomeScreen","custom_metadata":{},"test_failure_reason":"org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Gojek})","test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"failed","test_hooks_finished":{},"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"verifyWelcomeScreen","logs":[]}
+2025-09-29T05:04:37.595Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '11a9ad9f-56ce-4d55-9b23-39738f34eb11',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'failed',
+    duration_in_ms: 2872,
+    started_at: '2025-09-29T05:04:32.873Z',
+    finished_at: '2025-09-29T05:04:35.745Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: "org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Gojek})",
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5611:0
+2025-09-29T05:04:37.977Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '11a9ad9f-56ce-4d55-9b23-39738f34eb11',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'failed',
+      duration_in_ms: 2872,
+      started_at: '2025-09-29T05:04:32.873Z',
+      finished_at: '2025-09-29T05:04:35.745Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: "org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Gojek})",
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 5611:0
+2025-09-29T05:04:37.978Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:04:38.652Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:04:39.364Z CLI error [testhub:module]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [collectBuildData] Exception in collecting build data for build UUID u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n: {"message":"Build data collection started"}
+2025-09-29T05:04:39.365Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2025-09-29T05:04:40.080Z CLI info [testhub:module]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  stopBuild: u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n request={"finished_at":"2025-09-29T05:04:38.233Z","finished_metadata":[],"custom_metadata":{}} response={"data":""}
+2025-09-29T05:04:40.082Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T05:04:40.083Z CLI info [TEST REPORTING AND ANALYTICS:module]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Visit https://automation.browserstack.com/builds/u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n to view build report, insights, and many more debugging information all at one place!
+2025-09-29T05:04:42.657Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T05:04:43.048Z CLI info  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2025-09-29T05:04:43.928Z CLI info [main]  [sanjeev_efWR7h]  [u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n]  [ff241bae-81d0-485f-8e83-5d6348546378]  Received graceful signal termination, performing cleanup
+2025-09-29T05:13:24.184Z CLI info [main]     Server listening on port: 5400
+2025-09-29T05:13:24.407Z CLI info     Config : {"userName":"sanjeev_efWR7h","accessKey":"BrUyx5M5aC3uabP5s3sQ","framework":"testng","app":"bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688","platforms":[{"platformName":"android","deviceName":"Samsung Galaxy S22 Ultra","platformVersion":"12.0"}],"browserstackLocal":true,"buildName":"browserstack-local-build-1","projectName":"BrowserStack Sanju"}
+2025-09-29T05:13:24.443Z CLI info [testhub:module]  [sanjeev_efWR7h]   [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Starting testhub from 5959:0
+2025-09-29T05:13:24.444Z CLI info [testhub:module]  [sanjeev_efWR7h]   [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  startBuild: payload=
+
+{"started_at":"2025-09-29T05:13:24.443Z","host_info":{"hostname":"Sanjeeva-Reddy-2.local","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 25.0.0: Mon Aug 25 21:17:53 PDT 2025; root:xnu-12377.1.9~3/RELEASE_ARM64_T8112","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"7c4e923ebfa2a920251bfb983ad19a9d223d9e2c","short_sha":"7c4e923ebf","branch":"main","tag":null,"committer":"Reddy <sanjeevreddy9611@gmail.com>","committer_date":"2025-09-29T05:12:27.000Z","author":"Reddy <sanjeevreddy9611@gmail.com>","author_date":"2025-09-29T05:12:27.000Z","commit_message":"gojek file has been upladoed to BS","root":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp","common_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","worktree_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","last_tag":null,"commits_since_last_tag":0,"remotes":[{"name":"origin","url":"https://github.com/reddy17360/AppiumLearning.git"}]},"project_name":"BrowserStack Sanju","name":"browserstack-local-build-1","build_identifier":"#8","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.11.0","sdkVersion":"1.41.1","cliVersion":"1.6.23","language":"java","testFramework":{"name":"selenium","version":"4.34.0"}},"product_map":{"observability":true,"accessibility":null,"percy":false,"automate":false,"app_automate":true},"browserstackAutomation":true,"test_orchestration":{}}
+2025-09-29T05:13:24.444Z CLI info  [sanjeev_efWR7h]   [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2025-09-29T05:13:25.895Z CLI info [testhub:module]  [sanjeev_efWR7h]   [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  startBuild: response=jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup
+2025-09-29T05:13:25.896Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T05:13:26.199Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T05:13:26.500Z CLI error  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  error invoking callback for eventName: {}
+2025-09-29T05:13:26.500Z CLI error  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-09-29T05:13:36.951Z CLI info [appautomate:service]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Using app: bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688
+2025-09-29T05:13:37.132Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-09-29T05:13:37.297Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-09-29T05:13:37.427Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-09-29T05:13:38.096Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2025-09-29T05:13:40.615Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: 'c25c694d-6214-41ea-b813-0b640a588c57',
+    name: 'preRequisit',
+    result: 'pending',
+    test_run_id: '54df04e4-ade5-41cd-9943-dfa1ca072927',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T05:13:40.600Z'
+  },
+  logs: []
+} to 5959:0
+2025-09-29T05:13:40.661Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:13:40.654Z',
+      uuid: 'c25c694d-6214-41ea-b813-0b640a588c57',
+      kind: 'TEST_LOG',
+      message: '"▶ USE_BROWSERSTACK: true"',
+      level: 'INFO',
+      test_run_uuid: 'c25c694d-6214-41ea-b813-0b640a588c57'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:13:40.669Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:13:40.667Z',
+      uuid: 'c25c694d-6214-41ea-b813-0b640a588c57',
+      kind: 'TEST_LOG',
+      message: '"▶ Running on BrowserStack device: Samsung Galaxy S22 Ultra"',
+      level: 'INFO',
+      test_run_uuid: 'c25c694d-6214-41ea-b813-0b640a588c57'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:13:41.908Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: 'c25c694d-6214-41ea-b813-0b640a588c57',
+      name: 'preRequisit',
+      result: 'pending',
+      test_run_id: '54df04e4-ade5-41cd-9943-dfa1ca072927',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T05:13:40.600Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 5959:0
+2025-09-29T05:13:41.909Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:13.808Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: 'c25c694d-6214-41ea-b813-0b640a588c57',
+    name: 'preRequisit',
+    result: 'passed',
+    test_run_id: '54df04e4-ade5-41cd-9943-dfa1ca072927',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T05:13:40.600Z',
+    finished_at: '2025-09-29T05:14:13.804Z'
+  },
+  logs: []
+} to 5959:0
+2025-09-29T05:14:13.862Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '3bb86e78-ee63-4d6a-9b5e-1251f438179f',
+    integrations: { browserstack: [Object] }
+  }
+} to 5959:0
+2025-09-29T05:14:13.873Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '3bb86e78-ee63-4d6a-9b5e-1251f438179f',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T05:14:13.832Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5959:0
+2025-09-29T05:14:13.922Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: 'c25c694d-6214-41ea-b813-0b640a588c57',
+      name: 'preRequisit',
+      result: 'passed',
+      test_run_id: '54df04e4-ade5-41cd-9943-dfa1ca072927',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T05:13:40.600Z',
+      finished_at: '2025-09-29T05:14:13.804Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '3bb86e78-ee63-4d6a-9b5e-1251f438179f',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '3bb86e78-ee63-4d6a-9b5e-1251f438179f',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T05:14:13.832Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 5959:0
+2025-09-29T05:14:13.923Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:22.245Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  TestRunFinished: event={"test_hook_last_started":"BEFORE_CLASS","test_failure_type":null,"test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T10:44:20.447436","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T10:44:13.832286","platform_index":0,"test_failure":null,"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"3bb86e78-ee63-4d6a-9b5e-1251f438179f","test_ended_at":"2025-09-29T10:44:20.448374","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_hook_last_finished":"BEFORE_CLASS","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-changeAppLanguage","test_hook_state":"sdk:hook:cb9b1672","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{"BEFORE_CLASS":[]},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_CLASS":[{"hook_name":"preRequisit","hook_result":"passed","test_file_path":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","event_started_at":"2025-09-29T10:43:40.600318","hook_id":"c25c694d-6214-41ea-b813-0b640a588c57","hook_logs":[],"logs":[],"key":"BEFORE_CLASS","custom_metadata":{},"event_ended_at":"2025-09-29T10:44:13.804035","test_location":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java"}]},"hook_id":"c25c694d-6214-41ea-b813-0b640a588c57","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"changeAppLanguage","logs":[]}
+2025-09-29T05:14:22.248Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '3bb86e78-ee63-4d6a-9b5e-1251f438179f',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 6616,
+    started_at: '2025-09-29T05:14:13.832Z',
+    finished_at: '2025-09-29T05:14:20.448Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [ 'c25c694d-6214-41ea-b813-0b640a588c57' ],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5959:0
+2025-09-29T05:14:22.295Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+    integrations: { browserstack: [Object] }
+  }
+} to 5959:0
+2025-09-29T05:14:22.302Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T05:14:22.287Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5959:0
+2025-09-29T05:14:23.281Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:14:23.275Z',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:14:23.574Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:14:23.567Z',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:14:23.933Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '3bb86e78-ee63-4d6a-9b5e-1251f438179f',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 6616,
+      started_at: '2025-09-29T05:14:13.832Z',
+      finished_at: '2025-09-29T05:14:20.448Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T05:14:22.287Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 5959:0
+2025-09-29T05:14:23.938Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:28.194Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:14:28.190Z',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:14:28.383Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:14:28.381Z',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:14:29.935Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 5959:0
+2025-09-29T05:14:29.936Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:33.016Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:14:32.990Z',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:14:33.297Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:14:33.293Z',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:14:33.938Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 5959:0
+2025-09-29T05:14:33.944Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:37.937Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:14:37.931Z',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:14:37.939Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Processing batch event [ { event_type: 'LogCreated', logs: [ [Object] ] } ] to 5959:0
+2025-09-29T05:14:37.939Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:38.172Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:14:38.169Z',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5'
+    }
+  ]
+} to 5959:0
+2025-09-29T05:14:39.942Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Processing batch event [ { event_type: 'LogCreated', logs: [ [Object] ] } ] to 5959:0
+2025-09-29T05:14:39.947Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:43.964Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  TestRunFinished: event={"test_failure_type":null,"test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T10:44:42.188606","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T10:44:22.287794","platform_index":0,"test_failure":null,"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5","test_ended_at":"2025-09-29T10:44:42.188906","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-verifyWelcomeScreen","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"passed","test_hooks_finished":{},"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"verifyWelcomeScreen","logs":[]}
+2025-09-29T05:14:43.967Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 19901,
+    started_at: '2025-09-29T05:14:22.287Z',
+    finished_at: '2025-09-29T05:14:42.188Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5959:0
+2025-09-29T05:14:44.539Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:45.203Z CLI error [testhub:module]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [collectBuildData] Exception in collecting build data for build UUID jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup: {"message":"Build data collection started"}
+2025-09-29T05:14:45.944Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'ae2e7e1e-4ce4-4323-9928-1be57b3f7ca5',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 19901,
+      started_at: '2025-09-29T05:14:22.287Z',
+      finished_at: '2025-09-29T05:14:42.188Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 5959:0
+2025-09-29T05:14:45.945Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:14:46.723Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2025-09-29T05:14:47.421Z CLI info [testhub:module]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  stopBuild: jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup request={"finished_at":"2025-09-29T05:14:44.538Z","finished_metadata":[],"custom_metadata":{}} response={"data":""}
+2025-09-29T05:14:47.430Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T05:14:47.434Z CLI info [TEST REPORTING AND ANALYTICS:module]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Visit https://automation.browserstack.com/builds/jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup to view build report, insights, and many more debugging information all at one place!
+2025-09-29T05:14:50.003Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T05:14:50.329Z CLI info  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2025-09-29T05:14:51.281Z CLI info [main]  [sanjeev_efWR7h]  [jackfsvpxkde7k3bojgizix9f8gj3nlixgcjzyup]  [f3b6d957-2947-4bc4-a53e-3a8f9e41e31f]  Received graceful signal termination, performing cleanup
+2025-09-29T05:24:36.787Z CLI info [main]     Server listening on port: 5400
+2025-09-29T05:24:36.998Z CLI info     Config : {"userName":"sanjeev_efWR7h","accessKey":"BrUyx5M5aC3uabP5s3sQ","framework":"testng","app":"bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688","platforms":[{"platformName":"android","deviceName":"Samsung Galaxy S22 Ultra","platformVersion":"12.0"}],"browserstackLocal":true,"buildName":"browserstack-local-build-1","projectName":"BrowserStack Sanju"}
+2025-09-29T05:24:37.021Z CLI info [testhub:module]  [sanjeev_efWR7h]   [942460b5-e53b-4d73-afae-3049c89b4210]  Starting testhub from 6284:0
+2025-09-29T05:24:37.021Z CLI info [testhub:module]  [sanjeev_efWR7h]   [942460b5-e53b-4d73-afae-3049c89b4210]  startBuild: payload=
+
+{"started_at":"2025-09-29T05:24:37.021Z","host_info":{"hostname":"Sanjeeva-Reddy-2.local","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 25.0.0: Mon Aug 25 21:17:53 PDT 2025; root:xnu-12377.1.9~3/RELEASE_ARM64_T8112","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"7c4e923ebfa2a920251bfb983ad19a9d223d9e2c","short_sha":"7c4e923ebf","branch":"main","tag":null,"committer":"Reddy <sanjeevreddy9611@gmail.com>","committer_date":"2025-09-29T05:12:27.000Z","author":"Reddy <sanjeevreddy9611@gmail.com>","author_date":"2025-09-29T05:12:27.000Z","commit_message":"gojek file has been upladoed to BS","root":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp","common_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","worktree_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","last_tag":null,"commits_since_last_tag":0,"remotes":[{"name":"origin","url":"https://github.com/reddy17360/AppiumLearning.git"}]},"project_name":"BrowserStack Sanju","name":"browserstack-local-build-1","build_identifier":"#9","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.11.0","sdkVersion":"1.41.1","cliVersion":"1.6.23","language":"java","testFramework":{"name":"selenium","version":"4.34.0"}},"product_map":{"observability":true,"accessibility":null,"percy":false,"automate":false,"app_automate":true},"browserstackAutomation":true,"test_orchestration":{}}
+2025-09-29T05:24:37.021Z CLI info  [sanjeev_efWR7h]   [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2025-09-29T05:24:37.920Z CLI info [testhub:module]  [sanjeev_efWR7h]   [942460b5-e53b-4d73-afae-3049c89b4210]  startBuild: response=oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq
+2025-09-29T05:24:37.922Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T05:24:38.290Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T05:24:38.592Z CLI error  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  error invoking callback for eventName: {}
+2025-09-29T05:24:38.592Z CLI error  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-09-29T05:24:47.893Z CLI info [appautomate:service]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Using app: bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688
+2025-09-29T05:24:48.101Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-09-29T05:24:48.255Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-09-29T05:24:48.387Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-09-29T05:24:49.042Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2025-09-29T05:24:52.215Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f',
+    name: 'preRequisit',
+    result: 'pending',
+    test_run_id: 'd5b7815e-0721-48a8-8b1c-6986439ef5bc',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T05:24:52.168Z'
+  },
+  logs: []
+} to 6284:0
+2025-09-29T05:24:52.343Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:24:52.325Z',
+      uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f',
+      kind: 'TEST_LOG',
+      message: '"▶ USE_BROWSERSTACK: true"',
+      level: 'INFO',
+      test_run_uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:24:52.354Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:24:52.350Z',
+      uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f',
+      kind: 'TEST_LOG',
+      message: '"▶ Runtime BROWSERSTACK_APP = null"',
+      level: 'INFO',
+      test_run_uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:24:52.367Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:24:52.362Z',
+      uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f',
+      kind: 'TEST_LOG',
+      message: '"▶ Running on BrowserStack device: Samsung Galaxy S22 Ultra"',
+      level: 'INFO',
+      test_run_uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:24:53.936Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f',
+      name: 'preRequisit',
+      result: 'pending',
+      test_run_id: 'd5b7815e-0721-48a8-8b1c-6986439ef5bc',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T05:24:52.168Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 6284:0
+2025-09-29T05:24:53.938Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:26.628Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f',
+    name: 'preRequisit',
+    result: 'passed',
+    test_run_id: 'd5b7815e-0721-48a8-8b1c-6986439ef5bc',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T05:24:52.168Z',
+    finished_at: '2025-09-29T05:25:26.620Z'
+  },
+  logs: []
+} to 6284:0
+2025-09-29T05:25:26.686Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '2f921b1f-714a-41e4-9447-05d59815d1ec',
+    integrations: { browserstack: [Object] }
+  }
+} to 6284:0
+2025-09-29T05:25:26.696Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '2f921b1f-714a-41e4-9447-05d59815d1ec',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T05:25:26.652Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 6284:0
+2025-09-29T05:25:27.962Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: '64fb5f7b-508d-4ef9-aaed-b4ea338e246f',
+      name: 'preRequisit',
+      result: 'passed',
+      test_run_id: 'd5b7815e-0721-48a8-8b1c-6986439ef5bc',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T05:24:52.168Z',
+      finished_at: '2025-09-29T05:25:26.620Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '2f921b1f-714a-41e4-9447-05d59815d1ec',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '2f921b1f-714a-41e4-9447-05d59815d1ec',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T05:25:26.652Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 6284:0
+2025-09-29T05:25:27.966Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:34.862Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  TestRunFinished: event={"test_hook_last_started":"BEFORE_CLASS","test_failure_type":null,"test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T10:55:33.209448","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T10:55:26.652112","platform_index":0,"test_failure":null,"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"2f921b1f-714a-41e4-9447-05d59815d1ec","test_ended_at":"2025-09-29T10:55:33.210293","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_hook_last_finished":"BEFORE_CLASS","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-changeAppLanguage","test_hook_state":"sdk:hook:f742fc","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{"BEFORE_CLASS":[]},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_CLASS":[{"hook_name":"preRequisit","hook_result":"passed","test_file_path":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","event_started_at":"2025-09-29T10:54:52.168444","hook_id":"64fb5f7b-508d-4ef9-aaed-b4ea338e246f","hook_logs":[],"logs":[],"key":"BEFORE_CLASS","custom_metadata":{},"event_ended_at":"2025-09-29T10:55:26.620961","test_location":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java"}]},"hook_id":"64fb5f7b-508d-4ef9-aaed-b4ea338e246f","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"changeAppLanguage","logs":[]}
+2025-09-29T05:25:34.864Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '2f921b1f-714a-41e4-9447-05d59815d1ec',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 6558,
+    started_at: '2025-09-29T05:25:26.652Z',
+    finished_at: '2025-09-29T05:25:33.210Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [ '64fb5f7b-508d-4ef9-aaed-b4ea338e246f' ],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 6284:0
+2025-09-29T05:25:34.909Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+    integrations: { browserstack: [Object] }
+  }
+} to 6284:0
+2025-09-29T05:25:34.914Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T05:25:34.903Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 6284:0
+2025-09-29T05:25:35.966Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '2f921b1f-714a-41e4-9447-05d59815d1ec',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 6558,
+      started_at: '2025-09-29T05:25:26.652Z',
+      finished_at: '2025-09-29T05:25:33.210Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T05:25:34.903Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 6284:0
+2025-09-29T05:25:35.967Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:35.981Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:25:35.979Z',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:25:36.184Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:25:36.180Z',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:25:37.970Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 6284:0
+2025-09-29T05:25:37.971Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:40.817Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:25:40.808Z',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:25:41.060Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:25:41.058Z',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:25:41.971Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 6284:0
+2025-09-29T05:25:41.972Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:45.643Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:25:45.637Z',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:25:45.848Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:25:45.846Z',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:25:45.973Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 6284:0
+2025-09-29T05:25:45.975Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:50.432Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:25:50.415Z',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:25:50.645Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T05:25:50.641Z',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09'
+    }
+  ]
+} to 6284:0
+2025-09-29T05:25:51.979Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 6284:0
+2025-09-29T05:25:51.980Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:56.694Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  TestRunFinished: event={"test_failure_type":null,"test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T10:55:54.673120","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T10:55:34.903992","platform_index":0,"test_failure":null,"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"0d538e3c-cd33-44fe-a525-7b3a6c2cfe09","test_ended_at":"2025-09-29T10:55:54.673737","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-verifyWelcomeScreen","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"passed","test_hooks_finished":{},"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"verifyWelcomeScreen","logs":[]}
+2025-09-29T05:25:56.696Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 19770,
+    started_at: '2025-09-29T05:25:34.903Z',
+    finished_at: '2025-09-29T05:25:54.673Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 6284:0
+2025-09-29T05:25:57.386Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:57.985Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '0d538e3c-cd33-44fe-a525-7b3a6c2cfe09',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 19770,
+      started_at: '2025-09-29T05:25:34.903Z',
+      finished_at: '2025-09-29T05:25:54.673Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 6284:0
+2025-09-29T05:25:58.140Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T05:25:58.141Z CLI error [testhub:module]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [collectBuildData] Exception in collecting build data for build UUID oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq: {"message":"Build data collection started"}
+2025-09-29T05:25:58.852Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2025-09-29T05:25:59.575Z CLI info [testhub:module]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  stopBuild: oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq request={"finished_at":"2025-09-29T05:25:57.385Z","finished_metadata":[],"custom_metadata":{}} response={"data":""}
+2025-09-29T05:25:59.583Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T05:25:59.586Z CLI info [TEST REPORTING AND ANALYTICS:module]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Visit https://automation.browserstack.com/builds/oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq to view build report, insights, and many more debugging information all at one place!
+2025-09-29T05:26:02.163Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T05:26:02.603Z CLI info  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2025-09-29T05:26:03.583Z CLI info [main]  [sanjeev_efWR7h]  [oresud38ajeoc9b6buyhyu6qb5rjj9sw0akkisoq]  [942460b5-e53b-4d73-afae-3049c89b4210]  Received graceful signal termination, performing cleanup
+2025-09-29T06:03:45.701Z CLI info [main]     Server listening on port: 5400
+2025-09-29T06:03:45.928Z CLI info     Config : {"userName":"sanjeev_efWR7h","accessKey":"BrUyx5M5aC3uabP5s3sQ","framework":"testng","app":"bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688","platforms":[{"platformName":"android","deviceName":"Samsung Galaxy S22 Ultra","platformVersion":"12.0"}],"browserstackLocal":true,"buildName":"browserstack-local-build-1","projectName":"BrowserStack Sanju"}
+2025-09-29T06:03:45.957Z CLI info [testhub:module]  [sanjeev_efWR7h]   [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Starting testhub from 7549:0
+2025-09-29T06:03:45.957Z CLI info [testhub:module]  [sanjeev_efWR7h]   [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  startBuild: payload=
+
+{"started_at":"2025-09-29T06:03:45.957Z","host_info":{"hostname":"Sanjeeva-Reddy-2.local","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 25.0.0: Mon Aug 25 21:17:53 PDT 2025; root:xnu-12377.1.9~3/RELEASE_ARM64_T8112","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"7c4e923ebfa2a920251bfb983ad19a9d223d9e2c","short_sha":"7c4e923ebf","branch":"main","tag":null,"committer":"Reddy <sanjeevreddy9611@gmail.com>","committer_date":"2025-09-29T05:12:27.000Z","author":"Reddy <sanjeevreddy9611@gmail.com>","author_date":"2025-09-29T05:12:27.000Z","commit_message":"gojek file has been upladoed to BS","root":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp","common_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","worktree_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","last_tag":null,"commits_since_last_tag":0,"remotes":[{"name":"origin","url":"https://github.com/reddy17360/AppiumLearning.git"}]},"project_name":"BrowserStack Sanju","name":"browserstack-local-build-1","build_identifier":"#10","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.11.0","sdkVersion":"1.41.1","cliVersion":"1.6.23","language":"java","testFramework":{"name":"selenium","version":"4.34.0"}},"product_map":{"observability":true,"accessibility":null,"percy":false,"automate":false,"app_automate":true},"browserstackAutomation":true,"test_orchestration":{}}
+2025-09-29T06:03:45.957Z CLI info  [sanjeev_efWR7h]   [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2025-09-29T06:03:47.569Z CLI info [testhub:module]  [sanjeev_efWR7h]   [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  startBuild: response=ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly
+2025-09-29T06:03:47.571Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T06:03:48.027Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T06:03:48.321Z CLI error  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  error invoking callback for eventName: {}
+2025-09-29T06:03:48.322Z CLI error  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-09-29T06:03:55.710Z CLI info [appautomate:service]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Using app: bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688
+2025-09-29T06:03:55.759Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-09-29T06:03:55.906Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-09-29T06:03:56.040Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-09-29T06:03:56.706Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2025-09-29T06:03:59.236Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705',
+    name: 'preRequisit',
+    result: 'pending',
+    test_run_id: '6ff10511-aca2-4784-b68d-c3f68ebb1a34',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T06:03:59.224Z'
+  },
+  logs: []
+} to 7549:0
+2025-09-29T06:03:59.279Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:03:59.273Z',
+      uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705',
+      kind: 'TEST_LOG',
+      message: '"▶ USE_BROWSERSTACK: true"',
+      level: 'INFO',
+      test_run_uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:03:59.285Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:03:59.284Z',
+      uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705',
+      kind: 'TEST_LOG',
+      message: '"▶ Runtime BROWSERSTACK_APP = null"',
+      level: 'INFO',
+      test_run_uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:03:59.291Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:03:59.290Z',
+      uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705',
+      kind: 'TEST_LOG',
+      message: '"▶ Running on BrowserStack device: Samsung Galaxy S22 Ultra"',
+      level: 'INFO',
+      test_run_uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:03:59.577Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705',
+      name: 'preRequisit',
+      result: 'pending',
+      test_run_id: '6ff10511-aca2-4784-b68d-c3f68ebb1a34',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T06:03:59.224Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7549:0
+2025-09-29T06:03:59.578Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:04:53.701Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705',
+    name: 'preRequisit',
+    result: 'passed',
+    test_run_id: '6ff10511-aca2-4784-b68d-c3f68ebb1a34',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T06:03:59.224Z',
+    finished_at: '2025-09-29T06:04:53.693Z'
+  },
+  logs: []
+} to 7549:0
+2025-09-29T06:04:53.748Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'fe8107ef-5c42-4d41-9644-c609452e1d22',
+    integrations: { browserstack: [Object] }
+  }
+} to 7549:0
+2025-09-29T06:04:53.753Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'fe8107ef-5c42-4d41-9644-c609452e1d22',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T06:04:53.723Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 7549:0
+2025-09-29T06:04:55.645Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: '93ce6bb9-c34d-4bb2-8db6-45acef278705',
+      name: 'preRequisit',
+      result: 'passed',
+      test_run_id: '6ff10511-aca2-4784-b68d-c3f68ebb1a34',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T06:03:59.224Z',
+      finished_at: '2025-09-29T06:04:53.693Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'fe8107ef-5c42-4d41-9644-c609452e1d22',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'fe8107ef-5c42-4d41-9644-c609452e1d22',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T06:04:53.723Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 7549:0
+2025-09-29T06:04:55.647Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:05:02.411Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  TestRunFinished: event={"test_hook_last_started":"BEFORE_CLASS","test_failure_type":null,"test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T11:34:59.808223","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T11:34:53.723858","platform_index":0,"test_failure":null,"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"fe8107ef-5c42-4d41-9644-c609452e1d22","test_ended_at":"2025-09-29T11:34:59.808984","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_hook_last_finished":"BEFORE_CLASS","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-changeAppLanguage","test_hook_state":"sdk:hook:d517a3b4","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{"BEFORE_CLASS":[]},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_CLASS":[{"hook_name":"preRequisit","hook_result":"passed","test_file_path":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","event_started_at":"2025-09-29T11:33:59.224507","hook_id":"93ce6bb9-c34d-4bb2-8db6-45acef278705","hook_logs":[],"logs":[],"key":"BEFORE_CLASS","custom_metadata":{},"event_ended_at":"2025-09-29T11:34:53.693907","test_location":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java"}]},"hook_id":"93ce6bb9-c34d-4bb2-8db6-45acef278705","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"changeAppLanguage","logs":[]}
+2025-09-29T06:05:02.414Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'fe8107ef-5c42-4d41-9644-c609452e1d22',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 6085,
+    started_at: '2025-09-29T06:04:53.723Z',
+    finished_at: '2025-09-29T06:04:59.808Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [ '93ce6bb9-c34d-4bb2-8db6-45acef278705' ],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 7549:0
+2025-09-29T06:05:02.543Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+    integrations: { browserstack: [Object] }
+  }
+} to 7549:0
+2025-09-29T06:05:02.549Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T06:05:02.479Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 7549:0
+2025-09-29T06:05:03.432Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:05:03.430Z',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: '98d94601-c789-46c5-8db9-dbfc054996bf'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:05:03.625Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'fe8107ef-5c42-4d41-9644-c609452e1d22',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 6085,
+      started_at: '2025-09-29T06:04:53.723Z',
+      finished_at: '2025-09-29T06:04:59.808Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T06:05:02.479Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7549:0
+2025-09-29T06:05:03.626Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:05:03.636Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:05:03.633Z',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: '98d94601-c789-46c5-8db9-dbfc054996bf'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:05:05.626Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Processing batch event [ { event_type: 'LogCreated', logs: [ [Object] ] } ] to 7549:0
+2025-09-29T06:05:05.627Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:05:08.227Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:05:08.224Z',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: '98d94601-c789-46c5-8db9-dbfc054996bf'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:05:08.439Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:05:08.436Z',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: '98d94601-c789-46c5-8db9-dbfc054996bf'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:05:09.627Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7549:0
+2025-09-29T06:05:09.628Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:05:13.037Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:05:13.025Z',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: '98d94601-c789-46c5-8db9-dbfc054996bf'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:05:13.241Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:05:13.240Z',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: '98d94601-c789-46c5-8db9-dbfc054996bf'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:05:13.630Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7549:0
+2025-09-29T06:05:13.631Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:05:17.893Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:05:17.882Z',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: '98d94601-c789-46c5-8db9-dbfc054996bf'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:05:18.134Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:05:18.128Z',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: '98d94601-c789-46c5-8db9-dbfc054996bf'
+    }
+  ]
+} to 7549:0
+2025-09-29T06:05:19.635Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7549:0
+2025-09-29T06:05:19.638Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:05:23.874Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  TestRunFinished: event={"test_failure_type":null,"test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T11:35:22.151034","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T11:35:02.479509","platform_index":0,"test_failure":null,"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"98d94601-c789-46c5-8db9-dbfc054996bf","test_ended_at":"2025-09-29T11:35:22.151408","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-verifyWelcomeScreen","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"passed","test_hooks_finished":{},"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"verifyWelcomeScreen","logs":[]}
+2025-09-29T06:05:23.875Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 19672,
+    started_at: '2025-09-29T06:05:02.479Z',
+    finished_at: '2025-09-29T06:05:22.151Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 7549:0
+2025-09-29T06:05:24.404Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:05:25.200Z CLI error [testhub:module]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [collectBuildData] Exception in collecting build data for build UUID ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly: {"message":"Build data collection started"}
+2025-09-29T06:05:25.638Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '98d94601-c789-46c5-8db9-dbfc054996bf',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 19672,
+      started_at: '2025-09-29T06:05:02.479Z',
+      finished_at: '2025-09-29T06:05:22.151Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 7549:0
+2025-09-29T06:05:25.639Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:05:26.617Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2025-09-29T06:05:27.298Z CLI info [testhub:module]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  stopBuild: ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly request={"finished_at":"2025-09-29T06:05:24.403Z","finished_metadata":[],"custom_metadata":{}} response={"data":""}
+2025-09-29T06:05:27.304Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T06:05:27.305Z CLI info [TEST REPORTING AND ANALYTICS:module]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Visit https://automation.browserstack.com/builds/ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly to view build report, insights, and many more debugging information all at one place!
+2025-09-29T06:05:29.871Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T06:05:30.291Z CLI info  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2025-09-29T06:05:31.307Z CLI info [main]  [sanjeev_efWR7h]  [ullcmrmsyxfb7id8yes92u7azsce0qybankfjdly]  [7fca1cf5-8cbc-4216-aa6a-f1455f49eee8]  Received graceful signal termination, performing cleanup
+2025-09-29T06:07:14.492Z CLI info [main]     Server listening on port: 5400
+2025-09-29T06:07:14.698Z CLI info     Config : {"userName":"sanjeev_efWR7h","accessKey":"BrUyx5M5aC3uabP5s3sQ","framework":"testng","app":"bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688","platforms":[{"platformName":"android","deviceName":"Samsung Galaxy S22 Ultra","platformVersion":"12.0"}],"browserstackLocal":true,"buildName":"browserstack-local-build-1","projectName":"BrowserStack Sanju"}
+2025-09-29T06:07:14.716Z CLI info [testhub:module]  [sanjeev_efWR7h]   [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Starting testhub from 7683:0
+2025-09-29T06:07:14.717Z CLI info [testhub:module]  [sanjeev_efWR7h]   [cde93d56-df5a-424d-8654-42c75ffd8b0b]  startBuild: payload=
+
+{"started_at":"2025-09-29T06:07:14.717Z","host_info":{"hostname":"Sanjeeva-Reddy-2.local","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 25.0.0: Mon Aug 25 21:17:53 PDT 2025; root:xnu-12377.1.9~3/RELEASE_ARM64_T8112","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"7c4e923ebfa2a920251bfb983ad19a9d223d9e2c","short_sha":"7c4e923ebf","branch":"main","tag":null,"committer":"Reddy <sanjeevreddy9611@gmail.com>","committer_date":"2025-09-29T05:12:27.000Z","author":"Reddy <sanjeevreddy9611@gmail.com>","author_date":"2025-09-29T05:12:27.000Z","commit_message":"gojek file has been upladoed to BS","root":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp","common_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","worktree_git_dir":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/.git","last_tag":null,"commits_since_last_tag":0,"remotes":[{"name":"origin","url":"https://github.com/reddy17360/AppiumLearning.git"}]},"project_name":"BrowserStack Sanju","name":"browserstack-local-build-1","build_identifier":"#11","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.11.0","sdkVersion":"1.41.1","cliVersion":"1.6.23","language":"java","testFramework":{"name":"selenium","version":"4.34.0"}},"product_map":{"observability":true,"accessibility":null,"percy":false,"automate":false,"app_automate":true},"browserstackAutomation":true,"test_orchestration":{}}
+2025-09-29T06:07:14.717Z CLI info  [sanjeev_efWR7h]   [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2025-09-29T06:07:16.192Z CLI info [testhub:module]  [sanjeev_efWR7h]   [cde93d56-df5a-424d-8654-42c75ffd8b0b]  startBuild: response=s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y
+2025-09-29T06:07:16.195Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T06:07:17.132Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T06:07:17.434Z CLI error  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  error invoking callback for eventName: {}
+2025-09-29T06:07:17.435Z CLI error  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-09-29T06:07:24.144Z CLI info [appautomate:service]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Using app: bs://10b3879a9bcc83cce31ac6dcd114a9d335e8b688
+2025-09-29T06:07:24.256Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-09-29T06:07:24.419Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-09-29T06:07:24.558Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-09-29T06:07:25.227Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2025-09-29T06:07:27.613Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add',
+    name: 'preRequisit',
+    result: 'pending',
+    test_run_id: 'ed67a9b4-0b46-4467-a1ef-3981a2c50495',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T06:07:27.599Z'
+  },
+  logs: []
+} to 7683:0
+2025-09-29T06:07:27.664Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:07:27.654Z',
+      uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add',
+      kind: 'TEST_LOG',
+      message: '"▶ USE_BROWSERSTACK: true"',
+      level: 'INFO',
+      test_run_uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:07:27.672Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:07:27.670Z',
+      uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add',
+      kind: 'TEST_LOG',
+      message: '"▶ Runtime BROWSERSTACK_APP = null"',
+      level: 'INFO',
+      test_run_uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:07:27.680Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:07:27.678Z',
+      uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add',
+      kind: 'TEST_LOG',
+      message: '"▶ Running on BrowserStack device: Samsung Galaxy S22 Ultra"',
+      level: 'INFO',
+      test_run_uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:07:28.201Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add',
+      name: 'preRequisit',
+      result: 'pending',
+      test_run_id: 'ed67a9b4-0b46-4467-a1ef-3981a2c50495',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T06:07:27.599Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7683:0
+2025-09-29T06:07:28.202Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:01.335Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_CLASS',
+    framework: 'TestNG',
+    uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add',
+    name: 'preRequisit',
+    result: 'passed',
+    test_run_id: 'ed67a9b4-0b46-4467-a1ef-3981a2c50495',
+    body: { lang: 'java', code: null },
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    started_at: '2025-09-29T06:07:27.599Z',
+    finished_at: '2025-09-29T06:08:01.330Z'
+  },
+  logs: []
+} to 7683:0
+2025-09-29T06:08:01.386Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '61676979-e46c-4fb0-b96d-31005313688f',
+    integrations: { browserstack: [Object] }
+  }
+} to 7683:0
+2025-09-29T06:08:01.392Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '61676979-e46c-4fb0-b96d-31005313688f',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T06:08:01.358Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 7683:0
+2025-09-29T06:08:02.229Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_CLASS',
+      framework: 'TestNG',
+      uuid: '71b27ffc-fd2d-40d6-adc3-e4e0e4546add',
+      name: 'preRequisit',
+      result: 'passed',
+      test_run_id: 'ed67a9b4-0b46-4467-a1ef-3981a2c50495',
+      body: [Object],
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      started_at: '2025-09-29T06:07:27.599Z',
+      finished_at: '2025-09-29T06:08:01.330Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '61676979-e46c-4fb0-b96d-31005313688f',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '61676979-e46c-4fb0-b96d-31005313688f',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T06:08:01.358Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 7683:0
+2025-09-29T06:08:02.231Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:10.478Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  TestRunFinished: event={"test_hook_last_started":"BEFORE_CLASS","test_failure_type":null,"test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T11:38:08.628738","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T11:38:01.358369","platform_index":0,"test_failure":null,"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"61676979-e46c-4fb0-b96d-31005313688f","test_ended_at":"2025-09-29T11:38:08.629419","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_hook_last_finished":"BEFORE_CLASS","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-changeAppLanguage","test_hook_state":"sdk:hook:5f6f97f6","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{"BEFORE_CLASS":[]},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_CLASS":[{"hook_name":"preRequisit","hook_result":"passed","test_file_path":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","event_started_at":"2025-09-29T11:37:27.599601","hook_id":"71b27ffc-fd2d-40d6-adc3-e4e0e4546add","hook_logs":[],"logs":[],"key":"BEFORE_CLASS","custom_metadata":{},"event_ended_at":"2025-09-29T11:38:01.330852","test_location":"LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java"}]},"hook_id":"71b27ffc-fd2d-40d6-adc3-e4e0e4546add","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"changeAppLanguage","logs":[]}
+2025-09-29T06:08:10.483Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '61676979-e46c-4fb0-b96d-31005313688f',
+    name: 'changeAppLanguage',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage()'
+    },
+    identifier: 'changeAppLanguage',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 7271,
+    started_at: '2025-09-29T06:08:01.358Z',
+    finished_at: '2025-09-29T06:08:08.629Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [ '71b27ffc-fd2d-40d6-adc3-e4e0e4546add' ],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 7683:0
+2025-09-29T06:08:10.599Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+    integrations: { browserstack: [Object] }
+  }
+} to 7683:0
+2025-09-29T06:08:10.610Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-09-29T06:08:10.589Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 7683:0
+2025-09-29T06:08:11.375Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:08:11.365Z',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:08:11.597Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:08:11.591Z',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:08:12.236Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '61676979-e46c-4fb0-b96d-31005313688f',
+      name: 'changeAppLanguage',
+      body: [Object],
+      identifier: 'changeAppLanguage',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 7271,
+      started_at: '2025-09-29T06:08:01.358Z',
+      finished_at: '2025-09-29T06:08:08.629Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-09-29T06:08:10.589Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7683:0
+2025-09-29T06:08:12.237Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:16.188Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:08:16.184Z',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:08:16.235Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Processing batch event [ { event_type: 'LogCreated', logs: [ [Object] ] } ] to 7683:0
+2025-09-29T06:08:16.236Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:16.381Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:08:16.378Z',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:08:18.238Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Processing batch event [ { event_type: 'LogCreated', logs: [ [Object] ] } ] to 7683:0
+2025-09-29T06:08:18.240Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:21.123Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:08:21.119Z',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:08:21.338Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:08:21.313Z',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:08:22.239Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7683:0
+2025-09-29T06:08:22.242Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:26.402Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:08:26.388Z',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      kind: 'TEST_LOG',
+      message: '"Welcome to Gojek!"',
+      level: 'INFO',
+      test_run_uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:08:26.662Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.11.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-09-29T06:08:26.658Z',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      kind: 'TEST_LOG',
+      message: '"Your go-to app for a hassle-free life. We’re here to help with all your needs anytime, anywhere."',
+      level: 'INFO',
+      test_run_uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6'
+    }
+  ]
+} to 7683:0
+2025-09-29T06:08:28.241Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 7683:0
+2025-09-29T06:08:28.242Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:32.576Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  TestRunFinished: event={"test_failure_type":null,"test_rerun_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0","test_result_at":"2025-09-29T11:38:30.696541","test_scope":"All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-09-29T11:38:10.589214","platform_index":0,"test_failure":null,"test_framework_version":"7.11.0","test_logs":[],"test_scopes":["All Test Suite","gojek.android.gojek.GojekWelcomeScreenVerificationTest"],"test_code":"public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception","test_id":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0","test_uuid":"c1f1ea76-384d-4827-b390-125ba47c06b6","test_ended_at":"2025-09-29T11:38:30.696830","automate_session_name":"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-00","test_session_name":"gojek.android.gojek.GojekWelcomeScreenVerificationTest-verifyWelcomeScreen","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_hooks_started":{},"test_file_path":"src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java","test_result":"passed","test_hooks_finished":{},"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"verifyWelcomeScreen","logs":[]}
+2025-09-29T06:08:32.578Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+    name: 'verifyWelcomeScreen',
+    body: {
+      lang: 'java',
+      code: 'public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception'
+    },
+    identifier: 'verifyWelcomeScreen',
+    scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+    scopes: [
+      'All Test Suite',
+      'gojek.android.gojek.GojekWelcomeScreenVerificationTest'
+    ],
+    file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 20107,
+    started_at: '2025-09-29T06:08:10.589Z',
+    finished_at: '2025-09-29T06:08:30.696Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: {
+      rerun_name: '/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 7683:0
+2025-09-29T06:08:33.120Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:33.788Z CLI error [testhub:module]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [collectBuildData] Exception in collecting build data for build UUID s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y: {"message":"Build data collection started"}
+2025-09-29T06:08:34.244Z CLI info [testhub:request-queue-handler]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'c1f1ea76-384d-4827-b390-125ba47c06b6',
+      name: 'verifyWelcomeScreen',
+      body: [Object],
+      identifier: 'verifyWelcomeScreen',
+      scope: 'All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest',
+      scopes: [Array],
+      file_name: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      vc_filepath: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      location: 'src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 20107,
+      started_at: '2025-09-29T06:08:10.589Z',
+      finished_at: '2025-09-29T06:08:30.696Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 7683:0
+2025-09-29T06:08:34.245Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-29T06:08:35.005Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2025-09-29T06:08:35.749Z CLI info [testhub:module]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  stopBuild: s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y request={"finished_at":"2025-09-29T06:08:33.120Z","finished_metadata":[],"custom_metadata":{}} response={"data":""}
+2025-09-29T06:08:35.753Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-29T06:08:35.755Z CLI info [TEST REPORTING AND ANALYTICS:module]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Visit https://automation.browserstack.com/builds/s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y to view build report, insights, and many more debugging information all at one place!
+2025-09-29T06:08:38.317Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-29T06:08:38.757Z CLI info  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2025-09-29T06:08:39.785Z CLI info [main]  [sanjeev_efWR7h]  [s2fc1aktqnqira2u2mupoi4hr05mswnfbe6vk75y]  [cde93d56-df5a-424d-8654-42c75ffd8b0b]  Received graceful signal termination, performing cleanup
