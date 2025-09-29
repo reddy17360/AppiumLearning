@@ -149,3 +149,428 @@ com.browserstack.testOps.RequestException: Non 200 response
 21:34:54.481 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
 21:34:56.958 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 445caa86-8092-4a54-a945-0b2e361a2661, testhub id: 
 21:34:56.958 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+10:33:39.272 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+10:33:39.291 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.34.0
+10:33:39.292 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 9.5.0
+10:33:39.412 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+10:33:39.417 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:33:39.744 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://e00f1482142eb25279affa9605b5ded0396b8fec]
+10:33:39.744 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+10:33:39.745 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 138cb43d-a356-4ffb-8843-cd02c9bcb162
+10:33:39.745 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:33:39.751 [main] DEBUG com.browserstack.v2.SdkCliUtils - File /Users/sanjeevareddysj/.browserstack already exist
+10:33:39.752 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: /Users/sanjeevareddysj/.browserstack/cli/binary-macos-arm64
+10:33:40.755 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: /Users/sanjeevareddysj/.browserstack/cli/binary-macos-arm64
+10:33:40.756 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+10:33:40.756 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/sanjeevareddysj/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'
+10:33:41.019 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=ff241bae-81d0-485f-8e83-5d6348546378 listenAddress=127.0.0.1:5400
+10:33:41.020 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process started
+10:33:41.020 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process connecting {id=ff241bae-81d0-485f-8e83-5d6348546378, port=5400, listen=127.0.0.1:5400}
+10:33:41.028 [main] DEBUG com.browserstack.v2.SdkCliUtils - File /Users/sanjeevareddysj/.browserstack already exist
+10:33:52.826 [main] DEBUG com.browserstack.v2.SdkCLI - start-bin-session=bin_session_id: "ff241bae-81d0-485f-8e83-5d6348546378"
+config: "{\"userName\":\"sanjeev_efWR7h\",\"accessKey\":\"BrUyx5M5aC3uabP5s3sQ\",\"framework\":\"testng\",\"app\":\"bs://e00f1482142eb25279affa9605b5ded0396b8fec\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":\"12.0\"}],\"browserstackLocal\":true,\"buildName\":\"browserstack-local-build-1\",\"projectName\":\"BrowserStack Sanju\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"logDir\":\"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/log\",\"buildIdentifier\":\"#7\",\"browserStackLocalOptions\":{\"localIdentifier\":\"Sep_29_1033_Sanjeeva-Reddy-2.local_8i9g\",\"key\":\"BrUyx5M5aC3uabP5s3sQ\",\"skipBinaryInitialisation\":false},\"testOrchestrationOptions\":{\"retryTestsOnFailure\":{},\"abortBuildOnFailure\":{}},\"apis\":{\"automate\":{\"hub\":\"https://hub.browserstack.com\",\"cdp\":\"https://cdp.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"appAutomate\":{\"hub\":\"https://hub.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"percy\":{\"api\":\"https://api.browserstack.com\"},\"turboScale\":{\"api\":\"https://grid.browserstack.com\"},\"accessibility\":{\"api\":\"https://accessibility.browserstack.com\"},\"appAccessibility\":{\"api\":\"https://app-accessibility.browserstack.com\"},\"observability\":{\"api\":\"https://collector-observability.browserstack.com\",\"upload\":\"https://upload-observability.browserstack.com\"},\"configServer\":{\"api\":\"https://sdk.browserstack.com\"},\"edsInstrumentation\":{\"api\":\"https://eds.browserstack.com\"},\"tcg\":{\"api\":\"https://tcg.browserstack.com\"}},\"hubUrl\":\"https://hub.browserstack.com/wd/hub\",\"proxySettings\":{}}"
+testhub {
+  jwt: "eyJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNzU5MTMzMDIxIiwiaXNzIjoid3d3LmJyb3dzZXJzdGFjay5jb20iLCJzdWIiOjYxNTkwNDMsInNjb3BlIjp7InByb2R1Y3QiOiJzZGsiLCJ1c2VyX2FjY2VzcyI6eyJ0ZXN0X29ic2VydmFiaWxpdHkiOjEsImF1dG9tYXRlIjoxLCJhcHBfYXV0b21hdGUiOjEsInBlcmN5IjoxLCJhcHBfcGVyY3kiOjEsImFjY2Vzc2liaWxpdHlfdGVzdGluZyI6MCwiYXBwX2FjY2Vzc2liaWxpdHlfdGVzdGluZyI6MSwiYXV0b21hdGVfdHVyYm9zY2FsZSI6MSwibG93X2NvZGVfYXV0b21hdGlvbiI6MX0sImlhYW1fcm9sZSI6Im93bmVyIn0sImdyb3VwX2lkIjo2MDc3MTc3LCJ0ZWFtX2lkIjpudWxsLCJ1ZGFjX2FjY2VzcyI6Imdsb2JhbCJ9.iyo1IFIjX_lARhVQihSN_PUfyjOXwU7kyDbBJRKWiKiCBr9Kmmz3CZP7AQzeRWGqql7ldJd3YvGB_d3k4UOUN1yZW44zFePk1a4rwkMLHJLY6nbjOdmI2_kx9EoYSiX-NM9bhSE2ub7E5OYVInWMz8eulHzCs_dimaoO7vS8mj1c-wiYDE0R10h-cOHFJm2EH7SjnxrgOjrWhbdZbvhTki4sETgecUejwkr9WahCIno8lMkA8_Nrd8rudrY8zsr9TAFTGLFxpzztxN_YpfX1hl8dDbfKjn1ZaiSRjL2Zd98su8nEKF-MYusgsgnWw6Kx0v06Kd8wwX8pjhrXAS3XTw"
+  build_hashed_id: "u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+  5: "app"
+}
+session_framework: ""
+8: "selenium"
+
+10:33:52.842 [main] DEBUG com.browserstack.v2.SdkCLI - startChild: child-process connecting
+10:33:53.185 [main] DEBUG com.browserstack.v2.SdkCLI - connect-bin-session=bin_session_id: "ff241bae-81d0-485f-8e83-5d6348546378"
+config: "{\"userName\":\"sanjeev_efWR7h\",\"accessKey\":\"BrUyx5M5aC3uabP5s3sQ\",\"framework\":\"testng\",\"app\":\"bs://e00f1482142eb25279affa9605b5ded0396b8fec\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":\"12.0\"}],\"browserstackLocal\":true,\"buildName\":\"browserstack-local-build-1\",\"projectName\":\"BrowserStack Sanju\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"logDir\":\"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/log\",\"buildIdentifier\":\"#7\",\"browserStackLocalOptions\":{\"localIdentifier\":\"Sep_29_1033_Sanjeeva-Reddy-2.local_8i9g\",\"key\":\"BrUyx5M5aC3uabP5s3sQ\",\"skipBinaryInitialisation\":false},\"testOrchestrationOptions\":{\"retryTestsOnFailure\":{},\"abortBuildOnFailure\":{}},\"apis\":{\"automate\":{\"hub\":\"https://hub.browserstack.com\",\"cdp\":\"https://cdp.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"appAutomate\":{\"hub\":\"https://hub.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"percy\":{\"api\":\"https://api.browserstack.com\"},\"turboScale\":{\"api\":\"https://grid.browserstack.com\"},\"accessibility\":{\"api\":\"https://accessibility.browserstack.com\"},\"appAccessibility\":{\"api\":\"https://app-accessibility.browserstack.com\"},\"observability\":{\"api\":\"https://collector-observability.browserstack.com\",\"upload\":\"https://upload-observability.browserstack.com\"},\"configServer\":{\"api\":\"https://sdk.browserstack.com\"},\"edsInstrumentation\":{\"api\":\"https://eds.browserstack.com\"},\"tcg\":{\"api\":\"https://tcg.browserstack.com\"}},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\",\"proxySettings\":{}}"
+testhub {
+  jwt: "eyJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNzU5MTMzMDIxIiwiaXNzIjoid3d3LmJyb3dzZXJzdGFjay5jb20iLCJzdWIiOjYxNTkwNDMsInNjb3BlIjp7InByb2R1Y3QiOiJzZGsiLCJ1c2VyX2FjY2VzcyI6eyJ0ZXN0X29ic2VydmFiaWxpdHkiOjEsImF1dG9tYXRlIjoxLCJhcHBfYXV0b21hdGUiOjEsInBlcmN5IjoxLCJhcHBfcGVyY3kiOjEsImFjY2Vzc2liaWxpdHlfdGVzdGluZyI6MCwiYXBwX2FjY2Vzc2liaWxpdHlfdGVzdGluZyI6MSwiYXV0b21hdGVfdHVyYm9zY2FsZSI6MSwibG93X2NvZGVfYXV0b21hdGlvbiI6MX0sImlhYW1fcm9sZSI6Im93bmVyIn0sImdyb3VwX2lkIjo2MDc3MTc3LCJ0ZWFtX2lkIjpudWxsLCJ1ZGFjX2FjY2VzcyI6Imdsb2JhbCJ9.iyo1IFIjX_lARhVQihSN_PUfyjOXwU7kyDbBJRKWiKiCBr9Kmmz3CZP7AQzeRWGqql7ldJd3YvGB_d3k4UOUN1yZW44zFePk1a4rwkMLHJLY6nbjOdmI2_kx9EoYSiX-NM9bhSE2ub7E5OYVInWMz8eulHzCs_dimaoO7vS8mj1c-wiYDE0R10h-cOHFJm2EH7SjnxrgOjrWhbdZbvhTki4sETgecUejwkr9WahCIno8lMkA8_Nrd8rudrY8zsr9TAFTGLFxpzztxN_YpfX1hl8dDbfKjn1ZaiSRjL2Zd98su8nEKF-MYusgsgnWw6Kx0v06Kd8wwX8pjhrXAS3XTw"
+  build_hashed_id: "u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+  5: "app"
+}
+session_framework: "selenium"
+test_orchestration {
+  retry_tests_on_failure {
+  }
+  abort_build_on_failure {
+  }
+}
+
+10:33:53.186 [main] INFO  com.browserstack.v2.SdkCLI - loadBinResponse: Loading modules as per LoadBinResponse=bin_session_id: "ff241bae-81d0-485f-8e83-5d6348546378"
+config: "{\"userName\":\"sanjeev_efWR7h\",\"accessKey\":\"BrUyx5M5aC3uabP5s3sQ\",\"framework\":\"testng\",\"app\":\"bs://e00f1482142eb25279affa9605b5ded0396b8fec\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":\"12.0\"}],\"browserstackLocal\":true,\"buildName\":\"browserstack-local-build-1\",\"projectName\":\"BrowserStack Sanju\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"logDir\":\"/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp/log\",\"buildIdentifier\":\"#7\",\"browserStackLocalOptions\":{\"localIdentifier\":\"Sep_29_1033_Sanjeeva-Reddy-2.local_8i9g\",\"key\":\"BrUyx5M5aC3uabP5s3sQ\",\"skipBinaryInitialisation\":false},\"testOrchestrationOptions\":{\"retryTestsOnFailure\":{},\"abortBuildOnFailure\":{}},\"apis\":{\"automate\":{\"hub\":\"https://hub.browserstack.com\",\"cdp\":\"https://cdp.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"appAutomate\":{\"hub\":\"https://hub.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"percy\":{\"api\":\"https://api.browserstack.com\"},\"turboScale\":{\"api\":\"https://grid.browserstack.com\"},\"accessibility\":{\"api\":\"https://accessibility.browserstack.com\"},\"appAccessibility\":{\"api\":\"https://app-accessibility.browserstack.com\"},\"observability\":{\"api\":\"https://collector-observability.browserstack.com\",\"upload\":\"https://upload-observability.browserstack.com\"},\"configServer\":{\"api\":\"https://sdk.browserstack.com\"},\"edsInstrumentation\":{\"api\":\"https://eds.browserstack.com\"},\"tcg\":{\"api\":\"https://tcg.browserstack.com\"}},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\",\"proxySettings\":{}}"
+testhub {
+  jwt: "eyJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNzU5MTMzMDIxIiwiaXNzIjoid3d3LmJyb3dzZXJzdGFjay5jb20iLCJzdWIiOjYxNTkwNDMsInNjb3BlIjp7InByb2R1Y3QiOiJzZGsiLCJ1c2VyX2FjY2VzcyI6eyJ0ZXN0X29ic2VydmFiaWxpdHkiOjEsImF1dG9tYXRlIjoxLCJhcHBfYXV0b21hdGUiOjEsInBlcmN5IjoxLCJhcHBfcGVyY3kiOjEsImFjY2Vzc2liaWxpdHlfdGVzdGluZyI6MCwiYXBwX2FjY2Vzc2liaWxpdHlfdGVzdGluZyI6MSwiYXV0b21hdGVfdHVyYm9zY2FsZSI6MSwibG93X2NvZGVfYXV0b21hdGlvbiI6MX0sImlhYW1fcm9sZSI6Im93bmVyIn0sImdyb3VwX2lkIjo2MDc3MTc3LCJ0ZWFtX2lkIjpudWxsLCJ1ZGFjX2FjY2VzcyI6Imdsb2JhbCJ9.iyo1IFIjX_lARhVQihSN_PUfyjOXwU7kyDbBJRKWiKiCBr9Kmmz3CZP7AQzeRWGqql7ldJd3YvGB_d3k4UOUN1yZW44zFePk1a4rwkMLHJLY6nbjOdmI2_kx9EoYSiX-NM9bhSE2ub7E5OYVInWMz8eulHzCs_dimaoO7vS8mj1c-wiYDE0R10h-cOHFJm2EH7SjnxrgOjrWhbdZbvhTki4sETgecUejwkr9WahCIno8lMkA8_Nrd8rudrY8zsr9TAFTGLFxpzztxN_YpfX1hl8dDbfKjn1ZaiSRjL2Zd98su8nEKF-MYusgsgnWw6Kx0v06Kd8wwX8pjhrXAS3XTw"
+  build_hashed_id: "u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+  5: "app"
+}
+session_framework: "selenium"
+test_orchestration {
+  retry_tests_on_failure {
+  }
+  abort_build_on_failure {
+  }
+}
+
+10:33:53.193 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=WebdriverModule & ff241bae-81d0-485f-8e83-5d6348546378
+10:33:53.193 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=ObservabilityModule & ff241bae-81d0-485f-8e83-5d6348546378
+10:33:53.193 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=TestHubModule & ff241bae-81d0-485f-8e83-5d6348546378
+10:33:53.241 [main] INFO  com.browserstack.v2.SdkCLI - startChild: child-process connected
+10:33:53.245 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+10:33:55.949 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+10:33:55.962 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+10:33:56.193 [main] DEBUG com.browserstack.v2.SdkCLI - Setting up testng framework
+10:33:56.194 [main] DEBUG com.browserstack.v2.SdkCLI - Setting up selenium framework
+10:33:56.476 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.477 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.477 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.477 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.478 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.478 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.478 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.478 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.479 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.482 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.482 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.483 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.483 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.483 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.483 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.484 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.484 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.484 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.484 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.484 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.484 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.485 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.485 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.485 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.485 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.486 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.486 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.486 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.486 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.486 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.486 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.487 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.487 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.488 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.488 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.488 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.488 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.488 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.488 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.488 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.488 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.496 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.500 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1741108805 target=/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0 instances=[1741108805]
+10:33:56.500 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1741108805
+10:33:56.500 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1741108805
+10:33:56.502 [/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:33:56.511 [/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_CLASS hookState=HookState.PRE instance=1741108805
+10:33:56.511 [/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_CLASS hookState=HookState.PRE instance=1741108805
+10:33:56.511 [/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+10:33:56.567 [/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=preRequisit status=STARTED method=GojekWelcomeScreenVerificationTest.preRequisit()[pri:0, instance:gojek.android.gojek.GojekWelcomeScreenVerificationTest@6aa7b67f] output={null}]
+10:33:56.568 [/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = BEFORE_CLASS & hook = {hook_name=preRequisit, hook_result=pending, test_file_path=LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java, event_started_at=2025-09-29T10:33:56.568265, hook_id=63f51f38-7edc-49f2-8a12-224c80be523b, hook_logs=[], key=BEFORE_CLASS, custom_metadata={}, test_location=LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java}  and args = [[TestResult name=preRequisit status=STARTED method=GojekWelcomeScreenVerificationTest.preRequisit()[pri:0, instance:gojek.android.gojek.GojekWelcomeScreenVerificationTest@6aa7b67f] output={null}], GojekWelcomeScreenVerificationTest.preRequisit()[pri:0, instance:gojek.android.gojek.GojekWelcomeScreenVerificationTest@6aa7b67f]]
+10:33:56.568 [/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_CLASS.HookState.PRE , hooks started={BEFORE_CLASS=[{hook_name=preRequisit, hook_result=pending, test_file_path=LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java, event_started_at=2025-09-29T10:33:56.568265, hook_id=63f51f38-7edc-49f2-8a12-224c80be523b, hook_logs=[], key=BEFORE_CLASS, custom_metadata={}, test_location=LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java}]} , hooks finished={BEFORE_CLASS=[]}
+10:33:56.585 [/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@b2a7352, response=success: true
+
+10:33:56.627 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG hookState=HookState.PRE instance=1741108805
+10:33:56.627 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load log entries
+10:33:56.635 [preRequisit@0] INFO  c.b.v2.module.TestHubModule - sendLogCreatedEvent: event=com.browserstack.v2.eventBus.Event@32c16804, response=success: true
+
+10:33:56.636 [preRequisit@0] INFO  c.b.v2.module.TestHubModule - sendLogCreatedEvent: event=com.browserstack.v2.eventBus.Event@32c16804
+10:33:56.642 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG hookState=HookState.PRE instance=1741108805
+10:33:56.642 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load log entries
+10:33:56.644 [preRequisit@0] INFO  c.b.v2.module.TestHubModule - sendLogCreatedEvent: event=com.browserstack.v2.eventBus.Event@4b2d4cf7, response=success: true
+
+10:33:56.644 [preRequisit@0] INFO  c.b.v2.module.TestHubModule - sendLogCreatedEvent: event=com.browserstack.v2.eventBus.Event@4b2d4cf7
+10:33:56.690 [preRequisit@0] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=1385053903 target=5607:41 instances=[1385053903]
+10:33:56.690 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@52027a6d
+10:33:56.693 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@52027a6d
+10:33:56.714 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@449bc796
+10:33:56.714 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@449bc796
+10:34:27.753 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@32dafc39
+10:34:27.753 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@32dafc39
+10:34:27.753 [preRequisit@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:27.754 [preRequisit@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:27.754 [preRequisit@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:27.754 [preRequisit@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:27.754 [preRequisit@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:27.761 [preRequisit@0] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=1385053903 target=5607:41 instances=[1385053903]
+10:34:27.762 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - onDriverCreated: event=com.browserstack.v2.eventBus.Event@412faa01
+10:34:27.762 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - Found session id=1e33634af946bfbb13f06e1def97de58e1662e8b for instance=com.browserstack.v2.instance.AutomationFrameworkInstance@4a54df42
+10:34:27.764 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - Driver added successfully to automationFramework
+10:34:27.766 [preRequisit@0] ERROR c.b.v2.module.WebdriverModule - Error AutomationFrameworkStart to start driver with error java.lang.ClassCastException: class java.lang.Object cannot be cast to class browserstack.sdk.v1.Sdk$AutomationFrameworkStartResponse (java.lang.Object is in module java.base of loader 'bootstrap'; browserstack.sdk.v1.Sdk$AutomationFrameworkStartResponse is in unnamed module of loader 'app')
+	at com.browserstack.v2.module.WebdriverModule.startDriver(Unknown Source)
+	at com.browserstack.v2.module.WebdriverModule.onDriverCreated(Unknown Source)
+	at com.browserstack.v2.eventBus.EventDispatcher.notifyModuleObservers(Unknown Source)
+	at com.browserstack.v2.framework.AutomationFramework.runHooks(Unknown Source)
+	at com.browserstack.v2.framework.SeleniumFramework.trackEvent(Unknown Source)
+	at com.browserstack.selenium.SeleniumHandler.persistDriverInstance(Unknown Source)
+	at com.browserstack.selenium.SeleniumHandler.afterDriverInit(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:183)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:113)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+	at coreDriver.Drivers.createBrowserStackDriver(Drivers.java:87)
+	at coreDriver.Drivers.createDriver(Drivers.java:34)
+	at coreDriver.Drivers.getDrivers(Drivers.java:28)
+	at gojek.android.gojek.GojekWelcomeScreenVerificationTest.preRequisit(GojekWelcomeScreenVerificationTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+10:34:27.766 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - onDriverCreated: event=com.browserstack.v2.eventBus.Event@412faa01
+10:34:27.766 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - Found session id=1e33634af946bfbb13f06e1def97de58e1662e8b for instance=com.browserstack.v2.instance.AutomationFrameworkInstance@4a54df42
+10:34:27.766 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - Driver added successfully to automationFramework
+10:34:28.036 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_CLASS hookState=HookState.POST instance=1741108805
+10:34:28.036 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_CLASS hookState=HookState.POST instance=1741108805
+10:34:28.036 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=preRequisit status=SUCCESS method=GojekWelcomeScreenVerificationTest.preRequisit()[pri:0, instance:gojek.android.gojek.GojekWelcomeScreenVerificationTest@6aa7b67f] output={null}]
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=preRequisit, hook_result=pending, test_file_path=LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java, event_started_at=2025-09-29T10:33:56.568265, hook_id=63f51f38-7edc-49f2-8a12-224c80be523b, hook_logs=[], key=BEFORE_CLASS, custom_metadata={}, test_location=LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java}] and args = [[TestResult name=preRequisit status=SUCCESS method=GojekWelcomeScreenVerificationTest.preRequisit()[pri:0, instance:gojek.android.gojek.GojekWelcomeScreenVerificationTest@6aa7b67f] output={null}], GojekWelcomeScreenVerificationTest.preRequisit()[pri:0, instance:gojek.android.gojek.GojekWelcomeScreenVerificationTest@6aa7b67f]]
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/HookLevel
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/HookLevel/BuildLevelHookEvent and abs path = /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/HookLevel/BuildLevelHookEvent 
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/HookLevel/BuildLevelHookEvent
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+10:34:28.090 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_CLASS.HookState.POST , hooks started={BEFORE_CLASS=[]} , hooks finished={BEFORE_CLASS=[{hook_name=preRequisit, hook_result=passed, test_file_path=LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java, event_started_at=2025-09-29T10:33:56.568265, hook_id=63f51f38-7edc-49f2-8a12-224c80be523b, hook_logs=[], logs=[], key=BEFORE_CLASS, custom_metadata={}, event_ended_at=2025-09-29T10:34:28.090408, test_location=LearAumatingApp/src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java}]}
+10:34:28.095 [preRequisit@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@6950e7b3, response=success: true
+
+10:34:28.103 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1741108805
+10:34:28.116 [preRequisit@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1741108805 instanceThreadId=41 testResult=/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0 testData={test_uuid=b70067e1-e607-47f7-a265-9ecb0f8281ce, test_file_path=src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java, test_scope=All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest, test_meta={}, test_scopes=[All Test Suite, gojek.android.gojek.GojekWelcomeScreenVerificationTest], test_code=public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.changeAppLanguage(), test_session_name=gojek.android.gojek.GojekWelcomeScreenVerificationTest-changeAppLanguage, test_name=changeAppLanguage, test_tags=, custom_metadata={}, test_id=/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0, test_location=src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java}
+10:34:28.116 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@5f446e68
+10:34:28.116 [preRequisit@0] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@5f446e68
+10:34:28.116 [preRequisit@0] INFO  c.b.v2.module.TestHubModule - onBeforeTest: event={com.browserstack.v2.eventBus.Event@5f446e68}
+10:34:28.148 [preRequisit@0] INFO  c.b.v2.module.TestHubModule - sendTestSessionEvent: event=com.browserstack.v2.eventBus.Event@5f446e68, response=success: true
+
+10:34:28.153 [preRequisit@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@5f446e68, response=success: true
+
+10:34:28.155 [preRequisit@0] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@62c9541f, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@62c9541f, autoInstance=[com.browserstack.v2.instance.AutomationFrameworkInstance@4a54df42], hookState=HookState.PRE}
+10:34:28.155 [preRequisit@0] INFO  c.b.v2.module.ObservabilityModule - performTestReportingSync: Performing TEST REPORTING AND ANALYTICS Sync
+10:34:28.197 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@4eba0e90
+10:34:28.197 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@4eba0e90
+10:34:28.197 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@13d4e1b8
+10:34:28.197 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@13d4e1b8
+10:34:28.241 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@6d8a4158
+10:34:28.241 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@6d8a4158
+10:34:28.241 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:28.241 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:28.241 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:28.241 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:28.241 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:28.243 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@478e34e8
+10:34:28.243 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@478e34e8
+10:34:28.243 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:28.243 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:28.243 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:28.243 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:28.243 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:28.246 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@4b4e98bc
+10:34:28.246 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@4b4e98bc
+10:34:28.590 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@1e0e10f8
+10:34:28.590 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@1e0e10f8
+10:34:28.590 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:28.590 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:28.591 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:28.591 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:28.591 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:29.103 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@7fbfaa43
+10:34:29.103 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@7fbfaa43
+10:34:29.171 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@4e3bb2b7
+10:34:29.171 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@4e3bb2b7
+10:34:29.171 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:29.171 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:29.171 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:29.172 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:29.172 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:29.683 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@7fd2a948
+10:34:29.684 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@7fd2a948
+10:34:29.801 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@4a2930a1
+10:34:29.801 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@4a2930a1
+10:34:29.801 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:29.801 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:29.801 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:29.801 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:29.801 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:30.313 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@31522ebe
+10:34:30.313 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@31522ebe
+10:34:30.385 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@65e173f9
+10:34:30.385 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@65e173f9
+10:34:30.386 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:30.386 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:30.386 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:30.386 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:30.386 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:30.403 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@498cdd03
+10:34:30.403 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@498cdd03
+10:34:30.403 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@756e0c01
+10:34:30.403 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@756e0c01
+10:34:30.792 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@4c91c46e
+10:34:30.792 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@4c91c46e
+10:34:30.792 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:30.792 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:30.792 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:30.792 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:30.792 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:30.794 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@58ad7034
+10:34:30.794 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@58ad7034
+10:34:30.794 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:30.794 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:30.794 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:30.794 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:30.794 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:30.809 [changeAppLanguage@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1741108805
+10:34:30.809 [changeAppLanguage@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1741108805
+10:34:30.809 [changeAppLanguage@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+10:34:30.810 [changeAppLanguage@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1741108805
+10:34:30.810 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@7ef812c8
+10:34:30.810 [changeAppLanguage@0] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 1e33634af946bfbb13f06e1def97de58e1662e8b
+10:34:31.429 [changeAppLanguage@0] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 1e33634af946bfbb13f06e1def97de58e1662e8b
+10:34:32.034 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@7ef812c8
+10:34:32.035 [changeAppLanguage@0] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 1e33634af946bfbb13f06e1def97de58e1662e8b
+10:34:32.388 [changeAppLanguage@0] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 1e33634af946bfbb13f06e1def97de58e1662e8b
+10:34:32.837 [changeAppLanguage@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@7ef812c8, response=success: true
+
+10:34:32.849 [changeAppLanguage@0] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1741108805 target=/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0 instances=[1741108805]
+10:34:32.850 [changeAppLanguage@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1741108805
+10:34:32.873 [changeAppLanguage@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1741108805 instanceThreadId=41 testResult=/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0 testData={test_uuid=11a9ad9f-56ce-4d55-9b23-39738f34eb11, test_file_path=src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java, test_scope=All Test Suite.gojek.android.gojek.GojekWelcomeScreenVerificationTest, test_meta={}, test_scopes=[All Test Suite, gojek.android.gojek.GojekWelcomeScreenVerificationTest], test_code=public void gojek.android.gojek.GojekWelcomeScreenVerificationTest.verifyWelcomeScreen() throws java.lang.Exception, test_session_name=gojek.android.gojek.GojekWelcomeScreenVerificationTest-verifyWelcomeScreen, test_name=verifyWelcomeScreen, test_tags=, custom_metadata={}, test_id=/Users/sanjeevareddysj/IdeaProjects/LearAumatingApp/LearAumatingApp-0@0, test_location=src/test/java/gojek/android/gojek/GojekWelcomeScreenVerificationTest.java}
+10:34:32.873 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@5f5419e3
+10:34:32.873 [changeAppLanguage@0] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@5f5419e3
+10:34:32.873 [changeAppLanguage@0] INFO  c.b.v2.module.TestHubModule - onBeforeTest: event={com.browserstack.v2.eventBus.Event@5f5419e3}
+10:34:32.878 [changeAppLanguage@0] INFO  c.b.v2.module.TestHubModule - sendTestSessionEvent: event=com.browserstack.v2.eventBus.Event@5f5419e3, response=success: true
+
+10:34:32.881 [changeAppLanguage@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@5f5419e3, response=success: true
+
+10:34:32.883 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@1bf1bcb3, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@1bf1bcb3, autoInstance=[com.browserstack.v2.instance.AutomationFrameworkInstance@4a54df42], hookState=HookState.PRE}
+10:34:32.883 [changeAppLanguage@0] INFO  c.b.v2.module.ObservabilityModule - performTestReportingSync: Performing TEST REPORTING AND ANALYTICS Sync
+10:34:32.916 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@116782a7
+10:34:32.916 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@116782a7
+10:34:32.916 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@40920430
+10:34:32.916 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@40920430
+10:34:32.961 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@4b8a861b
+10:34:32.961 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@4b8a861b
+10:34:32.961 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:32.961 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:32.961 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:32.961 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:32.961 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:32.964 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@26ff7e22
+10:34:32.964 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@26ff7e22
+10:34:32.964 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:32.964 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:32.964 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:32.964 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:32.964 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:32.966 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@6939b7df
+10:34:32.966 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@6939b7df
+10:34:33.069 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@1e5de3eb
+10:34:33.069 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@1e5de3eb
+10:34:33.069 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:33.069 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:33.069 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:33.069 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:33.069 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:33.581 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@6dcc8fa
+10:34:33.581 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@6dcc8fa
+10:34:33.728 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@2b281fe3
+10:34:33.728 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@2b281fe3
+10:34:33.728 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:33.728 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:33.728 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:33.728 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:33.729 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:34.241 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@bf77db0
+10:34:34.241 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@bf77db0
+10:34:34.356 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@9abde9e
+10:34:34.356 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@9abde9e
+10:34:34.357 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:34.357 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:34.357 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:34.357 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:34.357 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:34.862 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@70d14c15
+10:34:34.862 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@70d14c15
+10:34:34.982 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@473d56c6
+10:34:34.982 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@473d56c6
+10:34:34.982 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:34.982 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:34.982 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:34.983 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:34.983 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:34.993 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@12ce5213
+10:34:34.993 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@12ce5213
+10:34:34.993 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@2f2caec6
+10:34:34.994 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@2f2caec6
+10:34:35.727 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@5fe6e5fb
+10:34:35.727 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@5fe6e5fb
+10:34:35.727 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:35.727 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:35.727 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:35.727 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:35.727 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:35.730 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@7b553525
+10:34:35.730 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@7b553525
+10:34:35.730 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - THREAD ID Inside Process= 41
+10:34:35.730 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing TestLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/TestLevel
+10:34:35.731 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing BuildLevel attachments from directory: /Users/sanjeevareddysj/.browserstack/UploadedAttachments-41/BuildLevel
+10:34:35.731 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - Processing attachments eventLogs: []
+10:34:35.731 [verifyWelcomeScreen@0] INFO  c.b.v2.module.ObservabilityModule - sendLogCreatedEvent: No Log Events to send
+10:34:35.745 [verifyWelcomeScreen@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1741108805
+10:34:35.745 [verifyWelcomeScreen@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1741108805
+10:34:35.745 [verifyWelcomeScreen@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+10:34:35.745 [verifyWelcomeScreen@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1741108805
+10:34:35.745 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@59640cf9
+10:34:35.745 [verifyWelcomeScreen@0] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 1e33634af946bfbb13f06e1def97de58e1662e8b
+10:34:36.147 [verifyWelcomeScreen@0] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 1e33634af946bfbb13f06e1def97de58e1662e8b
+10:34:36.638 [verifyWelcomeScreen@0] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@59640cf9
+10:34:36.638 [verifyWelcomeScreen@0] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 1e33634af946bfbb13f06e1def97de58e1662e8b
+10:34:37.101 [verifyWelcomeScreen@0] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 1e33634af946bfbb13f06e1def97de58e1662e8b
+10:34:37.596 [verifyWelcomeScreen@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@59640cf9, response=success: true
+
+10:34:38.200 [Test worker] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+10:34:38.209 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+10:34:38.219 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+10:34:43.913 [Thread-0] DEBUG com.browserstack.v2.SdkCLI - stop-bin-session=success: true
+automate_buildlink: "https://app-automate.browserstack.com/dashboard/v2/builds/d47ede4cfee42d7e614dae551f8cb1bdf2036a9c"
+hashed_id: "d47ede4cfee42d7e614dae551f8cb1bdf2036a9c"
+
+10:34:43.925 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+10:34:45.601 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - Visit https://automation.browserstack.com/builds/u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n to view build report, insights, and many more debugging information all at one place!
+10:34:45.601 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+10:34:45.601 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://app-automate.browserstack.com/dashboard/v2/builds/d47ede4cfee42d7e614dae551f8cb1bdf2036a9c
+10:34:45.601 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+10:34:45.603 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 138cb43d-a356-4ffb-8843-cd02c9bcb162, testhub id: u0hlometeepf7hx7afxjlolmz8nptrycsbzi2e3n
+10:34:45.603 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
