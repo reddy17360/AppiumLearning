@@ -59,7 +59,7 @@ public class AppiumUtilities {
 
     public String getScreenShot(String testName) throws Exception {
         // Capture the screenshot from the thread-safe driver
-        File source = Drivers.getDrivers().getScreenshotAs(OutputType.FILE);
+        File source = Drivers.getDriver().getScreenshotAs(OutputType.FILE);
 
         // Save the screenshot into ExtentReports folder
         String destination = System.getProperty("user.dir") + "/ExtentReports/reports/" + testName + ".png";
@@ -80,7 +80,7 @@ public class AppiumUtilities {
 
     public void waitBroUntilVisibility(WebElement ele , int duration) throws Exception {
 
-        WebDriverWait wait = new WebDriverWait(Drivers.getDrivers() , Duration.ofSeconds(duration));
+        WebDriverWait wait = new WebDriverWait(Drivers.getDriver() , Duration.ofSeconds(duration));
         wait.until(ExpectedConditions.visibilityOf(ele));
 
     }

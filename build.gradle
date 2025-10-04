@@ -5,7 +5,7 @@ plugins {
 group = 'LearAumatingApps'
 version = '1.0-SNAPSHOT'
 
-sourceCompatibility = '17'
+
 
 repositories {
     mavenCentral()
@@ -19,14 +19,14 @@ dependencies {
     implementation 'commons-io:commons-io:2.20.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
     implementation 'com.aventstack:extentreports:5.1.2'
-    testImplementation 'org.yaml:snakeyaml:2.0'
-    compileOnly 'com.browserstack:browserstack-java-sdk:latest.release'
+
+
 }
 
-def browserstackSDKArtifact = configurations.compileClasspath.resolvedConfiguration.resolvedArtifacts.find { it.name == 'browserstack-java-sdk' }
+//def browserstackSDKArtifact = configurations.compileClasspath.resolvedConfiguration.resolvedArtifacts.find { it.name == 'browserstack-java-sdk' }
 
 // -------------------- LOCAL --------------------
-task testLocal(type: Test) {
+test {
     useTestNG {
         suites "testng.xml"
     }
@@ -38,26 +38,7 @@ task testLocal(type: Test) {
 }
 
 // -------------------- BROWSERSTACK --------------------
-task testBrowserStack(type: Test) {
-    useTestNG {
-        suites "testng.xml"
-        // Attach Java agent only for BrowserStack
-        if ("true".equalsIgnoreCase(System.getProperty("USE_BROWSERSTACK"))) {
-            jvmArgs "-javaagent:${browserstackSDKArtifact.file}"
-        }
-    }
-    systemProperty "USE_BROWSERSTACK", "true"
-    systemProperty "BROWSERSTACK_USERNAME", System.getenv("BROWSERSTACK_USERNAME")
-    systemProperty "BROWSERSTACK_ACCESS_KEY", System.getenv("BROWSERSTACK_ACCESS_KEY")
 
-    doFirst { println "▶ Running BrowserStack tests" }
-}
 
-sourceSets {
-    main {
-        resources {
-            srcDir '.'
-            include 'browserstack.yml'
-        }
-    }
-}
+
+

@@ -20,9 +20,9 @@ public class PhoneNumberErrorValidation {
     @BeforeClass
     public void preRequisite() throws Exception {
 
-        driver = Drivers.getDrivers();
-      gojekWelcomePage = new  GojekWelcomePage(Drivers.getDrivers());
-      phoneInputPages = new PhoneInputPages(Drivers.getDrivers());
+        driver = Drivers.getDriver();
+      gojekWelcomePage = new  GojekWelcomePage( driver);
+      phoneInputPages = new PhoneInputPages(driver);
     }
 
     @Test

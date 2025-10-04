@@ -32,17 +32,17 @@ public class SignUpHappyFlowTest {
 
      @BeforeClass
     public void preRequisite() throws Exception {
-        driver= Drivers.getDrivers();
-         gojekWelcomePage = new GojekWelcomePage(Drivers.getDrivers());
-         phoneInputPages = new PhoneInputPages(Drivers.getDrivers());
-         chooseVerificationMethodPages = new ChooseVerificationMethodPages(Drivers.getDrivers());
-         smsOtpMethodPages = new SmsOtpMethodPages(Drivers.getDrivers());
-         nameInputPages = new NameInputPages(Drivers.getDrivers());
-         emailInputPages = new EmailInputPages(Drivers.getDrivers());
-         locationPermissionPages = new LocationPermissionPages(Drivers.getDrivers());
-         countrySelectPages =  new CountrySelectPages(Drivers.getDrivers());
-           shsPages = new ShsPages(Drivers.getDrivers());
-           turnOnLocationPages = new TurnOnLocationPages(Drivers.getDrivers());
+        driver= Drivers.getDriver();
+         gojekWelcomePage = new GojekWelcomePage(driver);
+         phoneInputPages = new PhoneInputPages(driver);
+         chooseVerificationMethodPages = new ChooseVerificationMethodPages(driver);
+         smsOtpMethodPages = new SmsOtpMethodPages(driver);
+         nameInputPages = new NameInputPages(driver);
+         emailInputPages = new EmailInputPages(driver);
+         locationPermissionPages = new LocationPermissionPages(driver);
+         countrySelectPages =  new CountrySelectPages(driver);
+           shsPages = new ShsPages(driver);
+           turnOnLocationPages = new TurnOnLocationPages(driver);
 
            appiumUtilities = new AppiumUtilities( );
 
@@ -77,7 +77,7 @@ public class SignUpHappyFlowTest {
             smsOtpMethodPages.enterOtp();
 
          appiumUtilities.waitBroUntilVisibility(nameInputPages.emailIstPopupOnEmailScreen(), 10);
-            ((AndroidDriver) Drivers.getDrivers()).pressKey(new KeyEvent().withKey(AndroidKey.BACK));
+            ((AndroidDriver) Drivers.getDriver()).pressKey(new KeyEvent().withKey(AndroidKey.BACK));
             nameInputPages.clickOnNameInputField();
             nameInputPages.enterName(user);
             nameInputPages.clickOnContinue();

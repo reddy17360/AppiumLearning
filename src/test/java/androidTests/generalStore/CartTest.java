@@ -5,6 +5,7 @@ import PageObjects.AndroidPageObject.GeneralStorePageObjects.CartPage;
 import PageObjects.AndroidPageObject.GeneralStorePageObjects.FillFormPage;
 import PageObjects.AndroidPageObject.GeneralStorePageObjects.ProductsListPage;
 import coreDriver.Drivers;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
@@ -20,13 +21,13 @@ public class CartTest    {
     FillFormPage fillFormPage;
     CartPage cartPage;
     ProductsListPage productsListPage;
-
+ AppiumDriver driver;
     @BeforeClass
     public void initPages() throws Exception {
-
-        fillFormPage = new FillFormPage(Drivers.getDrivers());
-        productsListPage = new ProductsListPage(Drivers.getDrivers());
-        cartPage = new CartPage(Drivers.getDrivers());
+    driver = Drivers.getDriver();
+        fillFormPage = new FillFormPage(driver);
+        productsListPage = new ProductsListPage(driver);
+        cartPage = new CartPage(driver);
 
     }
 
@@ -37,7 +38,7 @@ public class CartTest    {
         fillFormPage.setGender("Female");
         fillFormPage.submitForm();
 
-        WebDriverWait wait = new WebDriverWait(Drivers.getDrivers() , Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(productsListPage.getTitleOfProductListPage()));
         String[] productNames = {"Air Jordan 4 Retro" ,"Air Jordan 9 Retro" };
         for(int i=0 ;i<productNames.length ; i++) {

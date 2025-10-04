@@ -26,7 +26,7 @@ public class GojekWelcomePage {
     }
 
     public void swipeTheCarousel() throws Exception {
-        AndroidActions androidActions = new AndroidActions(Drivers.getDrivers());
+        AndroidActions androidActions = new AndroidActions(Drivers.getDriver());
 
             androidActions.swipeIt(welcomePageObjects.corouselSequence);
             System.out.println(welcomePageObjects.welcomeTitle.getText());

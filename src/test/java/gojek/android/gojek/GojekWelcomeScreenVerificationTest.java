@@ -1,30 +1,15 @@
 package gojek.android.gojek;
-
-
-
-import Pages.Android.GojekPages.GojekWelcomePage;
-import Pages.Android.GojekPages.PhoneInputPages;
-import coreDriver.Drivers;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import BaseTestClass.*;
 
-import java.io.IOException;
-
-
-public class GojekWelcomeScreenVerificationTest{
-    public GojekWelcomePage gojekWelcomePage;
-    public PhoneInputPages phoneInputPages;
-    @BeforeClass
-    public void preRequisit() throws Exception {
-
-        gojekWelcomePage = new GojekWelcomePage(Drivers.getDrivers());
-      phoneInputPages=  new  PhoneInputPages(Drivers.getDrivers());
-    }
+public class GojekWelcomeScreenVerificationTest  extends BaseTest  {
 
     @Test
     public void verifyWelcomeScreen() throws Exception {
         String title = gojekWelcomePage.getWelcomeTitle().getAttribute("content-desc");
+
+        appiumUtilities.waitBroUntilVisibility(gojekWelcomePage.getWelcomeTitle() , 40);
         Assert.assertEquals(title,"Gojek");
         for(int i=0 ;i<4;i++) {
             gojekWelcomePage.swipeTheCarousel();

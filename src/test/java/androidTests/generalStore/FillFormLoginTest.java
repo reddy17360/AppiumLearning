@@ -3,6 +3,7 @@ import PageObjects.AndroidPageObject.GeneralStorePageObjects.ProductsListPage;
 import Utils.AndroidActions;
 import coreDriver.Drivers;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,12 +21,12 @@ public class FillFormLoginTest  {
 
     FillFormPage fillFormPage;
     AndroidActions actions;
-
+AppiumDriver driver;
     @BeforeClass
     public void initPages() throws Exception {
-
-        fillFormPage = new FillFormPage(Drivers.getDrivers());
-        actions = new AndroidActions(Drivers.getDrivers());
+driver = Drivers.getDriver();
+        fillFormPage = new FillFormPage(driver);
+        actions = new AndroidActions(driver);
     }
 
     @Test(priority = 0)
@@ -33,20 +34,20 @@ public class FillFormLoginTest  {
         fillFormPage.setCountryPicker("Angola");
         fillFormPage.setGender("Female");
         fillFormPage.submitForm();
-        WebElement toast = Drivers.getDrivers().findElement(By.xpath("(//android.widget.Toast)[1]"));
+        WebElement toast = driver.findElement(By.xpath("(//android.widget.Toast)[1]"));
         System.out.println(toast.getAttribute("name"));
         Assert.assertEquals(toast.getAttribute("name"), "Please enter your name");
     }
     @Test(priority = 1, dataProvider = "getData")
     public void loginToGeneralStore(HashMap<String ,String> data) throws Exception {
-        WebDriverWait wait = new WebDriverWait(Drivers.getDrivers() , Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));
         WebElement title = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.androidsample.generalstore:id/toolbar_title")));
         fillFormPage.setName(data.get("name"));
         fillFormPage.setCountryPicker(data.get("country"));
         fillFormPage.setGender(data.get("gender"));
         fillFormPage.submitForm();
         Thread.sleep(2000);
-        new ProductsListPage(Drivers.getDrivers()).clickOnBack();
+        new ProductsListPage(driver).clickOnBack();
     }
 
 

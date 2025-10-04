@@ -1,6 +1,7 @@
 package androidTests.generalStore;
 
 import coreDriver.Drivers;
+import io.appium.java_client.AppiumDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,12 +13,12 @@ import java.io.IOException;
 public class ProductListTest   {
     public FillFormPage fillFormPage;
     public ProductsListPage productsListPage;
-
+  public AppiumDriver driver;
     @BeforeClass(alwaysRun = true)
     public void initPages() throws Exception {
-
-        fillFormPage = new FillFormPage(Drivers.getDrivers());
-        productsListPage = new ProductsListPage(Drivers.getDrivers());
+    driver= Drivers.getDriver();
+        fillFormPage = new FillFormPage(driver);
+        productsListPage = new ProductsListPage(driver);
     }
 
     @Test(groups = {"Smoke"})
