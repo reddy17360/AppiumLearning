@@ -12,9 +12,10 @@ import java.io.IOException;
 
 public class GojekWelcomePage {
     public WelcomePageObjects welcomePageObjects;
-    public AppiumDriver driver;
+      AppiumDriver driver;
 
     public GojekWelcomePage(AppiumDriver driver) {
+        this.driver=driver;
 
         welcomePageObjects = new WelcomePageObjects();
         PageFactory.initElements(new AppiumFieldDecorator(driver), welcomePageObjects);
@@ -26,9 +27,9 @@ public class GojekWelcomePage {
     }
 
     public void swipeTheCarousel() throws Exception {
-        AndroidActions androidActions = new AndroidActions(Drivers.getDriver());
+        AndroidActions androidActions = new AndroidActions( );
 
-            androidActions.swipeIt(welcomePageObjects.corouselSequence);
+            androidActions.swipeIt(welcomePageObjects.corouselSequence , driver);
             System.out.println(welcomePageObjects.welcomeTitle.getText());
             System.out.println(welcomePageObjects.welcomeSubTitle.getText());
 

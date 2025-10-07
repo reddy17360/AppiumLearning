@@ -49,6 +49,8 @@ public class PhoneInputPageObject {
 
 
 
+    @AndroidFindBy(id="com.gojek.app.staging:id/input_field_clear")
+    public WebElement phoneInputFieldClear;
 
 
 

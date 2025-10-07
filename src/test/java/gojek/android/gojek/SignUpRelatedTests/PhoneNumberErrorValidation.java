@@ -1,17 +1,12 @@
-package gojek.android.gojek;
+package gojek.android.gojek.SignUpRelatedTests;
 
 import Pages.Android.GojekPages.GojekWelcomePage;
 import Pages.Android.GojekPages.PhoneInputPages;
 import coreDriver.Drivers;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
 
 public class PhoneNumberErrorValidation {
     GojekWelcomePage gojekWelcomePage;

@@ -26,7 +26,7 @@ AppiumDriver driver;
     public void initPages() throws Exception {
 driver = Drivers.getDriver();
         fillFormPage = new FillFormPage(driver);
-        actions = new AndroidActions(driver);
+        actions = new AndroidActions( );
     }
 
     @Test(priority = 0)

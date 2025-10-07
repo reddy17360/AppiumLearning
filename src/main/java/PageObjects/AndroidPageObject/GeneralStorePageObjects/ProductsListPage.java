@@ -14,7 +14,7 @@ public class ProductsListPage {
     public ProductsListPage(AppiumDriver driver){
         this.driver  = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver) , this);
-        androidActions = new AndroidActions(driver);
+        androidActions = new AndroidActions( );
     }
     @AndroidFindBy(id="com.androidsample.generalstore:id/toolbar_title")
     private WebElement productsListPageTitle;
@@ -28,7 +28,7 @@ public class ProductsListPage {
 
 
     public void getAddToCartButton(String productName) {
-        androidActions.scrollItTill(productName);
+        androidActions.scrollItTill(productName , driver);
        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"" + productName + "\").fromParent(new UiSelector().text(\"ADD TO CART\"))")).click();
 
     }

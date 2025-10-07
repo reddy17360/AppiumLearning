@@ -10,9 +10,11 @@ public class SmsOtpMethodPages {
 
 
     SmsOtpMethodPageObjectNewUi smsOtpMethodPageObjectNewUi;
-    public AppiumDriver driver;
+     public AppiumDriver driver;
     public SmsOtpMethodPages(AppiumDriver driver){
       smsOtpMethodPageObjectNewUi = new SmsOtpMethodPageObjectNewUi();
+        this.driver=driver;
+
         PageFactory.initElements(new AppiumFieldDecorator(driver) , smsOtpMethodPageObjectNewUi);
     }
 

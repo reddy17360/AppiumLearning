@@ -9,10 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LocationPermissionPages {
 
-    public AppiumDriver driver;
+    public   AppiumDriver driver;
     public LocationPermissionPageObject locationPermissionPageObject;
 
     public LocationPermissionPages(AppiumDriver driver){
+        this.driver=driver;
+
         locationPermissionPageObject = new LocationPermissionPageObject();
         PageFactory.initElements(new AppiumFieldDecorator(driver) , locationPermissionPageObject);
     }

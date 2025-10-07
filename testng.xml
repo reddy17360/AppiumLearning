@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" parallel="methods" thread-count="2">
-
+    <listeners   class-name="TestHelpers.MyListeners"/>
     <test verbose="2" preserve-order="true" name="Parallell1" >
 
     <classes>
-        <class name="gojek.android.gojek.GojekWelcomeScreenVerificationTest">
-            <methods>
-                <include name="verifyWelcomeScreen"/>
-            </methods>
+        <class name="gojek.android.gojek.SignUpRelatedTests.SignUpHappyFlowTest">
+
         </class>
     </classes>
 </test>
 
-    <test verbose="2" preserve-order="true" name="Parallell2"  >
-
-        <classes>
-            <class name="gojek.android.gojek.GojekWelcomeScreenVerificationTest">
-                <methods>
-
-                    <include name="changeAppLanguage"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
 </suite>

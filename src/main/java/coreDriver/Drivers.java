@@ -24,13 +24,10 @@ public class Drivers {
     // simple static counter for unique systemPorts
 
 
-
-
     public static AppiumDriver createDriver() throws Exception {
         if (service == null || !service.isRunning()) {
             service = AppiumDriverLocalService.buildService(
-                    new AppiumServiceBuilder().
-                           usingAnyFreePort());
+                    new AppiumServiceBuilder().usingAnyFreePort().withIPAddress("127.0.0.1"));
             service.start();
         }
 
@@ -43,8 +40,10 @@ public class Drivers {
             options.setDeviceName(System.getProperty("deviceName", "emulator-5554"));
             options.setPlatformVersion(System.getProperty("platformVersion", "11"));
             options.setApp(System.getProperty("app", "//Users//sanjeevareddysj//Downloads//gojek.apk"));
-            options.setNewCommandTimeout(Duration.ofSeconds(50));
-
+            options.setNewCommandTimeout(Duration.ofSeconds(80));
+            options.setAppWaitForLaunch(true);
+            options.setCapability("unicodeKeyboard", true);
+            options.setCapability("resetKeyboard" , true);
              //options.setSystemPort(port);
              ////options.setUdid(udId);
 

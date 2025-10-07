@@ -10,8 +10,10 @@ public class WhatsappOtpMethodPages {
 
 
      WhatsappOtpMethodPageObjectNewUi whatsappOtpMethodPageObjectNewUi;
-    public AppiumDriver driver;
+     public AppiumDriver driver;
     public WhatsappOtpMethodPages(AppiumDriver driver){
+        this.driver=driver;
+
          whatsappOtpMethodPageObjectNewUi = new WhatsappOtpMethodPageObjectNewUi();
         PageFactory.initElements(new AppiumFieldDecorator(driver) , whatsappOtpMethodPageObjectNewUi);
     }

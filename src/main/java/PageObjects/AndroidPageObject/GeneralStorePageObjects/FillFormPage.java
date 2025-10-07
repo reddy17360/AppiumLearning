@@ -16,7 +16,7 @@ public class FillFormPage{
     public FillFormPage(AppiumDriver driver){
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver) , this);
-        actions = new AndroidActions(driver);
+        actions = new AndroidActions( );
     }
 
 
@@ -60,7 +60,7 @@ public class FillFormPage{
     public void setCountryPicker(String country) throws InterruptedException {
         Thread.sleep(2000);
         countryPicker.click();
-      actions.scrollItTill(country);
+      actions.scrollItTill(country , driver);
     }
 
     public List<WebElement> toastMessageHandler(){

@@ -3,12 +3,14 @@ package Utils;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.javafaker.Faker;
 import coreDriver.Drivers;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 
@@ -68,12 +70,24 @@ public class AppiumUtilities {
         return destination;
     }
 
-    public String randomNumberGenerator(){
+    public String randomNumberGenerator(String country){
         //generates the random int from 8 to 9
-        int firstDigit =ThreadLocalRandom.current().nextInt(8,9 );
-        //generates the random long rom 0 to 99999999
-        long remainingDigits = ThreadLocalRandom.current().nextLong(1_000_000_000L);
-        return firstDigit +  String.format("%09d" , remainingDigits);
+        if(country.equals("ID")) {
+            int firstDigit = ThreadLocalRandom.current().nextInt(8, 9);
+            //generates the random long rom 0 to 99999999
+            long remainingDigits = ThreadLocalRandom.current().nextLong(1_000_000_000L);
+            return firstDigit + String.format("%09d", remainingDigits);
+        }else if(country.equals("SG")){
+            int firstDigit = ThreadLocalRandom.current().nextInt(8, 9);
+            //generates the random long rom 0 to 99999999
+            long remainingDigits = ThreadLocalRandom.current().nextLong(1_000_000_000L);
+            return firstDigit + String.format("%07d", remainingDigits);
+        }else {
+            int firstDigit = ThreadLocalRandom.current().nextInt(8, 10);
+            //generates the random long rom 0 to 99999999
+            long remainingDigits = ThreadLocalRandom.current().nextLong(1_000_000_000L);
+            return firstDigit + String.format("%09d", remainingDigits);
+        }
 
 
     }
@@ -84,6 +98,24 @@ public class AppiumUtilities {
         wait.until(ExpectedConditions.visibilityOf(ele));
 
     }
+    public String userName(){
+        Faker faker = new Faker();
+       String   fName = faker.name().firstName();
+       String lName =  faker.name().lastName();
+       return  fName+lName;
+    }
+
+    public boolean isElementDisplayed(WebElement element){
+        boolean val=true;
+        try{
+            return element.isDisplayed();
+        }catch (NoSuchElementException e){
+          return false;
+        }
+
+    }
+
+
 
 
 

@@ -16,7 +16,7 @@ public class CartPage {
     {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver) , this);
-        androidActions = new AndroidActions(driver);
+        androidActions = new AndroidActions();
     }
 
 
@@ -69,7 +69,7 @@ public class CartPage {
 
 
     public void readTermsAndConditions(){
-        androidActions.longPress(termsAndCondition);
+        androidActions.longPress(termsAndCondition , driver);
 
     }
 

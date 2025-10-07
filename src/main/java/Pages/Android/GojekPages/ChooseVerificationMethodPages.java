@@ -9,6 +9,7 @@ public class ChooseVerificationMethodPages {
     ChooseVerificationMethodPageObject chooseVerificationMethodPageObject;
     public AppiumDriver driver;
     public ChooseVerificationMethodPages(AppiumDriver driver){
+        this.driver=driver;
        chooseVerificationMethodPageObject = new  ChooseVerificationMethodPageObject();
         PageFactory.initElements(new AppiumFieldDecorator(driver) , chooseVerificationMethodPageObject);
     }

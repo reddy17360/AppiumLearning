@@ -1,6 +1,7 @@
 package Pages.Android.GojekPages;
 
 import PageObjects.AndroidPageObject.GojekPageObject.NameInputPageObject;
+import Utils.AndroidActions;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
@@ -8,8 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NameInputPages {
     NameInputPageObject nameInputPageObject;
-   public AppiumDriver driver;
+ public  AppiumDriver driver;
     public NameInputPages(AppiumDriver driver){
+        this.driver = driver;
         nameInputPageObject = new NameInputPageObject();
         PageFactory.initElements(new AppiumFieldDecorator(driver) ,nameInputPageObject );
     }
@@ -17,19 +19,25 @@ public class NameInputPages {
     public void clickOnNameInputField(){
         nameInputPageObject.nameInputTextField.click();
     }
-    public void enterName(String name){
+    public NameInputPages enterName(String name) throws Exception {
+
+       for(int i=0;i<2;i++) {
+           new AndroidActions( ).pressBack(driver);
+       }
         nameInputPageObject.nameInputTextField.sendKeys(name);
+       nameInputPageObject.nameScreenContinueCta.click();
+       return this;
     }
-    public void clickOnContinue(){
-        nameInputPageObject.nameScreenContinueCta.click();
+    public WebElement clickOnContinue(){
+       return nameInputPageObject.nameScreenContinueCta;
     }
     public void clickOnBackNavigationNameScreen(){
         nameInputPageObject.nameInputScreenBackNavigation.click();
     }
 
 
-    public String nameInlineError(){
-        return nameInputPageObject.nameInputTextFieldInlineError.getText();
+    public WebElement nameInlineError(){
+        return nameInputPageObject.nameInputTextFieldInlineError;
     }
 
     public void clickOnRegisterLater(){
@@ -42,6 +50,8 @@ public class NameInputPages {
     public WebElement emailIstPopupOnEmailScreen(){
        return nameInputPageObject.googlePopUp;
     }
+
+
 
 
 }

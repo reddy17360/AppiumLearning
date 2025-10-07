@@ -7,14 +7,18 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import coreDriver.Drivers;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class PhoneInputPages {
 
-    public AppiumDriver driver;
+   public    AppiumDriver driver;
     public PhoneInputPageObject phoneInputPageObject;
     public PhoneInputPages(AppiumDriver driver){
+        this.driver=driver;
+
          phoneInputPageObject = new PhoneInputPageObject();
         PageFactory.initElements(new AppiumFieldDecorator(driver) ,phoneInputPageObject );
     }
@@ -30,9 +34,9 @@ public class PhoneInputPages {
         Thread.sleep(2000);
          phoneInputPageObject.pickCountry.click();
     }
-    public void enterPhone( ){
+    public void enterPhone(String country){
         AppiumUtilities appiumUtilities = new AppiumUtilities();
-        phoneInputPageObject.phoneInputTextField.sendKeys(appiumUtilities.randomNumberGenerator());
+        phoneInputPageObject.phoneInputTextField.sendKeys(appiumUtilities.randomNumberGenerator(country));
         phoneInputPageObject.continueCta.click();
         phoneInputPageObject.consentAgreeCta.click();
         }
@@ -40,10 +44,33 @@ public class PhoneInputPages {
         public void clickOnPhoneInputField(){
         phoneInputPageObject.phoneInputTextField.click();
         }
-        public void enterPhones(String phoneNumber){
+        public PhoneInputPages enterPhones(String country)  {
+            // as idenetity team confirms it is an consicious decision made by them about this pop-up issue
+            AppiumUtilities appiumUtilities = new AppiumUtilities();
 
-        phoneInputPageObject.phoneInputTextField.sendKeys(phoneNumber);
+            phoneInputPageObject.phoneInputTextField.click();
+            phoneInputPageObject.phoneInputTextField.click();
+            phoneInputPageObject.phoneInputTextField.sendKeys( appiumUtilities.randomNumberGenerator(country));
+            phoneInputPageObject.continueCta.click();
+            phoneInputPageObject.consentAgreeCta.click();
+
+            if(!driver.findElements(By.id("com.gojek.app.staging:id/input_field_error")).isEmpty()){
+                   phoneInputPageObject.phoneInputFieldClear.click();
+                   phoneInputPageObject.phoneInputTextField.sendKeys( appiumUtilities.randomNumberGenerator(country));
+                   phoneInputPageObject.continueCta.click();
+                   phoneInputPageObject.consentAgreeCta.click();
+
+                       if (!driver.findElements(By.id("com.gojek.app.staging:id/input_field_error")).isEmpty()){
+                           phoneInputPageObject.phoneInputFieldClear.click();
+                           phoneInputPageObject.phoneInputTextField.sendKeys( appiumUtilities.randomNumberGenerator(country));
+                           phoneInputPageObject.continueCta.click();
+                           phoneInputPageObject.consentAgreeCta.click();
+                       }
+
+           }
+           return this;
         }
+
         public void clickOnContinue(){
         phoneInputPageObject.continueCta.click();
         }
@@ -66,7 +93,12 @@ public class PhoneInputPages {
         phoneInputPageObject.selectNoneOfTheAbove.click();
     }
 
+    public void clickOnPhoneInputTwice(){
+        phoneInputPageObject.phoneInputTextField.click();
     }
+    }
+
+
 
 
 
